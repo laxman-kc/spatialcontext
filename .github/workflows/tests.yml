@@ -16,8 +16,9 @@ jobs:
       HF_HUB_OFFLINE: "1"
       TRANSFORMERS_OFFLINE: "1"
       HF_HUB_DISABLE_TELEMETRY: "1"
-      HF_HOME: ${{ runner.temp }}/ecqa-huggingface
     steps:
+      - name: Configure isolated model cache
+        run: echo "HF_HOME=$RUNNER_TEMP/ecqa-huggingface" >> "$GITHUB_ENV"
       - name: Check out source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:

@@ -26,6 +26,8 @@ python -m pip check
 
 The [CPU workflow](.github/workflows/tests.yml) uses these checks on Ubuntu with Python 3.10. It also checks the installed CLI, saved result snapshots, public-media exclusions and tests from the built source archive. GitHub Actions discovers this workflow at the standalone repository root. Workflow configuration is not evidence of a successful hosted CI run; the run history becomes available after the repository is pushed to GitHub.
 
+For workflow edits, also run `actionlint .github/workflows/tests.yml`. YAML parsing alone does not validate GitHub Actions expression contexts.
+
 ## Make a focused change
 
 - Keep the flat `ecqa/` package and thin CLI. Follow the responsibilities documented in the README.

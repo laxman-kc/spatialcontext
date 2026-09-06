@@ -6,6 +6,8 @@
 
 Publication uses **`main`** at [laxman-kc/spatialcontext](https://github.com/laxman-kc/spatialcontext). The owner supplied this destination and requested `main`; the private historical branch is excluded from the push.
 
+The first hosted workflow stopped before creating any jobs. `actionlint` identified an unsupported `runner.temp` reference in job-level environment configuration. Cache initialization now uses `$RUNNER_TEMP` in a workflow step, where the runner environment is available; the corrected workflow passes `actionlint`. Hosted outcomes are recorded in the linked GitHub Actions run history.
+
 The owner selected MIT for original project code. `LICENSE`, package license metadata and `NOTICE.md` now state that scope and preserve dataset/reference attributions. The public release excludes the third-party MP4, GIF and poster, including their earlier Git versions. The recordings and old Git history remain in the local handoff; the public `main` branch has no private-history ancestor.
 
 The README retains the original spatial-recall question, all measured outcomes and a plain Matplotlib chart. The actual video test is shown as a table linked to its unchanged questions, scores, timestamps and provenance. No model weights or dataset media are bundled. The numerical snapshots and frozen source archives retain their verified bytes.
