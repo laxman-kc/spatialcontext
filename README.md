@@ -20,14 +20,16 @@ The Matplotlib chart uses [saved metrics](results/overview/provenance.json). Ret
 
 ## Actual video test
 
-Six real A100 predictions on one reused validation video produced these results:
+**Watch the 35-second before-and-after demo:** full history → memory retrieval. This replays six real A100 predictions on one reused validation video. Retrieval corrects one answer; additional fine-tuning adds no improvement in this example.
+
+https://github.com/user-attachments/assets/a010dac7-c10b-4918-b69f-212430c1c387
 
 | Question, shortened | Full history | Retrieved frames | Fine-tuned + retrieval |
 |---|---|---|---|
 | What was right of the truck? | White car — incorrect | Spherical lights — correct | Spherical lights — correct |
 | Where was the truck relative to the lights? | Left — correct | Left — correct | Left — correct |
 
-The model received sampled frames. [Exact questions, answers and scores](results/video-demo/data.json) and [run provenance](results/video-demo/provenance.json) are included. The recording and images remain in the local handoff; third-party footage is excluded from the public release. [Reproduce locally](PLAN.md#reproduce-the-actual-video-test).
+The model received sampled frames. [Exact questions, answers and scores](results/video-demo/data.json) and [run provenance](results/video-demo/provenance.json) are included. The video is hosted as a GitHub attachment; its [publication record](results/video-demo/distribution.json) identifies the original recording. [Reproduce locally](PLAN.md#reproduce-the-actual-video-test).
 
 ## How it works
 
@@ -68,6 +70,6 @@ Python 3.10, PyTorch 2.6.0, Transformers 4.57.1, PEFT 0.18.1, PyAV, Pillow, SQLi
 
 Model: [Qwen3-VL-4B](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct). Research and data: [Self-in-Space](https://github.com/IntelliSensing/Self-in-Space), [SIS-Motion-54K](https://huggingface.co/datasets/choucsan/SIS-Motion-54K), [SIS-Bench](https://huggingface.co/datasets/choucsan/SIS-Bench) and [AirScape](https://huggingface.co/datasets/EmbodiedCity/AirScape-Dataset).
 
-Original project code is licensed under **[MIT](LICENSE)**. Dataset-derived text and external dependencies retain their own terms; see [NOTICE.md](NOTICE.md). Third-party footage and model weights are not distributed. [Release preparation](CONTRIBUTING.md#prepare-a-push).
+Original project code is licensed under **[MIT](LICENSE)**. Dataset-derived text, demo footage and external dependencies retain their own terms; see [NOTICE.md](NOTICE.md). Model weights and raw footage are not included in Git. [Release preparation](CONTRIBUTING.md#prepare-a-push).
 
 Maintainers: keep the ignored data, artifacts and backups when removing the temporary GPU. [Verified handoff and restore instructions](PLAN.md#restore-after-gpu-removal).

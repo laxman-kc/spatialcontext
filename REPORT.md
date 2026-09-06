@@ -31,7 +31,7 @@ The `tuned` column in the earlier memory diagnostic refers to the **original ful
 
 ## Actual video demonstration
 
-Six real GPU predictions were recorded with the source footage and retained frames. The public release preserves the numerical evidence; the 35-second recording is retained only in the local maintainer handoff because footage redistribution permission was not established.
+Watch the [35-second before/after recording in the README](README.md#actual-video-test). It replays six real GPU predictions with the source footage and retained frames. The project owner confirmed permission to publish this recording; [NOTICE.md](NOTICE.md#video-footage) explains its separate video rights. The uploaded recording and saved numerical evidence describe the same completed run.
 
 | Fixed question | Base, full history | Base, retrieved frames | New tuned reader, same retrieved frames |
 |---|---|---|---|

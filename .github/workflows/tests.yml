@@ -44,7 +44,7 @@ jobs:
           python scripts/inspect_results.py
           python scripts/inspect_memory_results.py
           python scripts/inspect_memory_results.py --root results/memory-reader
-      - name: Check public media exclusions
+      - name: Check Git media exclusions
         run: |
           python - <<'PY'
           import subprocess
@@ -54,7 +54,7 @@ jobs:
               "results/video-demo/poster.png",
           }
           tracked = set(subprocess.check_output(["git", "ls-files"], text=True).splitlines())
-          assert not tracked & excluded, "Third-party footage must stay out of the public release"
+          assert not tracked & excluded, "Demo media must stay out of Git; the authorized recording is a README attachment"
           PY
       - name: Build and test the source distribution
         run: |

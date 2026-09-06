@@ -24,7 +24,7 @@ python -m ruff check ecqa tests scripts
 python -m pip check
 ```
 
-The [CPU workflow](.github/workflows/tests.yml) uses these checks on Ubuntu with Python 3.10. It also checks the installed CLI, saved result snapshots, public-media exclusions and tests from the built source archive. GitHub Actions discovers this workflow at the standalone repository root. Workflow configuration is not evidence of a successful hosted CI run; the run history becomes available after the repository is pushed to GitHub.
+The [CPU workflow](.github/workflows/tests.yml) uses these checks on Ubuntu with Python 3.10. It also checks the installed CLI, saved result snapshots, Git media exclusions and tests from the built source archive. GitHub Actions discovers this workflow at the standalone repository root. Check the [hosted run history](https://github.com/laxman-kc/spatialcontext/actions/workflows/tests.yml) for each published commit's outcome.
 
 For workflow edits, also run `actionlint .github/workflows/tests.yml`. YAML parsing alone does not validate GitHub Actions expression contexts.
 
@@ -46,7 +46,7 @@ Keep scientific claims tied to the saved evidence. Distinguish software correctn
 
 ## Prepare a push
 
-Original project code is MIT-licensed; preserve [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md). The public branch excludes third-party footage and its MP4, GIF and poster derivatives. Keep those exclusions when preparing future releases.
+Original project code is MIT-licensed; preserve [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md). The README links the owner-authorized recording as a GitHub attachment. Its MP4, raw footage, frames, GIF and poster remain excluded from Git and source distributions. Keep those exclusions; permission for this demonstration does not cover other footage.
 
 Work from the standalone repository's `main` branch. It begins with a clean root commit so earlier media-containing commits are not part of the public history. The former `codex/release-ready` branch and private Git bundle retain local history; do not push them. Include source, tests, documentation and the small `results/` snapshots. Keep original media, memory databases, model weights, private credentials and backup archives ignored. The two small frozen-source archives under `results/` are intentional reproducibility inputs. `.gitattributes` preserves the exact bytes of checksum-bound results.
 

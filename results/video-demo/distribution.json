@@ -1,9 +1,13 @@
 {
-  "schema": "video-demo-public-distribution-v1",
-  "prepared_at_utc": "2026-09-06T13:49:35.531016+00:00",
-  "media_included": false,
-  "reason": "Individual redistribution permission for the source footage was not established; retain footage and derivatives only in the private maintainer handoff.",
-  "omitted_media": {
+  "schema": "video-demo-public-distribution-v2",
+  "reason": "Media files remain excluded from Git and source distributions. The original walkthrough is published separately as a GitHub attachment after the project owner confirmed permission.",
+  "retained_historical_receipt": "provenance.json",
+  "retained_outputs": "data.json",
+  "license_notice": "../../NOTICE.md",
+  "scope": "The published video is byte-identical to the walkthrough in the historical provenance receipt. Numerical outputs and source identities are unchanged. Raw source footage, sampled frames, GIF and poster remain in the private handoff.",
+  "source_distribution_prepared_at_utc": "2026-09-06T13:49:35.531016+00:00",
+  "media_in_git_or_source_distribution": false,
+  "omitted_from_git_and_source_distribution": {
     "walkthrough.mp4": {
       "bytes": 3914418,
       "sha256": "f500496d8e2fb9f2c7134e5e3f1092b187b64dd296aaf89f80ee92d3076de4b0"
@@ -17,8 +21,15 @@
       "sha256": "37469645b38072ba88c583d071cc255ee3b0c537a854b38574bba7429f23521a"
     }
   },
-  "retained_historical_receipt": "provenance.json",
-  "retained_outputs": "data.json",
-  "license_notice": "../../NOTICE.md",
-  "scope": "The historical receipt records excluded media hashes. Numerical outputs and their source identities are unchanged."
+  "published_video": {
+    "url": "https://github.com/user-attachments/assets/a010dac7-c10b-4918-b69f-212430c1c387",
+    "uploaded_at_utc": "2026-09-06T14:49:59.384373+00:00",
+    "filename": "spatialcontext-before-after.mp4",
+    "source_file": "walkthrough.mp4",
+    "bytes": 3914418,
+    "sha256": "f500496d8e2fb9f2c7134e5e3f1092b187b64dd296aaf89f80ee92d3076de4b0",
+    "duration_seconds": 35,
+    "publication_permission": "The project owner confirmed permission to publish this footage on GitHub on 2026-09-06.",
+    "license_scope": "Original footage retains its source owners rights; the project MIT license does not relicense it."
+  }
 }
