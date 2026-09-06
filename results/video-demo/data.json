@@ -1,0 +1,550 @@
+{
+  "memory": {
+    "after": {
+      "frames/00000001_0.png": "af7fc65bf879fd23190cf85d9f96f36006d60c919efcdbc0abefedfca9772cc9",
+      "frames/00000001_1.png": "1afbf1ea226aab69d69092da22eed38186f7757f0a3f0247a00e486838f9c6b1",
+      "frames/00000002_0.png": "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+      "frames/00000002_1.png": "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025",
+      "frames/00000003_0.png": "20b81d1e1d6638f6017345567fcd571cc82aee20f782dfc142664c0bf4189f77",
+      "frames/00000003_1.png": "993e72ee686832f74438de882adadebaab0491255087f6eec78cf671a337ae78",
+      "frames/00000004_0.png": "bb974e2b4dd3a19e79efd31eec0b5b42b3d0c1e7e30047179c31c23975321a03",
+      "frames/00000004_1.png": "872105c4bb1010deaae238d532f0db70b125bb7e9f94ed4d9763ca346ee87bbd",
+      "manifest.json": "dd4f8ab4fa386436949e094e59179fe9722066a1a11e355e4fb10b3740ef8c15",
+      "memory.sqlite": "e2f9ae8549c943b782e44c797a85431af1f3e3d0f7ebbf4e5fc2d9431a86a1e1"
+    },
+    "before": {
+      "frames/00000001_0.png": "af7fc65bf879fd23190cf85d9f96f36006d60c919efcdbc0abefedfca9772cc9",
+      "frames/00000001_1.png": "1afbf1ea226aab69d69092da22eed38186f7757f0a3f0247a00e486838f9c6b1",
+      "frames/00000002_0.png": "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+      "frames/00000002_1.png": "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025",
+      "frames/00000003_0.png": "20b81d1e1d6638f6017345567fcd571cc82aee20f782dfc142664c0bf4189f77",
+      "frames/00000003_1.png": "993e72ee686832f74438de882adadebaab0491255087f6eec78cf671a337ae78",
+      "frames/00000004_0.png": "bb974e2b4dd3a19e79efd31eec0b5b42b3d0c1e7e30047179c31c23975321a03",
+      "frames/00000004_1.png": "872105c4bb1010deaae238d532f0db70b125bb7e9f94ed4d9763ca346ee87bbd",
+      "manifest.json": "dd4f8ab4fa386436949e094e59179fe9722066a1a11e355e4fb10b3740ef8c15",
+      "memory.sqlite": "e2f9ae8549c943b782e44c797a85431af1f3e3d0f7ebbf4e5fc2d9431a86a1e1"
+    },
+    "capacity_pairs": 4,
+    "full_paths_unavailable_during_memory_scoring": true,
+    "question_blind_writer": true,
+    "retained_frames": 8,
+    "sealed_before_question_retrieval": true,
+    "selected_frames_per_question": 2,
+    "selections": {
+      "inverse-8918": {
+        "available_pairs": 4,
+        "clip_indices": [
+          2
+        ],
+        "diagnostic": false,
+        "episode_id": "video-demo-8918",
+        "evidence_usage_proven": false,
+        "fallback": null,
+        "frame_sha256": [
+          "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+          "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025"
+        ],
+        "frames": [
+          "frames/00000002_0.png",
+          "frames/00000002_1.png"
+        ],
+        "max_pairs": 4,
+        "observation_ids": [
+          2
+        ],
+        "pair_indices": [
+          1
+        ],
+        "policy": "episode",
+        "reason": null,
+        "requested_clip": 2,
+        "scene_ids": [
+          "clip-2"
+        ],
+        "selected_frames": 2,
+        "selected_pairs": 1,
+        "source_ids": [
+          "source-clip-2"
+        ],
+        "store_digest": "b82055bec8fdead3a355ee081dc4043a445d1c750eae64cf829a20a990f2852d",
+        "timestamps": [
+          1.25
+        ]
+      },
+      "original-8918": {
+        "available_pairs": 4,
+        "clip_indices": [
+          2
+        ],
+        "diagnostic": false,
+        "episode_id": "video-demo-8918",
+        "evidence_usage_proven": false,
+        "fallback": null,
+        "frame_sha256": [
+          "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+          "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025"
+        ],
+        "frames": [
+          "frames/00000002_0.png",
+          "frames/00000002_1.png"
+        ],
+        "max_pairs": 4,
+        "observation_ids": [
+          2
+        ],
+        "pair_indices": [
+          1
+        ],
+        "policy": "episode",
+        "reason": null,
+        "requested_clip": 2,
+        "scene_ids": [
+          "clip-2"
+        ],
+        "selected_frames": 2,
+        "selected_pairs": 1,
+        "source_ids": [
+          "source-clip-2"
+        ],
+        "store_digest": "b82055bec8fdead3a355ee081dc4043a445d1c750eae64cf829a20a990f2852d",
+        "timestamps": [
+          1.25
+        ]
+      }
+    },
+    "store_digest": "b82055bec8fdead3a355ee081dc4043a445d1c750eae64cf829a20a990f2852d",
+    "unchanged": true
+  },
+  "model": {
+    "attention_backend": "sdpa_math",
+    "deterministic": true,
+    "dtype": "bfloat16",
+    "id": "Qwen/Qwen3-VL-4B-Instruct",
+    "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17"
+  },
+  "questions": [
+    {
+      "gold": "B",
+      "id": "original-8918",
+      "options": {
+        "A": "The white sedan traveling in the left lane",
+        "B": "The spherical decorative street lights among green trees",
+        "C": "The lane dividing dashed white lines",
+        "D": "The overhead road sign structure spanning the highway"
+      },
+      "origin": "Unchanged approved validation question",
+      "question": "The video consists of multiple concatenated clips. In the second clip, what object is located to the right of the cargo truck loaded with white bags?",
+      "results": {
+        "full": {
+          "condition": "full",
+          "correct": false,
+          "finished_at_utc": "2026-09-06T06:58:04.591568+00:00",
+          "frame_count": 8,
+          "id": "original-8918",
+          "margin": 3.874999985098839,
+          "prediction": "A",
+          "reader_record_digest": "02036c046edcddf6d33390ae2223a870014e5b0a73ade07b5d9c9fae3286356d",
+          "scores": {
+            "A": -0.024295106530189514,
+            "B": -3.8992950916290283,
+            "C": -5.649295330047607,
+            "D": -8.39929485321045
+          },
+          "seconds": 0.9461663759975636,
+          "started_at_utc": "2026-09-06T06:58:03.645364+00:00"
+        },
+        "memory_base": {
+          "condition": "memory",
+          "correct": true,
+          "finished_at_utc": "2026-09-06T06:58:06.938972+00:00",
+          "frame_count": 2,
+          "id": "original-8918",
+          "margin": 1.4999999850988388,
+          "prediction": "B",
+          "reader_record_digest": "589a8afe627cc28245841dfd4eaa1ce26fa225a09ab29233218615796478672c",
+          "scores": {
+            "A": -1.7132201194763184,
+            "B": -0.21322013437747955,
+            "C": -4.463220119476318,
+            "D": -8.463220596313477
+          },
+          "seconds": 0.3555894700002682,
+          "started_at_utc": "2026-09-06T06:58:06.583372+00:00"
+        },
+        "memory_tuned": {
+          "condition": "memory",
+          "correct": true,
+          "finished_at_utc": "2026-09-06T06:58:19.612313+00:00",
+          "frame_count": 2,
+          "id": "original-8918",
+          "margin": 1.2499999403953552,
+          "prediction": "B",
+          "reader_record_digest": "589a8afe627cc28245841dfd4eaa1ce26fa225a09ab29233218615796478672c",
+          "scores": {
+            "A": -1.513094186782837,
+            "B": -0.2630942463874817,
+            "C": -4.513094425201416,
+            "D": -8.888093948364258
+          },
+          "seconds": 0.7507174480015237,
+          "started_at_utc": "2026-09-06T06:58:18.861574+00:00"
+        }
+      },
+      "reviewer_type": "ai"
+    },
+    {
+      "gold": "C",
+      "id": "inverse-8918",
+      "options": {
+        "A": "Entirely to the right of the light cluster",
+        "B": "Horizontally overlapping the light cluster",
+        "C": "Entirely to the left of the light cluster",
+        "D": "The bag-loaded truck is not visible in the supplied frames"
+      },
+      "origin": "Previously AI-reviewed inverse question",
+      "question": "In the second clip, compare the cargo truck carrying white bags with the cluster of bright spherical lights on the right-hand roadside. What is the truck's horizontal position in the image relative to that light cluster?",
+      "results": {
+        "full": {
+          "condition": "full",
+          "correct": true,
+          "finished_at_utc": "2026-09-06T06:58:06.582895+00:00",
+          "frame_count": 8,
+          "id": "inverse-8918",
+          "margin": 2.6249999925494194,
+          "prediction": "C",
+          "reader_record_digest": "02f623d772a473408a3fac43be808842999178668b5a9e3916d1f78f95da6f3d",
+          "scores": {
+            "A": -2.703413486480713,
+            "B": -5.203413486480713,
+            "C": -0.07841349393129349,
+            "D": -5.828413486480713
+          },
+          "seconds": 0.4678645849999157,
+          "started_at_utc": "2026-09-06T06:58:06.114999+00:00"
+        },
+        "memory_base": {
+          "condition": "memory",
+          "correct": true,
+          "finished_at_utc": "2026-09-06T06:58:08.006599+00:00",
+          "frame_count": 2,
+          "id": "inverse-8918",
+          "margin": 1.4999999552965164,
+          "prediction": "C",
+          "reader_record_digest": "8237cf056ef0e856ef9648fa4def13c6c74518a8838c67bda77f4fb82246be02",
+          "scores": {
+            "A": -1.7124559879302979,
+            "B": -5.087456226348877,
+            "C": -0.21245603263378143,
+            "D": -5.337456226348877
+          },
+          "seconds": 0.33869333999973605,
+          "started_at_utc": "2026-09-06T06:58:07.667885+00:00"
+        },
+        "memory_tuned": {
+          "condition": "memory",
+          "correct": true,
+          "finished_at_utc": "2026-09-06T06:58:20.008578+00:00",
+          "frame_count": 2,
+          "id": "inverse-8918",
+          "margin": 1.2500000298023224,
+          "prediction": "C",
+          "reader_record_digest": "8237cf056ef0e856ef9648fa4def13c6c74518a8838c67bda77f4fb82246be02",
+          "scores": {
+            "A": -1.5096975564956665,
+            "B": -5.384697437286377,
+            "C": -0.2596975266933441,
+            "D": -5.759697437286377
+          },
+          "seconds": 0.39600229400093667,
+          "started_at_utc": "2026-09-06T06:58:19.612566+00:00"
+        }
+      },
+      "reviewer_type": "ai"
+    }
+  ],
+  "run": {
+    "adapter_files": {
+      "adapter_config.json": "a486b3ad5ca4d875184ef4d8c2ab78e772d9e4f961047fffa7d506de24ae06d5",
+      "adapter_model.safetensors": "e65c7ff88df0887bc4fdeb35629c36be1c84fcea81855c241525aa1bf2c59912"
+    },
+    "adapter_identity": "8d275db3c86920e760a3e0aa79e3c22a001efb3c720fb3784a151b19aca8b94a",
+    "base_identity": "dc6e4377addd21e22e89ffdec6d23c985fdb106601645601d9d88124b2b0208a",
+    "code_digest": "489cdb3bb34e804473b79c03c85c61313310521b07d4379d30ae835484ee775a",
+    "config_digest": "da391d7ad47841853d2de50cd84dcfcde05c5a586364876e82996f0e563c971b",
+    "decoder": {
+      "libraries": {
+        "libavcodec": [
+          61,
+          3,
+          100
+        ],
+        "libavdevice": [
+          61,
+          1,
+          100
+        ],
+        "libavfilter": [
+          10,
+          1,
+          100
+        ],
+        "libavformat": [
+          61,
+          1,
+          100
+        ],
+        "libavutil": [
+          59,
+          8,
+          100
+        ],
+        "libswresample": [
+          5,
+          1,
+          100
+        ],
+        "libswscale": [
+          8,
+          1,
+          100
+        ]
+      },
+      "machine": "arm64",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "pyav": "13.1.0"
+    },
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "processes": {
+      "base": {
+        "finished_at_utc": "2026-09-06T06:58:08.009520+00:00",
+        "full_paths_unavailable_during_memory_scoring": true,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "model_load_seconds": 7.647892468001373,
+        "model_name": "base",
+        "peak_allocated_bytes": 9958468608,
+        "protocol_digest": "d918bdef5430741f35e788d7a9763f95f5fa80be94b6a3246780de50438a7fb9",
+        "reference_checks": [
+          {
+            "condition": "full",
+            "max_abs_difference": 0.0,
+            "reference_scores": {
+              "A": -0.024295106530189514,
+              "B": -3.8992950916290283,
+              "C": -5.649295330047607,
+              "D": -8.39929485321045
+            }
+          },
+          {
+            "condition": "memory",
+            "max_abs_difference": 0.0,
+            "reference_scores": {
+              "A": -1.7132201194763184,
+              "B": -0.21322013437747955,
+              "C": -4.463220119476318,
+              "D": -8.463220596313477
+            }
+          }
+        ],
+        "rows": [
+          {
+            "condition": "full",
+            "finished_at_utc": "2026-09-06T06:58:04.591568+00:00",
+            "frame_count": 8,
+            "id": "original-8918",
+            "margin": 3.874999985098839,
+            "prediction": "A",
+            "reader_record_digest": "02036c046edcddf6d33390ae2223a870014e5b0a73ade07b5d9c9fae3286356d",
+            "scores": {
+              "A": -0.024295106530189514,
+              "B": -3.8992950916290283,
+              "C": -5.649295330047607,
+              "D": -8.39929485321045
+            },
+            "seconds": 0.9461663759975636,
+            "started_at_utc": "2026-09-06T06:58:03.645364+00:00"
+          },
+          {
+            "condition": "full",
+            "finished_at_utc": "2026-09-06T06:58:06.582895+00:00",
+            "frame_count": 8,
+            "id": "inverse-8918",
+            "margin": 2.6249999925494194,
+            "prediction": "C",
+            "reader_record_digest": "02f623d772a473408a3fac43be808842999178668b5a9e3916d1f78f95da6f3d",
+            "scores": {
+              "A": -2.703413486480713,
+              "B": -5.203413486480713,
+              "C": -0.07841349393129349,
+              "D": -5.828413486480713
+            },
+            "seconds": 0.4678645849999157,
+            "started_at_utc": "2026-09-06T06:58:06.114999+00:00"
+          },
+          {
+            "condition": "memory",
+            "finished_at_utc": "2026-09-06T06:58:06.938972+00:00",
+            "frame_count": 2,
+            "id": "original-8918",
+            "margin": 1.4999999850988388,
+            "prediction": "B",
+            "reader_record_digest": "589a8afe627cc28245841dfd4eaa1ce26fa225a09ab29233218615796478672c",
+            "scores": {
+              "A": -1.7132201194763184,
+              "B": -0.21322013437747955,
+              "C": -4.463220119476318,
+              "D": -8.463220596313477
+            },
+            "seconds": 0.3555894700002682,
+            "started_at_utc": "2026-09-06T06:58:06.583372+00:00"
+          },
+          {
+            "condition": "memory",
+            "finished_at_utc": "2026-09-06T06:58:08.006599+00:00",
+            "frame_count": 2,
+            "id": "inverse-8918",
+            "margin": 1.4999999552965164,
+            "prediction": "C",
+            "reader_record_digest": "8237cf056ef0e856ef9648fa4def13c6c74518a8838c67bda77f4fb82246be02",
+            "scores": {
+              "A": -1.7124559879302979,
+              "B": -5.087456226348877,
+              "C": -0.21245603263378143,
+              "D": -5.337456226348877
+            },
+            "seconds": 0.33869333999973605,
+            "started_at_utc": "2026-09-06T06:58:07.667885+00:00"
+          }
+        ],
+        "started_at_utc": "2026-09-06T06:57:55.997140+00:00",
+        "store_unchanged": true,
+        "torch_version": "2.6.0+cu124"
+      },
+      "tuned": {
+        "finished_at_utc": "2026-09-06T06:58:20.011222+00:00",
+        "full_paths_unavailable_during_memory_scoring": true,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "model_load_seconds": 8.420794907000527,
+        "model_name": "tuned",
+        "peak_allocated_bytes": 9260998656,
+        "protocol_digest": "d918bdef5430741f35e788d7a9763f95f5fa80be94b6a3246780de50438a7fb9",
+        "reference_checks": [],
+        "rows": [
+          {
+            "condition": "memory",
+            "finished_at_utc": "2026-09-06T06:58:19.612313+00:00",
+            "frame_count": 2,
+            "id": "original-8918",
+            "margin": 1.2499999403953552,
+            "prediction": "B",
+            "reader_record_digest": "589a8afe627cc28245841dfd4eaa1ce26fa225a09ab29233218615796478672c",
+            "scores": {
+              "A": -1.513094186782837,
+              "B": -0.2630942463874817,
+              "C": -4.513094425201416,
+              "D": -8.888093948364258
+            },
+            "seconds": 0.7507174480015237,
+            "started_at_utc": "2026-09-06T06:58:18.861574+00:00"
+          },
+          {
+            "condition": "memory",
+            "finished_at_utc": "2026-09-06T06:58:20.008578+00:00",
+            "frame_count": 2,
+            "id": "inverse-8918",
+            "margin": 1.2500000298023224,
+            "prediction": "C",
+            "reader_record_digest": "8237cf056ef0e856ef9648fa4def13c6c74518a8838c67bda77f4fb82246be02",
+            "scores": {
+              "A": -1.5096975564956665,
+              "B": -5.384697437286377,
+              "C": -0.2596975266933441,
+              "D": -5.759697437286377
+            },
+            "seconds": 0.39600229400093667,
+            "started_at_utc": "2026-09-06T06:58:19.612566+00:00"
+          }
+        ],
+        "started_at_utc": "2026-09-06T06:58:10.440417+00:00",
+        "store_unchanged": true,
+        "torch_version": "2.6.0+cu124"
+      }
+    },
+    "protocol_digest": "d918bdef5430741f35e788d7a9763f95f5fa80be94b6a3246780de50438a7fb9",
+    "script_sha256": "a470b48c19f7f712f4ab2c66d74ac052e1302a9119c0781c03fc5012bb024d3f",
+    "timestamp": "2026-09-06T06:58:20.936940+00:00"
+  },
+  "schema": "video-demo-v1",
+  "scope": [
+    "Two correlated AI-reviewed questions on a previously used validation video.",
+    "Fresh MP4 decoding and GPU inference; no training or new held-out test.",
+    "Full baseline uses 8 sampled frames; memory readers use 2 retained frames.",
+    "Memory retrieval parses the explicit clip ordinal; it is not learned semantic retrieval.",
+    "Full versus memory changes both evidence and prompt formatting.",
+    "Memory base versus tuned holds evidence and prompt fixed; only the adapter differs.",
+    "Scores are unnormalized answer-token log likelihoods, not calibrated confidence.",
+    "Timings include scoring and input preparation, exclude model loading/reference checks.",
+    "No automatic 3D mapping or continuous-video processing is demonstrated."
+  ],
+  "source": {
+    "all_eight_pngs_match_reviewed_evidence": true,
+    "clip_ranges_seconds": [
+      [
+        0.0,
+        5.375
+      ],
+      [
+        5.375,
+        10.75
+      ],
+      [
+        10.75,
+        16.125
+      ],
+      [
+        16.125,
+        21.5
+      ]
+    ],
+    "decoded_frames": 516,
+    "duration": 21.5,
+    "fps": 24.0,
+    "geometry_wh": [
+      1280,
+      720
+    ],
+    "id": "AirScape_Train_8918",
+    "prepared_png_sha256": [
+      "af7fc65bf879fd23190cf85d9f96f36006d60c919efcdbc0abefedfca9772cc9",
+      "1afbf1ea226aab69d69092da22eed38186f7757f0a3f0247a00e486838f9c6b1",
+      "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+      "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025",
+      "20b81d1e1d6638f6017345567fcd571cc82aee20f782dfc142664c0bf4189f77",
+      "993e72ee686832f74438de882adadebaab0491255087f6eec78cf671a337ae78",
+      "bb974e2b4dd3a19e79efd31eec0b5b42b3d0c1e7e30047179c31c23975321a03",
+      "872105c4bb1010deaae238d532f0db70b125bb7e9f94ed4d9763ca346ee87bbd"
+    ],
+    "sample_indices": [
+      43,
+      86,
+      172,
+      215,
+      301,
+      344,
+      430,
+      473
+    ],
+    "sample_pts": [
+      1.7916666666666667,
+      3.5833333333333335,
+      7.166666666666667,
+      8.958333333333334,
+      12.541666666666666,
+      14.333333333333334,
+      17.916666666666668,
+      19.708333333333332
+    ],
+    "sha256": "00fb1953fa10157fa4382b3eb00630eb562f61742863bab91311826de754a708",
+    "synthetic_model_fps": 2.0,
+    "url": "https://modelscope.cn/api/v1/datasets/choucisan/SIS-Motion-54K-Dataset/repo?Revision=edc34ea44f58a538622ef4221cf5a3b0fe3070a8&FilePath=AirScape_dataset%2FAirScape_Train_8918.mp4"
+  }
+}

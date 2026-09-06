@@ -1,0 +1,154 @@
+{
+  "checks": {
+    "answer_words_match_saved_predictions": true,
+    "browser_console_errors": 0,
+    "browser_console_warnings": 0,
+    "cpu_tests_context": "251 tests passed in the existing release; not rerun for this presentation-only change.",
+    "cpu_tests_passed": 251,
+    "desktop_pixels": [
+      1600,
+      900
+    ],
+    "desktop_scroll_pixels": [
+      1600,
+      900
+    ],
+    "eight_canonical_png_hashes_match": true,
+    "exact_tested_question_preserved": true,
+    "footer_bottom_pixels": 885.96875,
+    "frozen_protocol_and_preparation_digests": true,
+    "gif_all_frames_decoded": true,
+    "historical_result_inspectors": "all three passed",
+    "memory_base_and_tuned_input_digest_match": true,
+    "memory_inventory_unchanged": true,
+    "mobile_scroll_width_pixels": 390,
+    "mobile_viewport_pixels": [
+      390,
+      844
+    ],
+    "mp4_all_frames_decoded": true,
+    "mp4_frame_count": 875,
+    "reference_max_abs_difference": 0.0,
+    "reference_scope": "Question 1 full-input and memory-base modes only",
+    "remembered_frame_seconds": 8.958333,
+    "ruff": "passed",
+    "six_predictions_recomputed": true,
+    "source_seekable_end_seconds": 21.5,
+    "visual_review": "Inspected the updated overview, desktop/mobile poster and actual captured frames for both questions. Both answer words and correctness agree with saved GPU outputs."
+  },
+  "counts_correct_of_two": {
+    "full": 1,
+    "memory_base": 2,
+    "memory_tuned": 2
+  },
+  "created_at_utc": "2026-09-06T07:37:13.875472+00:00",
+  "files": {
+    "data.json": {
+      "bytes": 20085,
+      "sha256": "a2ea06ca6cb5c0e5705fd277697477f54ab772b6b7ed3d420ceb5cd8c8185298"
+    },
+    "decoder-comparison.json": {
+      "bytes": 3579,
+      "sha256": "7d9b58ca85ee795b9c6d182e3140bd4d0a17f15e0e7d0b3c37138754ec764d99"
+    },
+    "poster.png": {
+      "bytes": 371915,
+      "sha256": "37469645b38072ba88c583d071cc255ee3b0c537a854b38574bba7429f23521a"
+    },
+    "preparation.json": {
+      "bytes": 6507,
+      "sha256": "cc5bd363cd4927ab9aa9fd71797ee5bec451f5aa1737cff2c9731b356b79d83a"
+    },
+    "preview.gif": {
+      "bytes": 2711418,
+      "sha256": "3649e81ba6ca5861c9f8710e752dc99e3ad9b3d785a49bf284066cb5f640c9b7"
+    },
+    "protocol.json": {
+      "bytes": 6961,
+      "sha256": "a615facc197693001ce281da457e6d663e799abd8d52e498a5db7b80d9d5adbb"
+    },
+    "walkthrough.mp4": {
+      "bytes": 3914418,
+      "sha256": "f500496d8e2fb9f2c7134e5e3f1092b187b64dd296aaf89f80ee92d3076de4b0"
+    }
+  },
+  "gpu_instance": "Retained intact; post-run check reported no compute processes and 0 MiB GPU memory.",
+  "presentation": "Short display questions and answer words; exact tested question/options remain in expandable details and unchanged data.json. README uses a still linked to the 35-second MP4.",
+  "presentation_issue_resolved": "The simple HTTP server exposed an empty seekable range. Loading the local source as a Blob made the full 21.5 seconds seekable; the final recording passed target-clip endpoint checks.",
+  "preview": {
+    "colors": 128,
+    "dither": "bayer, bayer_scale=3",
+    "duration_seconds": 10.0,
+    "fps": 5,
+    "frames": 50,
+    "height": 450,
+    "loop": true,
+    "speed_multiplier": 3.5,
+    "width": 800
+  },
+  "previous_presentation_receipt_sha256": "4c27d1097927008c340fefa8dfa01fa4e7d0d4c9dc93385bea88809b20363770",
+  "protocol_digest": "d918bdef5430741f35e788d7a9763f95f5fa80be94b6a3246780de50438a7fb9",
+  "publication": "Local repository preparation only; no public upload performed.",
+  "recording": {
+    "browser": "HeadlessChrome/152.0.0.0",
+    "capture_pixels": [
+      1600,
+      900
+    ],
+    "captured_webm_sha256": "1e72da99f3b8923777202c7776bdd9b8d9b1d4b16a6e899c166ab8d86d7361fd",
+    "edit": "Keep the first 35 seconds of the real browser capture; remove redundant final still only.",
+    "ffmpeg_version": "9.0.1",
+    "mp4_encoding": {
+      "audio": false,
+      "codec": "libx264",
+      "crf": 22,
+      "faststart": true,
+      "pixel_format": "yuv420p",
+      "preset": "medium"
+    },
+    "mp4_probe": {
+      "format": {
+        "duration": "35.000000",
+        "size": "3914418"
+      },
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "height": 900,
+          "nb_read_frames": "875",
+          "r_frame_rate": "25/1",
+          "width": 1600
+        }
+      ]
+    },
+    "sequence": [
+      "Play complete original 21.5-second source at normal speed",
+      "Reveal Question 1: White car / Spherical lights / Spherical lights",
+      "Seek the source to the remembered frame at 8.958333 seconds",
+      "Show Question 2: Left of the lights in all three runs"
+    ],
+    "source_playback_speed": 1,
+    "tool": "Playwright CLI video-start/video-stop"
+  },
+  "render_sources": {
+    "scripts/build_video_demo.py": "6ce4be4069924190f053f94ff3a1a64f8cdd1a525e76e3653a7708dd04ee4fa1",
+    "scripts/run_video_demo.py": "a470b48c19f7f712f4ab2c66d74ac052e1302a9119c0781c03fc5012bb024d3f",
+    "scripts/templates/video_demo.html": "25e11f1cc5d8e90f6f0e205fa675637dc93a861e08cfe24dc176d08a2ed73cfd"
+  },
+  "schema": "video-demo-presentation-v1",
+  "scope": "Annotated browser replay of six fresh GPU predictions on one reused validation video; no live inference in the viewer, no new training or fresh held-out benchmark.",
+  "source_media": {
+    "dataset_card": "https://huggingface.co/datasets/choucsan/SIS-Motion-54K",
+    "duration_seconds": 21.5,
+    "fps": 24,
+    "id": "AirScape_Train_8918",
+    "original_media_in_git": false,
+    "rights_note": "Upstream AirScape reserves video rights to the original source owners. The dataset card does not establish a blanket Apache-2.0 license for this individual video.",
+    "sha256": "00fb1953fa10157fa4382b3eb00630eb562f61742863bab91311826de754a708",
+    "source_owner_mapping": "unresolved",
+    "upstream_card": "https://huggingface.co/datasets/EmbodiedCity/AirScape-Dataset",
+    "url": "https://modelscope.cn/api/v1/datasets/choucisan/SIS-Motion-54K-Dataset/repo?Revision=edc34ea44f58a538622ef4221cf5a3b0fe3070a8&FilePath=AirScape_dataset%2FAirScape_Train_8918.mp4"
+  }
+}

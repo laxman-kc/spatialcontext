@@ -1,0 +1,4279 @@
+[
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00019667598826345056,
+      "B": -8.87519645690918,
+      "C": -9.87519645690918,
+      "D": -12.12519645690918
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10466",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "f116737c212338873e689fcb85ed490c21a082468ca44baf20ae3c5b8cc68e47",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.00010466027742950246,
+      "B": -9.500104904174805,
+      "C": -10.500104904174805,
+      "D": -13.000104904174805
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -3.814689989667386e-06,
+      "B": -13.750003814697266,
+      "C": -13.250003814697266,
+      "D": -13.875003814697266
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10280",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "3948779e23bd7e516e32978f2da1fd7c11f93e5d7305c7322c49f666ce1b83f8",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -1.6689286894688848e-06,
+      "B": -14.500001907348633,
+      "C": -14.000001907348633,
+      "D": -14.750001907348633
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -10.500810623168945,
+      "B": -0.0008108903421089053,
+      "C": -7.5008111000061035,
+      "D": -8.375810623168945
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9432",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "166e3224bbfe08352790d339f281cdd973af3bbb1a68dee3ed25a2610aa75693",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -11.000510215759277,
+      "B": -0.0005104430601932108,
+      "C": -8.000510215759277,
+      "D": -8.750510215759277
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -5.505365371704102,
+      "B": -7.630365371704102,
+      "C": -0.005365495104342699,
+      "D": -7.130365371704102
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11518",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "25fd80e061a331936c841b1c2df84664f22f0b4398c8e6de580eacfd4f499318",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -5.753998279571533,
+      "B": -8.003998756408691,
+      "C": -0.003998500294983387,
+      "D": -7.628998279571533
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -14.125000953674316,
+      "B": -15.375000953674316,
+      "C": -1.0728830375228426e-06,
+      "D": -15.625000953674316
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10265",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "7a34d6dd31dda621aa50c42d04dfa43b4b3e94933607be98b0876c2a67f668ec",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -14.750000953674316,
+      "B": -16.125,
+      "C": -5.960462772236497e-07,
+      "D": -16.375
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -10.250383377075195,
+      "B": -11.250383377075195,
+      "C": -8.000383377075195,
+      "D": -0.00038378025055862963
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10422",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "3ea3914bca4a7df224e6d0b1dbc80c803dc0ac1bf61861271bdda1591da19c8c",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -11.000225067138672,
+      "B": -12.125225067138672,
+      "C": -8.500225067138672,
+      "D": -0.00022551853908225894
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -3.576278118089249e-07,
+      "B": -15.75,
+      "C": -15.75,
+      "D": -16.5
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9438",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "0b184a00cf0d7820f2f36a0fab2d04c890d1f0b454207d35246bb54a91ef268f",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": 0.0,
+      "B": -17.0,
+      "C": -16.75,
+      "D": -17.25
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -7.86750388215296e-05,
+      "B": -12.500078201293945,
+      "C": -9.500078201293945,
+      "D": -16.375078201293945
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11654",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "8ac063c18f0b050bef067febe1d1b968145cc832eebe0d75e79f1fb1f41afc4d",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -7.712543447269127e-05,
+      "B": -13.000077247619629,
+      "C": -9.500077247619629,
+      "D": -16.875076293945312
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -13.750000953674316,
+      "B": -15.875000953674316,
+      "C": -1.1920922133867862e-06,
+      "D": -17.125001907348633
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11520",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "e1fa9b155cb3c66737694f3ec092aff4aff104c7d96180a2070f57ac534d4d24",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -14.500000953674316,
+      "B": -16.75,
+      "C": -5.960462772236497e-07,
+      "D": -17.875
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -4.5298504119273275e-05,
+      "B": -11.125044822692871,
+      "C": -12.000044822692871,
+      "D": -10.625044822692871
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11199",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "3e7d1d6b1d11634137296d986e856818e20df27c95232db17315014c84c098d2",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -2.455681169521995e-05,
+      "B": -11.750024795532227,
+      "C": -12.500024795532227,
+      "D": -11.250024795532227
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -10.875057220458984,
+      "B": -5.709961988031864e-05,
+      "C": -11.000057220458984,
+      "D": -10.750057220458984
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9525",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "0d8f92f47b7aba1894ba85351d2a1b6f50608478f67bd8ea407730bf654df47c",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -11.500029563903809,
+      "B": -2.9205850296420977e-05,
+      "C": -11.625029563903809,
+      "D": -11.500029563903809
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -13.000003814697266,
+      "B": -4.172316494077677e-06,
+      "C": -13.750003814697266,
+      "D": -14.000003814697266
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10001",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "b9bdf31f1349aecd1ca98a78c6a288c97581968b87c74b25c8d498ab07a27e5b",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -14.000001907348633,
+      "B": -1.5497195136049413e-06,
+      "C": -14.750001907348633,
+      "D": -15.000001907348633
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -7.750482559204102,
+      "B": -11.000482559204102,
+      "C": -10.250482559204102,
+      "D": -0.00048268112004734576
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10348",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "1fc9f41318a1d374e235517a3aae3f08549bed01779cb6692208697cd6547512",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -8.25029182434082,
+      "B": -11.62529182434082,
+      "C": -10.75029182434082,
+      "D": -0.0002915434306487441
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.06534402817487717,
+      "B": -4.440343856811523,
+      "C": -4.190343856811523,
+      "D": -3.3153440952301025
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11615",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "1743701cc5ed99ff37a036ae2122c9c941371d4c320890ab9a2f8b0cb89f5cbb",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.03575359284877777,
+      "B": -5.2857537269592285,
+      "C": -4.9107537269592285,
+      "D": -3.7857534885406494
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -11.750016212463379,
+      "B": -13.000016212463379,
+      "C": -1.6331539882230572e-05,
+      "D": -12.000016212463379
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9137",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "010d55054fb0d78b14f54a78f0e2bb91b29d181bf54f1c115fc58eb6f10aef25",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -12.375009536743164,
+      "B": -13.625009536743164,
+      "C": -9.179073458653875e-06,
+      "D": -12.500009536743164
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -9.625106811523438,
+      "B": -11.250106811523438,
+      "C": -0.00010668662434909493,
+      "D": -10.500106811523438
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10477",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "0d2398fb570c7ec627ae084b5ac161ee2d1463dd8198f193aac18642c4b47afa",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -10.250054359436035,
+      "B": -12.000054359436035,
+      "C": -5.447716102935374e-05,
+      "D": -11.250054359436035
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -9.250259399414062,
+      "B": -10.125259399414062,
+      "C": -9.000259399414062,
+      "D": -0.00025960413040593266
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9758",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "93874ca98ab734ebecdff52cc489ab32861d43247b19d605772d633bbe25af5a",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -10.250110626220703,
+      "B": -11.000110626220703,
+      "C": -9.750110626220703,
+      "D": -0.00011038171214750037
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -8.25101089477539,
+      "B": -10.12601089477539,
+      "C": -7.251010894775391,
+      "D": -0.0010110987350344658
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_8935",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "7a45a0b0b67a0a5792ea7e18eaf0a0bd566fdd5fe421f32b5cf332ca086a7553",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -8.7506103515625,
+      "B": -10.7506103515625,
+      "C": -7.7506103515625,
+      "D": -0.0006104036583565176
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -8.876361846923828,
+      "B": -9.876361846923828,
+      "C": -0.0013613966293632984,
+      "D": -6.75136137008667
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11226",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "50d6c7c66c3d549a4ea8c577a475417ec377425aac96a8f183bdb9c194efdca3",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -9.37573528289795,
+      "B": -10.62573528289795,
+      "C": -0.000735608336981386,
+      "D": -7.375735759735107
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -18.0,
+      "B": 0.0,
+      "C": -17.75,
+      "D": -19.75
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9013",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "9062fd2949f89bc961b1acc3c78a96662dcdb87b3d08977a793f2cb4b9e0bbfd",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -18.75,
+      "B": 0.0,
+      "C": -18.5,
+      "D": -20.625
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -12.00002384185791,
+      "B": -13.75002384185791,
+      "C": -11.00002384185791,
+      "D": -2.396077979938127e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11698",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "9e8d05cbb49b7c0c3e3df3ae627617f8aeee26ff9f02f68f62c459965aca67e9",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -12.500017166137695,
+      "B": -14.250017166137695,
+      "C": -11.250017166137695,
+      "D": -1.7404405298293568e-05
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -7.750509738922119,
+      "B": -11.250509262084961,
+      "C": -9.625509262084961,
+      "D": -0.0005097282119095325
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11699",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "ced10d214c8b450c2e8fa82cfe1472621113c89a206d1db75b8109328687cb54",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -8.250307083129883,
+      "B": -12.000307083129883,
+      "C": -10.125307083129883,
+      "D": -0.0003073934931308031
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00567515566945076,
+      "B": -6.380675315856934,
+      "C": -7.130675315856934,
+      "D": -5.755675315856934
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_8914",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "b6741e6f1fd9e095051c127b4191460d8fe5341192ea63838f58a52381c4150a",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.004057034384459257,
+      "B": -6.879056930541992,
+      "C": -7.504056930541992,
+      "D": -6.004056930541992
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -14.000000953674316,
+      "B": -16.750001907348633,
+      "C": -15.250000953674316,
+      "D": -1.0728830375228426e-06
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11643",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "8cbae4e364fe3ee6e448c0e929050b1f9d25673bc3c27f7b134f4e625c4a630f",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -14.75,
+      "B": -18.0,
+      "C": -16.0,
+      "D": -4.768370445162873e-07
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.25001049041748,
+      "B": -13.12501049041748,
+      "C": -1.0132738680113107e-05,
+      "D": -12.62501049041748
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10735",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "8e8c37ee0de0a2aa6a294efd3b3035623cea26c22c6f3361db3531ee5824120d",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -13.000004768371582,
+      "B": -13.875004768371582,
+      "C": -5.006777428206988e-06,
+      "D": -13.250004768371582
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.0013311582151800394,
+      "B": -7.876331329345703,
+      "C": -7.001331329345703,
+      "D": -10.126331329345703
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10808",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "85b43199c533825ea8e00f5fca1e3ec5d4bb59d18adc640e87011ede0d84dc37",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.0006079017766751349,
+      "B": -8.75060749053955,
+      "C": -7.750607967376709,
+      "D": -10.87560749053955
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -9.500893592834473,
+      "B": -0.0008936702506616712,
+      "C": -7.250893592834473,
+      "D": -9.125893592834473
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9198",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "149f14ceb0e06e794939583c6c5f2d53c3a509ece5aa5126d0bd9a545cfe0e6c",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -10.250524520874023,
+      "B": -0.00052426423644647,
+      "C": -7.750524044036865,
+      "D": -9.750524520874023
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": false,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.6050626039505005,
+      "B": -6.980062484741211,
+      "C": -2.105062484741211,
+      "D": -1.1050626039505005
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11257",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "7d3a65be32837a6c5f2180ebcca15e2067ee9110ef86182246511c5e39d8d6a4",
+    "tuned_correct": false,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.6810319423675537,
+      "B": -7.181032180786133,
+      "C": -1.6810319423675537,
+      "D": -1.1810319423675537
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -5.756679534912109,
+      "B": -0.006679587997496128,
+      "C": -5.881679534912109,
+      "D": -7.256679534912109
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10591",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "656d3447b646948922aede8bdd09d86fc91091c5c4e13354cabd22d1cf3aef56",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -6.5033369064331055,
+      "B": -0.0033369355369359255,
+      "C": -6.5033369064331055,
+      "D": -8.003336906433105
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -12.50041389465332,
+      "B": -8.00041389465332,
+      "C": -9.50041389465332,
+      "D": -0.00041392818093299866
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10505",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "92eb1c06e93b4618c704c63ff01883e8761112e57ca2703602c5a943d6f6d27f",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -13.125264167785645,
+      "B": -8.500264167785645,
+      "C": -9.750264167785645,
+      "D": -0.0002637753786984831
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -14.000009536743164,
+      "B": -14.000009536743164,
+      "C": -11.750009536743164,
+      "D": -9.536697689327411e-06
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10481",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "4f417fbaa3b7825dc592ee5611664987fd3199c7abb917c65d7534c73d989474",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -14.750005722045898,
+      "B": -14.750005722045898,
+      "C": -12.250005722045898,
+      "D": -5.602820692729438e-06
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -7.510157047363464e-06,
+      "B": -12.500007629394531,
+      "C": -13.000007629394531,
+      "D": -13.375007629394531
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11005",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b347dbd9deb5711cfcda",
+    "split": "train",
+    "store_digest": "fa396d7e6fbce594143a85fb8a15d30d8091566ab7a3f9f6cd89b3f2ca84cd05",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -4.291525328881107e-06,
+      "B": -13.000003814697266,
+      "C": -13.625003814697266,
+      "D": -14.000003814697266
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -1.6927575416048057e-05,
+      "B": -12.000017166137695,
+      "C": -12.125017166137695,
+      "D": -12.125017166137695
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10231",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:ae6fec54afed14b68ceb",
+    "split": "train",
+    "store_digest": "cd3969ec3402f8d5381a36138c3a878654fc5c7fbb7b394edb040b564f464430",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -9.417489309271332e-06,
+      "B": -12.750009536743164,
+      "C": -12.500009536743164,
+      "D": -12.750009536743164
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -9.250226020812988,
+      "B": -12.000226020812988,
+      "C": -9.000226020812988,
+      "D": -0.0002256377338198945
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9431",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:e8b116618ac32f92624f",
+    "split": "train",
+    "store_digest": "9ee8b6be9d2ebf2f7a8a539530431b29aaf6d2c7117c458044fdc93e0e30e621",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -9.750137329101562,
+      "B": -12.375137329101562,
+      "C": -9.500137329101562,
+      "D": -0.00013731967192143202
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -5.507094860076904,
+      "B": -7.507094860076904,
+      "C": -0.0070946672931313515,
+      "D": -6.007094860076904
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10195",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:f1d746d2b332fc2c855c",
+    "split": "train",
+    "store_digest": "fceefe1ffca67be48e27bc1a17544e543972a9608cb519c04182fd4bd8982e23",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -5.755253791809082,
+      "B": -7.880253791809082,
+      "C": -0.0052535575814545155,
+      "D": -6.380253791809082
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -7.501072883605957,
+      "B": -0.0010726656764745712,
+      "C": -8.876072883605957,
+      "D": -7.876072883605957
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9933",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:2348397763cf78746fdd",
+    "split": "train",
+    "store_digest": "54519d3674f2ed8f7472d52afdd87862c5444f6002516fcca2f7c01d99d45c52",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -8.000650405883789,
+      "B": -0.0006507901125587523,
+      "C": -9.375650405883789,
+      "D": -8.375650405883789
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.875009536743164,
+      "B": -13.500009536743164,
+      "C": -9.298280929215252e-06,
+      "D": -12.125009536743164
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_8939",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:f7e54048447f764606bf",
+    "split": "train",
+    "store_digest": "ed557fdbfeca4b701904c3f71637602a389a7d00700cd3c19c05d37c55f10466",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -13.625004768371582,
+      "B": -14.250004768371582,
+      "C": -4.768360213347478e-06,
+      "D": -12.750004768371582
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -4.892053127288818,
+      "B": -0.017053278163075447,
+      "C": -4.767053127288818,
+      "D": -7.017053127288818
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_8910",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:f1edc4e5fac4e7ff09ec",
+    "split": "train",
+    "store_digest": "8183812562c8a487c52f0081af19df353dbcccdf2fa3f35193fbc8664bc86c19",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -5.261834144592285,
+      "B": -0.01183394156396389,
+      "C": -5.136834144592285,
+      "D": -7.261834144592285
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": 0.0,
+      "B": -19.5,
+      "C": -20.5,
+      "D": -22.125
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9025",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:e644b6d1a6917cf4e8d9",
+    "split": "train",
+    "store_digest": "d87df49efb2f0bb74cf3b638684416377441e6b15a5d772cad794d6cebce55d5",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": 0.0,
+      "B": -20.25,
+      "C": -21.25,
+      "D": -22.75
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -6.141568660736084,
+      "B": -6.266568660736084,
+      "C": -4.391568660736084,
+      "D": -0.016568565741181374
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10614",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:89fff5df18215e9b1fd1",
+    "split": "train",
+    "store_digest": "e16fe1458b74bae46f716f4253ce948982bbe3e3e1b04b19037fe3cddd58dde4",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -6.510411262512207,
+      "B": -6.635411262512207,
+      "C": -4.885411262512207,
+      "D": -0.010411118157207966
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -4.159312725067139,
+      "B": -4.909312725067139,
+      "C": -4.534312725067139,
+      "D": -0.03431258723139763
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11140",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:cd00221acb60f6498e19",
+    "split": "train",
+    "store_digest": "3c355a2fea753d715365558989efdd49192e4089ccea58fc9fcd7512fa76ee24",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -4.277174472808838,
+      "B": -5.402174472808838,
+      "C": -4.777174472808838,
+      "D": -0.02717452682554722
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -7.376482963562012,
+      "B": -0.0014831743901595473,
+      "C": -7.376482963562012,
+      "D": -8.376482963562012
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10314",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:456917a46e9b10be6c36",
+    "split": "train",
+    "store_digest": "7b272b3869fa9cb0ccbfd1be8bffc871a6c0aa82bec022793e79e3e32d93c47b",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -7.751097679138184,
+      "B": -0.0010979106882587075,
+      "C": -7.626097679138184,
+      "D": -8.626097679138184
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -5.878973960876465,
+      "B": -6.878973960876465,
+      "C": -8.878973960876465,
+      "D": -0.003974159713834524
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10009",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b1b34a3f2c83f4599240",
+    "split": "train",
+    "store_digest": "7952e47cbfd6b7469ea8cd09d950fa702f05fbee78a9ac88b43507d97ffeb040",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -6.502064228057861,
+      "B": -7.627064228057861,
+      "C": -9.50206470489502,
+      "D": -0.0020642417948693037
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -5.007915019989014,
+      "B": -0.007914847694337368,
+      "C": -7.007915019989014,
+      "D": -8.132914543151855
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10684",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:969adae31ffc9e60e5a3",
+    "split": "train",
+    "store_digest": "8af183288b83342d7d4fadc8176fb659089db9d12ca70e18eea62c9c244d5b63",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -5.256142616271973,
+      "B": -0.006142428610473871,
+      "C": -7.256142616271973,
+      "D": -8.506142616271973
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -16.5,
+      "B": -14.750000953674316,
+      "C": -7.152555099310121e-07,
+      "D": -15.250000953674316
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10625",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:46298fae77c4f61d7710",
+    "split": "train",
+    "store_digest": "e9254e652764baece0d1f45a8af269ed76d2d4546e528199874c9842b77b8f39",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -16.875,
+      "B": -15.0,
+      "C": -4.768370445162873e-07,
+      "D": -15.75
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -4.339123915997334e-05,
+      "B": -11.250042915344238,
+      "C": -10.750042915344238,
+      "D": -11.625042915344238
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10129",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b290762c7602159ac509",
+    "split": "train",
+    "store_digest": "a49ab2d5057c19ae79a8e7ee91df8c8cadfed603a31d739934efcbd56e097a06",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -2.90866428258596e-05,
+      "B": -11.625028610229492,
+      "C": -11.125028610229492,
+      "D": -12.125028610229492
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": false,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -3.9761035442352295,
+      "B": -5.101103782653809,
+      "C": -0.6011036038398743,
+      "D": -0.8511036038398743
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10727",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:abb4ac3dc6cabf2dda59",
+    "split": "train",
+    "store_digest": "1d919de99d91d36240cedc0a84412e2730533609525ad4b2c24689165b7efe99",
+    "tuned_correct": false,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -4.343302249908447,
+      "B": -5.468302249908447,
+      "C": -0.593302309513092,
+      "D": -0.843302309513092
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -8.251660346984863,
+      "B": -0.0016600412782281637,
+      "C": -7.626659870147705,
+      "D": -7.001659870147705
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10209",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:0598c4dc125ab8c26b79",
+    "split": "train",
+    "store_digest": "4f2212886a8ef6ab6e919f45122fcc0d383eac2c5c15f5d04e5fc997ce8e5b09",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -8.501494407653809,
+      "B": -0.0014944825088605285,
+      "C": -7.876494407653809,
+      "D": -7.001494407653809
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -14.875000953674316,
+      "B": -15.250000953674316,
+      "C": -9.536738616588991e-07,
+      "D": -14.750000953674316
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9387",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:5fcb6966457794e5707e",
+    "split": "train",
+    "store_digest": "756196d73171ffffc81288534227c6beb40f32c88eae199009b0fb8d6876fc57",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -15.500000953674316,
+      "B": -16.0,
+      "C": -5.960462772236497e-07,
+      "D": -15.500000953674316
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -14.125003814697266,
+      "B": -3.6954811548639555e-06,
+      "C": -12.750003814697266,
+      "D": -16.125003814697266
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9190",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:6ea52a476cd5507775d4",
+    "split": "train",
+    "store_digest": "32581a1a2049fc8abcdd47e5f870878c32a49008cc54cf46ebb7506754824175",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -14.75000286102295,
+      "B": -2.622600959512056e-06,
+      "C": -13.00000286102295,
+      "D": -16.750001907348633
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -15.75,
+      "B": -16.0,
+      "C": -2.3841855067985307e-07,
+      "D": -17.375
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9047",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:95b1efd877dba279283d",
+    "split": "train",
+    "store_digest": "00e608b7900feb4bbf8d7c87956513931f72662ff7fe231137bcf291ac270597",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -16.25,
+      "B": -16.5,
+      "C": -1.1920928244535389e-07,
+      "D": -17.875
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -17.0,
+      "B": -19.25,
+      "C": -16.0,
+      "D": -1.1920928244535389e-07
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10341",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:ae1c7b2b46ba030fee90",
+    "split": "train",
+    "store_digest": "ffc2863fd48c10ed41a16b709fc6dbf3276e1ca7c58ea0784741ad3632f6bb65",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -17.75,
+      "B": -20.25,
+      "C": -16.75,
+      "D": -1.1920928244535389e-07
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -1.1920928244535389e-07,
+      "B": -16.25,
+      "C": -17.25,
+      "D": -18.75
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10506",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:5ef0e3d2993956b84cab",
+    "split": "train",
+    "store_digest": "e59a22e5d4e554e374b641277f0938e8792c333ab7e8cccaef24763d05ea4e2e",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": 0.0,
+      "B": -17.0,
+      "C": -17.75,
+      "D": -19.625
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -13.125009536743164,
+      "B": -9.417489309271332e-06,
+      "C": -12.500009536743164,
+      "D": -12.500009536743164
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10732",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:30a62c4f8525bcee647c",
+    "split": "train",
+    "store_digest": "cac6e074c6094e084bdb54004abefd2d1d05f6521d778f1a252fe138783919cf",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -13.750004768371582,
+      "B": -5.125986263010418e-06,
+      "C": -13.250004768371582,
+      "D": -13.000004768371582
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -12.000043869018555,
+      "B": -4.410646579344757e-05,
+      "C": -10.875043869018555,
+      "D": -10.875043869018555
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9038",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:38415327a9648c2875d9",
+    "split": "train",
+    "store_digest": "5cd373f2eeaf58694d9be07ee4a1bfe364219b96f9c5a06b46cd6b266c441bff",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -12.50002670288086,
+      "B": -2.658331868587993e-05,
+      "C": -11.37502670288086,
+      "D": -11.37502670288086
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -6.751394271850586,
+      "B": -9.626394271850586,
+      "C": -8.751394271850586,
+      "D": -0.0013943722005933523
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10601",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:6811c55633f32f79f606",
+    "split": "train",
+    "store_digest": "c83b1910ffd1bee82950c3afbf22b1548726f764b37d7fe5e83962eece711b79",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -7.500655174255371,
+      "B": -10.500655174255371,
+      "C": -9.500655174255371,
+      "D": -0.0006553170969709754
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -3.290122185717337e-05,
+      "B": -10.500032424926758,
+      "C": -12.375032424926758,
+      "D": -13.625032424926758
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10309",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:02805c67107af020a264",
+    "split": "train",
+    "store_digest": "e71ce37e4248374e94d324409a778d74f570d5bcae9c802d1e52196bfa1b25fb",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -2.0265373677830212e-05,
+      "B": -11.000020027160645,
+      "C": -12.750020027160645,
+      "D": -14.125020027160645
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": false,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.009044865146279335,
+      "B": -8.509044647216797,
+      "C": -4.759044647216797,
+      "D": -8.384044647216797
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9326",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b6ae2ac1a98096ae4fe6",
+    "split": "train",
+    "store_digest": "7b816d85809f416c1d79f86bdaaf3b74e62ddf9439f0b498bbfd0812b3caa213",
+    "tuned_correct": false,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.0069809104315936565,
+      "B": -9.131980895996094,
+      "C": -5.006980895996094,
+      "D": -8.756980895996094
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -14.625000953674316,
+      "B": -15.750000953674316,
+      "C": -7.152555099310121e-07,
+      "D": -16.125
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11323",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:e3001f03b4c5c559d424",
+    "split": "train",
+    "store_digest": "b2e624b61bbd55b6d106cdb2f0f7bd03769a2fb20266abd33d613dcadb37b4ca",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -15.0,
+      "B": -16.125,
+      "C": -4.768370445162873e-07,
+      "D": -16.5
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00010227633902104571,
+      "B": -11.125102043151855,
+      "C": -9.625102043151855,
+      "D": -10.750102043151855
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11446",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:ec4d16c2c19737b32b72",
+    "split": "train",
+    "store_digest": "edf4d610915a9c1ed0d5afb93b673ae72709b2dbefeffbe01123e29472e8d1ae",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -7.521823135903105e-05,
+      "B": -11.625075340270996,
+      "C": -9.875075340270996,
+      "D": -11.125075340270996
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -7.479462623596191,
+      "B": -0.10446258634328842,
+      "C": -5.604462623596191,
+      "D": -2.3544626235961914
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10728",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:e0a57d759e4a702e1395",
+    "split": "train",
+    "store_digest": "e3d2e593f6c17a2ec15da2bbb2578540a2b65d0037c4089f9deefecf965696be",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -8.512734413146973,
+      "B": -0.01273487601429224,
+      "C": -6.512734889984131,
+      "D": -4.512734889984131
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": 0.0,
+      "B": -17.75,
+      "C": -18.0,
+      "D": -19.0
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10752",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:f4a8ff58466d57ab44ba",
+    "split": "train",
+    "store_digest": "decdd0a16fa37727b7bc6c99d00a14b01eee4c66095f0c6aea53bb1e7590494b",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": 0.0,
+      "B": -18.25,
+      "C": -18.5,
+      "D": -19.5
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -11.625028610229492,
+      "B": -2.90866428258596e-05,
+      "C": -12.125028610229492,
+      "D": -11.125028610229492
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10568",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:08c56c16a7e4617cdb0d",
+    "split": "train",
+    "store_digest": "027a7b41bda4f71f3fbca5189f187cd7f3de355240cf6ffa853a654c0d9a0ffc",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -12.250016212463379,
+      "B": -1.597391747054644e-05,
+      "C": -12.625016212463379,
+      "D": -11.750016212463379
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00023493390472140163,
+      "B": -11.000234603881836,
+      "C": -11.125234603881836,
+      "D": -8.500234603881836
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10093",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:cf0464a8f567c70111dc",
+    "split": "train",
+    "store_digest": "5d8d66b53a1e56f31ba3bc76eefa9139e80538980c4139638c5e83610f9289d5",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.0001401803019689396,
+      "B": -11.750140190124512,
+      "C": -11.625140190124512,
+      "D": -9.000140190124512
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -3.933898824470816e-06,
+      "B": -14.125003814697266,
+      "C": -13.500003814697266,
+      "D": -13.250003814697266
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11484",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:88e08470962aab28a6a2",
+    "split": "train",
+    "store_digest": "e954ad1f9ff8978ba08ded270669329deec71712f1426e6491769ca8cc41006a",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -2.0265558760002023e-06,
+      "B": -15.000001907348633,
+      "C": -14.000001907348633,
+      "D": -14.000001907348633
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -5.010488510131836,
+      "B": -6.010488510131836,
+      "C": -6.635488510131836,
+      "D": -0.010488389059901237
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11597",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:6d28c4b4008df78398c1",
+    "split": "train",
+    "store_digest": "5f18165f27d59e2d1d76f2eb3fd569d7fe6a53e91f52f71cd07f5fbdc8a15eab",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -5.506481170654297,
+      "B": -6.506481170654297,
+      "C": -7.006481170654297,
+      "D": -0.006481103599071503
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -9.679325739853084e-05,
+      "B": -11.625096321105957,
+      "C": -11.250096321105957,
+      "D": -9.500096321105957
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10321",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:bc299b41f677938ab740",
+    "split": "train",
+    "store_digest": "b8085b1a62ed46bc7b40f70a5eda88d228c93c87910234b1d7d329e917025a52",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -5.972207145532593e-05,
+      "B": -12.125060081481934,
+      "C": -11.625060081481934,
+      "D": -10.000060081481934
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -1.5497195136049413e-06,
+      "B": -13.500001907348633,
+      "C": -16.500001907348633,
+      "D": -17.250001907348633
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10324",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:a3994f98123586a47292",
+    "split": "train",
+    "store_digest": "dc931898a3092a38e1bf1d039f3415cc24042ea385d4776f6974e3db605afb76",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -5.960462772236497e-07,
+      "B": -14.250000953674316,
+      "C": -17.0,
+      "D": -18.0
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -8.376962661743164,
+      "B": -0.001962760929018259,
+      "C": -8.376962661743164,
+      "D": -6.501962661743164
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9501",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:087e04ab619b6162b8a6",
+    "split": "train",
+    "store_digest": "a8539b4aa2fc44544d4568c8e57019752fa69c1091382b577d8eecc36d08ef58",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -8.751507759094238,
+      "B": -0.0015076948329806328,
+      "C": -8.626507759094238,
+      "D": -6.751507759094238
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -8.001057624816895,
+      "B": -7.3760576248168945,
+      "C": -0.0010577804641798139,
+      "D": -9.251057624816895
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10528",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:bbf7861c5f0e0e2c15a3",
+    "split": "train",
+    "store_digest": "e43c30a143928db76d18d1b003802c47970b20f930d2bf65f6a28e1f2ed87426",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -8.50065803527832,
+      "B": -7.8756585121154785,
+      "C": -0.0006584145012311637,
+      "D": -9.50065803527832
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -1.1920928244535389e-07,
+      "B": -16.75,
+      "C": -17.125,
+      "D": -15.75
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9702",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:679db814bd75180f03fc",
+    "split": "train",
+    "store_digest": "797307e8ec5b190c1a2815c89c3d7e7eaa42cdbe52e3bbe6d19b34c587d2a137",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -1.1920928244535389e-07,
+      "B": -17.5,
+      "C": -17.625,
+      "D": -16.25
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.50001049041748,
+      "B": -12.00001049041748,
+      "C": -1.0490362910786644e-05,
+      "D": -14.37501049041748
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9296",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:c2ce340233019d563f91",
+    "split": "train",
+    "store_digest": "ce4a0d57c52466a407376d5bf45e015ab722cd800870b4c0bd2d31a41737d793",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -12.875006675720215,
+      "B": -12.375006675720215,
+      "C": -7.152531907195225e-06,
+      "D": -14.750006675720215
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.875004768371582,
+      "B": -13.875004768371582,
+      "C": -4.410734163684538e-06,
+      "D": -13.875004768371582
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11297",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:39f07d1f543e82d3b3ac",
+    "split": "train",
+    "store_digest": "45acc84c79c1d9c95600c458aa37235696f35b89325a85e58706b1ab8a21b1c4",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -13.750001907348633,
+      "B": -14.875001907348633,
+      "C": -1.7881377516459906e-06,
+      "D": -14.750001907348633
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -5.504287242889404,
+      "B": -9.879287719726562,
+      "C": -8.754287719726562,
+      "D": -0.004287456162273884
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10086",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:aadadcd8de68011044fa",
+    "split": "train",
+    "store_digest": "d5ff5a7b6030c8b4ff27cf2b199e25478351091b19cf7876664f88a7af379c74",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -6.002599239349365,
+      "B": -10.502598762512207,
+      "C": -9.252598762512207,
+      "D": -0.002599077532067895
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -9.50008487701416,
+      "B": -8.511180931236595e-05,
+      "C": -11.87508487701416,
+      "D": -12.62508487701416
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10471",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:9e1c24bb035c0c08e11f",
+    "split": "train",
+    "store_digest": "410c46a2990791477f82954dbf9db2c39fd24f561643e9f2d365beb7ada5dc36",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -10.00005054473877,
+      "B": -5.090107151772827e-05,
+      "C": -12.50005054473877,
+      "D": -13.25005054473877
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -12.000097274780273,
+      "B": -9.703165414975956e-05,
+      "C": -10.000097274780273,
+      "D": -10.000097274780273
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10647",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:62336a8732488fd91294",
+    "split": "train",
+    "store_digest": "687bf2017873699184b9fa979bdd7d3c1fac63c43cacc51ae04b8f72206b6c0e",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -12.500061988830566,
+      "B": -6.246371776796877e-05,
+      "C": -10.375061988830566,
+      "D": -10.500061988830566
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -10.250051498413086,
+      "B": -11.875051498413086,
+      "C": -5.125868119648658e-05,
+      "D": -11.625051498413086
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9747",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:15ad1687d63564d79d30",
+    "split": "train",
+    "store_digest": "aef621d93a0fd17891f9b5396298afbfb66e1de4662856e3db14c92f4b17f0fb",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -10.50003719329834,
+      "B": -12.37503719329834,
+      "C": -3.707340147229843e-05,
+      "D": -12.12503719329834
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -14.000025749206543,
+      "B": -11.750025749206543,
+      "C": -11.000025749206543,
+      "D": -2.539125671319198e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10770",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:b4133fadd2af12eed0a2",
+    "split": "train",
+    "store_digest": "04ef3ce5270486494aac2c6b51450188626ee4c7755e46a85dc2016ec2d79269",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -14.375018119812012,
+      "B": -12.250018119812012,
+      "C": -11.250018119812012,
+      "D": -1.8358061424805783e-05
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -2.7418097943154862e-06,
+      "B": -13.00000286102295,
+      "C": -14.50000286102295,
+      "D": -17.000001907348633
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11828",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:c5a293042a5491d15a47",
+    "split": "train",
+    "store_digest": "9320c20daea0e4e518e39c3f5a2a35d5dc945234aa532ebf8a77d069fd292147",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -1.0728830375228426e-06,
+      "B": -14.000000953674316,
+      "C": -15.250000953674316,
+      "D": -17.875001907348633
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.001430917764082551,
+      "B": -7.001430988311768,
+      "C": -8.87643051147461,
+      "D": -7.876430988311768
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10564",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:87c1216e5844ddb90c03",
+    "split": "train",
+    "store_digest": "f52551371679901fc0927f106ebdae6f07853c432a411bbe9423a9e6362745f2",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.0011144625023007393,
+      "B": -7.251114368438721,
+      "C": -9.126114845275879,
+      "D": -8.126114845275879
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -11.00004768371582,
+      "B": -12.50004768371582,
+      "C": -10.50004768371582,
+      "D": -4.792098479811102e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11324",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:9aaa22422bb49e91a5e9",
+    "split": "train",
+    "store_digest": "33d3bf817ba397bdb980795949310f776f7a8c07e526e0b6953ea80be21ca1b4",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -11.750025749206543,
+      "B": -13.375025749206543,
+      "C": -11.000025749206543,
+      "D": -2.610649426060263e-05
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -6.752518177032471,
+      "B": -0.002518222201615572,
+      "C": -8.627518653869629,
+      "D": -6.752518177032471
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10206",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:ef0833a0d43bb4b5e881",
+    "split": "train",
+    "store_digest": "d42dcee3c996b8af29e1bf03ee2f0bc5c50be4e3e08663fded979703009d7973",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -7.126704216003418,
+      "B": -0.0017043125117197633,
+      "C": -9.251704216003418,
+      "D": -7.126704216003418
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -2.932505594799295e-05,
+      "B": -12.625029563903809,
+      "C": -11.250029563903809,
+      "D": -11.250029563903809
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10144",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:7dbd63a46ca7a5410cbb",
+    "split": "train",
+    "store_digest": "3b504ba2d3fb3c9aed22b541b57fc2b862d929b783cf95b1976d84fd3945e82f",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -1.5616295058862306e-05,
+      "B": -13.375015258789062,
+      "C": -11.750015258789062,
+      "D": -12.000015258789062
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -12.00001049041748,
+      "B": -13.75001049041748,
+      "C": -12.50001049041748,
+      "D": -1.0967194612021558e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10301",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:0b4b99794dd25b7a7a9f",
+    "split": "train",
+    "store_digest": "f0857cc1ef43be227ba3f5e434ca87b6a04a4e946cc1046d6569520b40ea6f51",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -12.750005722045898,
+      "B": -14.500005722045898,
+      "C": -13.000005722045898,
+      "D": -5.722029527532868e-06
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -12.003186225891113,
+      "B": -13.128186225891113,
+      "C": -5.753185749053955,
+      "D": -0.003185794921591878
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9506",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:bd6167c7f11cb48249f2",
+    "split": "train",
+    "store_digest": "04d219619cc9ff745ab75ac71ee995fd9755a3ac0987a9e86a3d7c59206f60fa",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -12.502480506896973,
+      "B": -13.752480506896973,
+      "C": -6.002480506896973,
+      "D": -0.002480527386069298
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": false,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -1.1370882987976074,
+      "B": -0.3870882987976074,
+      "C": -8.637088775634766,
+      "D": -10.137088775634766
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11392",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:062755806f8d219c010f",
+    "split": "train",
+    "store_digest": "dc50eed785e3ce524331d535d2bb7343d00e16f3dcdfa15e6d6b49b35e753a69",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.5760602951049805,
+      "B": -0.8260602951049805,
+      "C": -9.20106029510498,
+      "D": -10.82606029510498
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.6158893704414368,
+      "B": -1.865889310836792,
+      "C": -2.240889310836792,
+      "D": -1.615889310836792
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10515",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:12eaa8b6062eb4cd72ee",
+    "split": "train",
+    "store_digest": "015e7d250e552437b1519af55030c1fa3c4600f98a3e3306c37d86f5a826eff6",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.6380765438079834,
+      "B": -2.0130765438079834,
+      "C": -2.1380765438079834,
+      "D": -1.5130765438079834
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00011205045302631333,
+      "B": -10.25011157989502,
+      "C": -10.00011157989502,
+      "D": -10.37511157989502
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10066",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:ca85e3a54bc1ae3a38fa",
+    "split": "train",
+    "store_digest": "6cde57c54907b82f7dd606af14e6b6a86d5adcdcef67142b60b0b83217c5ce19",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -8.582700684200972e-05,
+      "B": -10.625085830688477,
+      "C": -10.125085830688477,
+      "D": -10.750085830688477
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -0.9846388697624207,
+      "B": -5.609638690948486,
+      "C": -4.984638690948486,
+      "D": -0.48463886976242065
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10315",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:4d15bf87267db1447f33",
+    "split": "train",
+    "store_digest": "b8c1adfac75b23c05589e2fc209f2c082f7c5914f6315e82b243b652e4b9e466",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -0.9819759130477905,
+      "B": -5.98197603225708,
+      "C": -5.23197603225708,
+      "D": -0.4819759130477905
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.16027416288852692,
+      "B": -1.9102741479873657,
+      "C": -10.535274505615234,
+      "D": -10.660274505615234
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10163",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:a9782c1bfce2d1f915df",
+    "split": "train",
+    "store_digest": "99954716a138ad5cf60c34cdda3b20c7b9249cb350d124513d9e825ca47ac32f",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.16025283932685852,
+      "B": -1.9102528095245361,
+      "C": -11.035252571105957,
+      "D": -11.285252571105957
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": false,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -2.662064552307129,
+      "B": -1.162064552307129,
+      "C": -2.287064552307129,
+      "D": -0.6620645523071289
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11087",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:783418deaacc45709fc1",
+    "split": "train",
+    "store_digest": "a86a956847518c41f7f06bd2c78aa263b5cf58c3b50aeb506e1a28179b78e756",
+    "tuned_correct": false,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -2.559624433517456,
+      "B": -1.184624433517456,
+      "C": -2.184624433517456,
+      "D": -0.6846243739128113
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -6.880003452301025,
+      "B": -6.505003452301025,
+      "C": -6.005003452301025,
+      "D": -0.005003312602639198
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10474",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:e297030a261be717d9f4",
+    "split": "train",
+    "store_digest": "5a2eb0049451876f2ec1e93fd813af4df67c4d64df78a6832f082e969af2abf3",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -7.752464771270752,
+      "B": -7.252464771270752,
+      "C": -6.627464771270752,
+      "D": -0.002464830409735441
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -18.75,
+      "B": -20.5,
+      "C": -19.25,
+      "D": 0.0
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11302",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:de76e5575b368002113e",
+    "split": "train",
+    "store_digest": "9e8755735fd9635909d3c48e39c4f6865e7ce0b20543141fcd59dcf0229dfff1",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -19.25,
+      "B": -21.25,
+      "C": -19.75,
+      "D": 0.0
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -8.00034236907959,
+      "B": -13.12534236907959,
+      "C": -12.25034236907959,
+      "D": -0.000342191313393414
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10906",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:5d88032b09c501bc0064",
+    "split": "train",
+    "store_digest": "6c53ad6f914312f440b4cc20b8b9d73485fcd9c1c2b95a5d597bd02f2ca855ff",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -8.750162124633789,
+      "B": -13.875162124633789,
+      "C": -12.750162124633789,
+      "D": -0.00016234986833296716
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -11.500170707702637,
+      "B": -0.0001705739414319396,
+      "C": -9.125170707702637,
+      "D": -9.875170707702637
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11353",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:9e09b48c3655df1e0f0f",
+    "split": "train",
+    "store_digest": "8befac1bbc90f8dfd5dab35ff87813699bef7066229cc6c24230166c2bbbc780",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -12.250110626220703,
+      "B": -0.00011085849109804258,
+      "C": -9.500110626220703,
+      "D": -10.375110626220703
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -8.50086498260498,
+      "B": -9.12586498260498,
+      "C": -7.5008649826049805,
+      "D": -0.0008652042597532272
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9989",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:e904c82a404823131a0b",
+    "split": "train",
+    "store_digest": "07b806c74a43b42f990ced7cd801bb28cd16a0c6d2035fad0911a938cd09902b",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -9.000516891479492,
+      "B": -9.750516891479492,
+      "C": -8.000516891479492,
+      "D": -0.0005169962532818317
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.750006675720215,
+      "B": -13.125006675720215,
+      "C": -6.6756979322235566e-06,
+      "D": -13.250006675720215
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11817",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:19be3add5352dceacd62",
+    "split": "train",
+    "store_digest": "57026b3c9835f15f7270a04bd624ae869e69deba565c42eccefa621631545de6",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -13.125003814697266,
+      "B": -13.750003814697266,
+      "C": -4.291525328881107e-06,
+      "D": -13.625003814697266
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -11.750722885131836,
+      "B": -12.125722885131836,
+      "C": -7.250723361968994,
+      "D": -0.0007232195930555463
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11667",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:0924e06011e7ca37b623",
+    "split": "train",
+    "store_digest": "add622f4de5f0a6214eb1d3a08ca47186dcb3702850af3214b6e183c4fe6ba0b",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -12.37555980682373,
+      "B": -12.75055980682373,
+      "C": -7.5005598068237305,
+      "D": -0.0005600076401606202
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -7.250827789306641,
+      "B": -0.0008276851149275899,
+      "C": -11.62582778930664,
+      "D": -9.12582778930664
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11584",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:9e5e33cab554327ae683",
+    "split": "train",
+    "store_digest": "ae5625dfb8309c61221403e5b7a45462fa31f01eccc943fb25b279eac05637ef",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -7.750511646270752,
+      "B": -0.0005116345710121095,
+      "C": -12.000511169433594,
+      "D": -9.500511169433594
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -14.500000953674316,
+      "B": -16.25,
+      "C": -15.250000953674316,
+      "D": -8.344646857949556e-07
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9460",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:3635f80c3244c42ff34e",
+    "split": "train",
+    "store_digest": "8070458e51237aab7dc70aaa67f8eff6a416d273558d04c8675db2ef66c7470d",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -15.25,
+      "B": -17.25,
+      "C": -16.0,
+      "D": -3.576278118089249e-07
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.02998899295926094,
+      "B": -3.529989004135132,
+      "C": -9.654989242553711,
+      "D": -8.654989242553711
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9818",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:d07fbf5cf73ffbe4264c",
+    "split": "train",
+    "store_digest": "c1e7a50965540305d1fe0e926f518bfddaa827b1ac6333dc77f5c718d3064c99",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.018310561776161194,
+      "B": -4.018310546875,
+      "C": -10.143310546875,
+      "D": -9.018310546875
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -5.504295349121094,
+      "B": -9.129295349121094,
+      "C": -9.129295349121094,
+      "D": -0.004295527469366789
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10724",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:39410a6f1898e8338de3",
+    "split": "train",
+    "store_digest": "a0c5b232e25d65ed1e3e348ed35b91b2919628cc2b586adb8aa7d56a5c273d94",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -5.753293991088867,
+      "B": -9.753293991088867,
+      "C": -9.753293991088867,
+      "D": -0.0032939244993031025
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00010394509445177391,
+      "B": -10.875103950500488,
+      "C": -11.500103950500488,
+      "D": -9.500103950500488
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9002",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:2f2d80994aeef95e5cda",
+    "split": "train",
+    "store_digest": "a9dacf02083fc5d4cf3c14320c7c2b26d4ca1e07609f7007aeb311465c00ee46",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -6.3774932641536e-05,
+      "B": -11.3750638961792,
+      "C": -11.8750638961792,
+      "D": -10.0000638961792
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -14.00000286102295,
+      "B": -2.7418097943154862e-06,
+      "C": -14.62500286102295,
+      "D": -13.50000286102295
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10004",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:ab91c2e6003314ee5d36",
+    "split": "train",
+    "store_digest": "c32ba2e78fe98ebf2b191999e7218f4190b2b4446fc856ea88e1dcc2687dc0db",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -14.750000953674316,
+      "B": -1.1920922133867862e-06,
+      "C": -15.375000953674316,
+      "D": -14.250000953674316
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -14.000001907348633,
+      "B": -14.625001907348633,
+      "C": -1.7881377516459906e-06,
+      "D": -14.625001907348633
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10879",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:1dfc92070ad71b484d79",
+    "split": "train",
+    "store_digest": "cb708edf7827246c2b16e40863eab22bdc8decc0b15d2c238cc50cf46c52631e",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -14.875000953674316,
+      "B": -15.500000953674316,
+      "C": -7.152555099310121e-07,
+      "D": -15.500000953674316
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -8.01298999786377,
+      "B": -0.012989548034965992,
+      "C": -5.512989521026611,
+      "D": -4.762989521026611
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9852",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:42f5fd04caa863403e5d",
+    "split": "train",
+    "store_digest": "edb69514b3b3581e6d989c2ced78c85c2f14e3b1935fe2635ef9e3fec3fd1a01",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -8.632874488830566,
+      "B": -0.007874871604144573,
+      "C": -6.007874965667725,
+      "D": -5.257874965667725
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -13.500001907348633,
+      "B": -1.9073468138230965e-06,
+      "C": -14.750001907348633,
+      "D": -16.000001907348633
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9132",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:0324aef36f925b96f0c5",
+    "split": "train",
+    "store_digest": "9d6e18eade6dfcc6f88d8195f9a10d6a32637d21b0074bea1a0a34d491a54733",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -14.250000953674316,
+      "B": -8.344646857949556e-07,
+      "C": -15.500000953674316,
+      "D": -16.75
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": false,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.32314199209213257,
+      "B": -5.448142051696777,
+      "C": -1.3231420516967773,
+      "D": -5.198142051696777
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10418",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:6140a7cae2a1043b9432",
+    "split": "train",
+    "store_digest": "97654d89455f7f67ffd22c78f545adac0613cd5b3c917b77d79e9b8454cf09bb",
+    "tuned_correct": false,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.5835458040237427,
+      "B": -5.708545684814453,
+      "C": -0.8335458040237427,
+      "D": -5.458545684814453
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -1.7132201194763184,
+      "B": -0.21322013437747955,
+      "C": -4.463220119476318,
+      "D": -8.463220596313477
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_8918",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:446d93bd3ec2075d4d10",
+    "split": "val",
+    "store_digest": "2a33ca7bf7995cc491996336e7499272a15803d1d76e76fb4b5c339f97d285ff",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -1.513094186782837,
+      "B": -0.2630942463874817,
+      "C": -4.513094425201416,
+      "D": -8.888093948364258
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -4.768360213347478e-06,
+      "B": -14.875004768371582,
+      "C": -14.125004768371582,
+      "D": -12.500004768371582
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9211",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:af8f50871eed345c07e9",
+    "split": "val",
+    "store_digest": "bc1ebce503059afc137d30dbabcb816d5636b0747747ed966c5226d4d1ea14bc",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -2.264974000354414e-06,
+      "B": -15.750001907348633,
+      "C": -14.750001907348633,
+      "D": -13.250001907348633
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -8.500235557556152,
+      "B": -11.250235557556152,
+      "C": -10.875235557556152,
+      "D": -0.00023541064001619816
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9511",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:af8f50871eed345c07e9",
+    "split": "val",
+    "store_digest": "368c5f8e0bcbbb702be2e173e75afa61452d303dee6bf86a3af1727a057ef910",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -9.000137329101562,
+      "B": -12.125137329101562,
+      "C": -11.625137329101562,
+      "D": -0.00013779645087197423
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.002459835959598422,
+      "B": -7.00246000289917,
+      "C": -6.75246000289917,
+      "D": -7.87746000289917
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10330",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:43dea7430ec4e7bb9cae",
+    "split": "val",
+    "store_digest": "94249cfa29d66d93a24cc630c0ac46b5d958346f4ce95a174032e4beb3d451a3",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.001492696930654347,
+      "B": -7.501492500305176,
+      "C": -7.251492500305176,
+      "D": -8.376492500305176
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -7.500697135925293,
+      "B": -9.125697135925293,
+      "C": -0.0006971312686800957,
+      "D": -10.250697135925293
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10714",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:30263f7842c19912da92",
+    "split": "val",
+    "store_digest": "a26d6e227ef6816b052655023b2ba482fa405dd5f13a7abca05335e037a54f61",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -7.875467777252197,
+      "B": -9.625467300415039,
+      "C": -0.00046754872892051935,
+      "D": -10.750467300415039
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -5.256117343902588,
+      "B": -8.006117820739746,
+      "C": -7.506117343902588,
+      "D": -0.006117429118603468
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10580",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:d749323a4ca24d3bb61a",
+    "split": "val",
+    "store_digest": "6cf12727defc5eaeb4f6f302340b1ca67f88323d34006f2ff9c868291ae6f66f",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -5.504659652709961,
+      "B": -8.504659652709961,
+      "C": -7.879659652709961,
+      "D": -0.00465962802991271
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": false,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -2.13201904296875,
+      "B": -0.1320190727710724,
+      "C": -5.75701904296875,
+      "D": -6.25701904296875
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10102",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:8a797a9bcd65e0cc97ad",
+    "split": "val",
+    "store_digest": "ff8c69aafedba2b5712de4faaccf905e9df5bdea07f9f85f36c4947c91f8033a",
+    "tuned_correct": false,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -2.131094217300415,
+      "B": -0.13109423220157623,
+      "C": -6.006094455718994,
+      "D": -6.381094455718994
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -14.250000953674316,
+      "B": -19.0,
+      "C": -18.25,
+      "D": -7.152555099310121e-07
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10069",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:348028639bbd7babe406",
+    "split": "val",
+    "store_digest": "626c3143a8d4cb1b44e594154a989a2efedd02ded97c575da0b06f771c5feaba",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -15.0,
+      "B": -19.75,
+      "C": -19.0,
+      "D": -3.576278118089249e-07
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -4.471395015716553,
+      "B": -4.221395015716553,
+      "C": -2.7213947772979736,
+      "D": -0.0963948518037796
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10256",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:054129cd87fb5cc921f1",
+    "split": "val",
+    "store_digest": "a85c41be28433ec4f3b09b002d6e23601a6cda25059fcc43930a89fc463eb4ba",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -4.706434726715088,
+      "B": -4.581434726715088,
+      "C": -2.831434726715088,
+      "D": -0.08143465220928192
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.0003060825983993709,
+      "B": -8.750306129455566,
+      "C": -9.000306129455566,
+      "D": -10.625306129455566
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10810",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:c873b5a4a5a4a8e95757",
+    "split": "val",
+    "store_digest": "fe438faabc0242ef091c55f89463ab0853dc721b248a1179d4bc2bd0eb24a0c6",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.00013648532330989838,
+      "B": -9.500136375427246,
+      "C": -9.875136375427246,
+      "D": -11.500136375427246
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -11.500014305114746,
+      "B": -1.4781842764932662e-05,
+      "C": -12.500014305114746,
+      "D": -13.875014305114746
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9824",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:15506dabe6315c0cadce",
+    "split": "val",
+    "store_digest": "602309d0e76674d77f1039f9f4ea3c122ee978f7ccc99da9ca72b107c22760d8",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -12.000008583068848,
+      "B": -8.940656698541716e-06,
+      "C": -13.000008583068848,
+      "D": -14.625008583068848
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -4.758699893951416,
+      "B": -0.008699966594576836,
+      "C": -10.508700370788574,
+      "D": -9.758700370788574
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10794",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:b9dafe7148ad5ab63b4d",
+    "split": "val",
+    "store_digest": "379f9e12ad9114383183d29d267953ac33a121c4b5734669a140c32567f60810",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -5.00676965713501,
+      "B": -0.006769461557269096,
+      "C": -10.881769180297852,
+      "D": -10.256769180297852
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -9.500086784362793,
+      "B": -12.125086784362793,
+      "C": -8.713819261174649e-05,
+      "D": -11.875086784362793
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9959",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:10d8074d9fdfd14b9daf",
+    "split": "val",
+    "store_digest": "23d92ea18534f5bddbb72b47cadaad8bd4362fbdb6e68be1187883bd7a8669fe",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -9.875059127807617,
+      "B": -12.625059127807617,
+      "C": -5.94836674281396e-05,
+      "D": -12.250059127807617
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -5.590759246842936e-05,
+      "B": -10.750056266784668,
+      "C": -11.500056266784668,
+      "D": -10.625056266784668
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10583",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:435ae92b4b866b0efae3",
+    "split": "val",
+    "store_digest": "a7e38f89a232d3e0747225a8637592fbc07cc61413835d2e262aee8931273476",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -3.218599158572033e-05,
+      "B": -11.250032424926758,
+      "C": -12.000032424926758,
+      "D": -11.250032424926758
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -3.6691179275512695,
+      "B": -4.7941179275512695,
+      "C": -4.6691179275512695,
+      "D": -0.04411790892481804
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11596",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:23dd5dd1059157f6a54f",
+    "split": "val",
+    "store_digest": "db6bbd2a73cab0fb50271cf9421ad3cb800f1a406e7a0fccdce3639b5c684ace",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -3.788170337677002,
+      "B": -5.038170337677002,
+      "C": -4.788170337677002,
+      "D": -0.03817039728164673
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -10.375107765197754,
+      "B": -10.375107765197754,
+      "C": -10.000107765197754,
+      "D": -0.00010775939153973013
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10648",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:047d0ad5cf72a0683301",
+    "split": "val",
+    "store_digest": "86dc0f50cd0973c43d2a687544ad1dc85b8ca7e08f4728e9db08e101ca37a631",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -11.00006103515625,
+      "B": -11.00006103515625,
+      "C": -10.50006103515625,
+      "D": -6.09140915912576e-05
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -1.9073468138230965e-06,
+      "B": -13.500001907348633,
+      "C": -15.375001907348633,
+      "D": -15.500001907348633
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11208",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:f49b5f14c1257467f105",
+    "split": "val",
+    "store_digest": "78c4d4b7fb24c4e6e00b13c5077a8d22dbca574327c42f4588c404123ca1a210",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -1.0728830375228426e-06,
+      "B": -14.000000953674316,
+      "C": -15.875000953674316,
+      "D": -16.125001907348633
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -11.125079154968262,
+      "B": -12.000079154968262,
+      "C": -9.750079154968262,
+      "D": -7.915183232398704e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10814",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:a9114e651dd0a30996fe",
+    "split": "val",
+    "store_digest": "12c3ce59f3c51484d02e6ed212505c04c6930abc01208d883fecf7a5d1ebff0e",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -11.6250581741333,
+      "B": -12.5000581741333,
+      "C": -10.0000581741333,
+      "D": -5.8053239627042785e-05
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -10.375091552734375,
+      "B": -9.142934868577868e-05,
+      "C": -11.125091552734375,
+      "D": -10.000091552734375
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10138",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:3a522743ca7d91da6707",
+    "split": "val",
+    "store_digest": "8116923be7243b47040076f6431776e64bf23d2b2ba3895a3d7ac6de2625391d",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -11.000055313110352,
+      "B": -5.566918844124302e-05,
+      "C": -11.375055313110352,
+      "D": -10.500055313110352
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -13.000004768371582,
+      "B": -14.750004768371582,
+      "C": -13.250004768371582,
+      "D": -4.410734163684538e-06
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10817",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:a1c49e1b18513ae7ad97",
+    "split": "val",
+    "store_digest": "148b5d626fcec382045b1f81b2962aeb004086f871560838204092d12c6322a1",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -13.50000286102295,
+      "B": -15.50000286102295,
+      "C": -13.75000286102295,
+      "D": -2.622600959512056e-06
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -15.25000286102295,
+      "B": -15.50000286102295,
+      "C": -13.00000286102295,
+      "D": -2.7418097943154862e-06
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9849",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:96bf485cb909271dbe92",
+    "split": "val",
+    "store_digest": "884f78b08391a72ef2da1e9aec4f07168a334a3cd23707b0f1de5f6f1ce0f376",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -15.750001907348633,
+      "B": -16.000001907348633,
+      "C": -13.250001907348633,
+      "D": -2.0265558760002023e-06
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -1.4305104514278355e-06,
+      "B": -15.500000953674316,
+      "C": -15.000000953674316,
+      "D": -14.000000953674316
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10241",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:8def450e6ffabe112a3b",
+    "split": "val",
+    "store_digest": "0d7f11ecb816a93ce62f2bd8a565c0d1fe06aa974c30d3a82118d734c4b0af02",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -5.960462772236497e-07,
+      "B": -16.5,
+      "C": -15.750000953674316,
+      "D": -14.750000953674316
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -7.012495994567871,
+      "B": -7.512495994567871,
+      "C": -4.512495994567871,
+      "D": -0.012495797127485275
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11716",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:85dfd3a24b97002c38f5",
+    "split": "val",
+    "store_digest": "180c8f934dba78d0d70e22e86ea8b8b04d14c9f8acb437535563bc4587584f9e",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -7.384612560272217,
+      "B": -7.884612560272217,
+      "C": -4.759612560272217,
+      "D": -0.00961234699934721
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.625003814697266,
+      "B": -15.250003814697266,
+      "C": -4.0531076592742465e-06,
+      "D": -14.500003814697266
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10476",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:dd2874900c454c98c418",
+    "split": "val",
+    "store_digest": "1c22a92088044eda2b5bf597c9a3ff23114bd1e011683305a695598cf3bdf39f",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -13.250001907348633,
+      "B": -16.125001907348633,
+      "C": -2.145764938177308e-06,
+      "D": -15.125001907348633
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -10.37505054473877,
+      "B": -11.25005054473877,
+      "C": -5.0424259825376794e-05,
+      "D": -12.00005054473877
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11599",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:07ee07656f3472a1715e",
+    "split": "val",
+    "store_digest": "23569aaddfd7c2d2dc0932488615a222d5a0317389ed6c3d335795902a81fda0",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -10.75003433227539,
+      "B": -11.62503433227539,
+      "C": -3.45700973412022e-05,
+      "D": -12.37503433227539
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -16.25,
+      "B": -16.375,
+      "C": -2.3841855067985307e-07,
+      "D": -15.875
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9934",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:0c4dc5b6adff4dfa64f7",
+    "split": "val",
+    "store_digest": "e681004cf590f4b8e899d91f9c2a34b099148d11c497d72ae50f73e9e062896f",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -17.25,
+      "B": -17.375,
+      "C": -1.1920928244535389e-07,
+      "D": -16.75
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -2.7418097943154862e-06,
+      "B": -13.25000286102295,
+      "C": -14.50000286102295,
+      "D": -14.50000286102295
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10332",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:19dafbbd6fe750429db5",
+    "split": "val",
+    "store_digest": "faba5816fa2faf5870f15d95e799d698923aca08dcd2dad92563a697269326e7",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -1.311301275563892e-06,
+      "B": -14.000000953674316,
+      "C": -15.250000953674316,
+      "D": -15.250000953674316
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.10154444724321365,
+      "B": -3.3515443801879883,
+      "C": -3.1015443801879883,
+      "D": -4.101544380187988
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10020",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:f5fdd16e5298ba0668ff",
+    "split": "val",
+    "store_digest": "c83cd94e3cb3bd100237a4bdbb950b40f42c5ecc306ec1b2c480bca0d260b1f3",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.09546505659818649,
+      "B": -3.4704649448394775,
+      "C": -3.0954649448394775,
+      "D": -4.220465183258057
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -5.960462772236497e-07,
+      "B": -15.500000953674316,
+      "C": -15.750000953674316,
+      "D": -15.500000953674316
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10372",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:3f29946e3d210d9bf4a0",
+    "split": "val",
+    "store_digest": "e491d4538d594112b211d36707f348ced247a798dd77e78a4484265dc98952b8",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -3.576278118089249e-07,
+      "B": -16.5,
+      "C": -16.5,
+      "D": -16.5
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -16.75,
+      "B": -20.0,
+      "C": -17.5,
+      "D": -1.1920928244535389e-07
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10169",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:e0a661fe200f1fa410fe",
+    "split": "val",
+    "store_digest": "f509331d8871f56be8350d8eb06c12b3cf38e1cd768321691c9adbecc6f48887",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -17.5,
+      "B": -21.25,
+      "C": -18.5,
+      "D": 0.0
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -10.000052452087402,
+      "B": -12.875052452087402,
+      "C": -12.250052452087402,
+      "D": -5.2689116273541003e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9662",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:3e2b1c9bdd607ff9fa8e",
+    "split": "val",
+    "store_digest": "c2e20ed5a455a79e6727eae1cda46354683485e47bb98bc0cb296960bd242fbe",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -10.500030517578125,
+      "B": -13.750030517578125,
+      "C": -13.000030517578125,
+      "D": -3.0874729418428615e-05
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00035470392322167754,
+      "B": -8.125354766845703,
+      "C": -10.375354766845703,
+      "D": -10.500354766845703
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10205",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:279b81e8bb1526d69e9c",
+    "split": "val",
+    "store_digest": "86735d5b3526df87c70a2868b482c1ede318f013857dae6805fbf6828db2a0d5",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.00018809456378221512,
+      "B": -8.750187873840332,
+      "C": -11.000187873840332,
+      "D": -11.250187873840332
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -8.500364303588867,
+      "B": -12.750364303588867,
+      "C": -8.750364303588867,
+      "D": -0.000364713923772797
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10595",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:290f9f04a8185b4c8bd0",
+    "split": "val",
+    "store_digest": "72466d9737c70135e7e1d1e45c35976383667ff4516b22b6cde8d6cf8322bd36",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -9.500150680541992,
+      "B": -13.875150680541992,
+      "C": -9.500150680541992,
+      "D": -0.00015066919149830937
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": false,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -3.2992753982543945,
+      "B": -4.6742753982543945,
+      "C": -2.1742753982543945,
+      "D": -0.1742754727602005
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9809",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:6756ab1254c3ba2c2797",
+    "split": "val",
+    "store_digest": "db82019410882fb276fd01cb6c1fc5a8ad24548ab922090b0488fe2388cfe13b",
+    "tuned_correct": false,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -3.5007262229919434,
+      "B": -5.125726222991943,
+      "C": -2.5007262229919434,
+      "D": -0.1257261335849762
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -17.125,
+      "B": -16.0,
+      "C": -1.1920928244535389e-07,
+      "D": -17.375
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9374",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:ca190e41579b8a0fa955",
+    "split": "val",
+    "store_digest": "2dfa072b6fba4ee9367b4ea411e7a0bd5df2ace024b8d32a14f1f022a1eb1557",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -17.375,
+      "B": -16.25,
+      "C": -1.1920928244535389e-07,
+      "D": -17.625
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": false,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -6.1964263916015625,
+      "B": -6.6964263916015625,
+      "C": -0.696426272392273,
+      "D": -0.696426272392273
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11084",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:b964dcb3fe56e5ff0028",
+    "split": "val",
+    "store_digest": "0431b759217c472eb8cdb6ede4e12e0803a56df5943639b43a83d018095c535b",
+    "tuned_correct": false,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -6.570401668548584,
+      "B": -7.070401668548584,
+      "C": -0.6954014897346497,
+      "D": -0.6954014897346497
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.875003814697266,
+      "B": -14.125003814697266,
+      "C": -4.172316494077677e-06,
+      "D": -14.000003814697266
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10349",
+    "observation_ids": [
+      1,
+      2
+    ],
+    "source_group": "conservative:f0a7a1e10134b7c19f93",
+    "split": "val",
+    "store_digest": "459d05debe23d303dad48f1ead3baa564e5556df6023ac8cd7c03140fec55615",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -13.37500286102295,
+      "B": -14.62500286102295,
+      "C": -2.50339189733495e-06,
+      "D": -14.50000286102295
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": false,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.12123456597328186,
+      "B": -2.871234655380249,
+      "C": -2.871234655380249,
+      "D": -6.99623441696167
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9831",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:423cda3e44ad7cab847e",
+    "split": "val",
+    "store_digest": "a3c0d9ee590f8c25f4e5f50e0f1056aa7db9ea349660d07de71796bf6e99fe50",
+    "tuned_correct": false,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.12467864155769348,
+      "B": -2.624678611755371,
+      "C": -3.124678611755371,
+      "D": -7.124678611755371
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.00013016807497479022,
+      "B": -9.000129699707031,
+      "C": -13.125129699707031,
+      "D": -12.250129699707031
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10034",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:e0e8ff2be0faa18827be",
+    "split": "val",
+    "store_digest": "b77a524db4cca2123a59725715265d3dbe7da9db964eb98f91cc48bba1c20da3",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.0001003691868390888,
+      "B": -9.250100135803223,
+      "C": -13.500100135803223,
+      "D": -12.750100135803223
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -7.750674724578857,
+      "B": -10.1256742477417,
+      "C": -0.0006744970451109111,
+      "D": -8.5006742477417
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11360",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:b155d7729179b50e9607",
+    "split": "val",
+    "store_digest": "7551b1f9bb7806d809956adcb27e5068c4bced197f21b08b1d6fe659b1fb83fd",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -8.375361442565918,
+      "B": -10.750361442565918,
+      "C": -0.0003610197745729238,
+      "D": -9.125361442565918
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -8.50039291381836,
+      "B": -9.62539291381836,
+      "C": -0.00039295581518672407,
+      "D": -9.00039291381836
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_8913",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:50ec810a14bb33ddff05",
+    "split": "val",
+    "store_digest": "670504b4b245394b11df225cf1ea9c85e24ce200a2950d524cba38d4f014e6bb",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -8.62533950805664,
+      "B": -9.87533950805664,
+      "C": -0.0003399271226953715,
+      "D": -9.12533950805664
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -6.751209259033203,
+      "B": -0.00120936194434762,
+      "C": -10.626209259033203,
+      "D": -11.126209259033203
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10015",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:ad815c2f7bd94f23331f",
+    "split": "val",
+    "store_digest": "d638d7820f70b034bb7e4cef650b78899b7bf8ab6bee438d16584a92844217fb",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -7.000941753387451,
+      "B": -0.0009419057168997824,
+      "C": -10.87594223022461,
+      "D": -11.37594223022461
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -8.702239938429557e-06,
+      "B": -11.750008583068848,
+      "C": -15.500008583068848,
+      "D": -14.250008583068848
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10953",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:867ee11f6a1e6281ac3f",
+    "split": "val",
+    "store_digest": "24db51e978931b2f054ba93f27125c091cd5ddbb0ee0f577fe065c6ce8be4149",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -4.172316494077677e-06,
+      "B": -12.500003814697266,
+      "C": -16.125003814697266,
+      "D": -14.750003814697266
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -14.875028610229492,
+      "B": -14.375028610229492,
+      "C": -10.500028610229492,
+      "D": -2.8490614567999728e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9801",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:2be80081517d49869e7d",
+    "split": "val",
+    "store_digest": "5debd38e0a4659864099fe0b5d2c3e595a942c6a60ac96fde9a8061f0f630374",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -15.625017166137695,
+      "B": -15.250017166137695,
+      "C": -11.000017166137695,
+      "D": -1.7046782886609435e-05
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -1.1079864501953125,
+      "B": -0.6079865097999573,
+      "C": -2.3579864501953125,
+      "D": -3.4829864501953125
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10878",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:be822ce5411d02dbe193",
+    "split": "val",
+    "store_digest": "117fb7fd46f653afee4f48993cbe6624ee5b5cd67393ca68710f634c4e5f37c0",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -1.4576997756958008,
+      "B": -0.457699716091156,
+      "C": -2.207699775695801,
+      "D": -3.707699775695801
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -12.000011444091797,
+      "B": -15.375011444091797,
+      "C": -12.250011444091797,
+      "D": -1.1086402082582936e-05
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_9371",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:9139d521e7722a2e31e3",
+    "split": "val",
+    "store_digest": "27c70391a0a13ba4d58a43483e15d51b0b6ce204d4dd8b39d838b4629c5fd810",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -12.750005722045898,
+      "B": -16.3750057220459,
+      "C": -12.750005722045898,
+      "D": -5.8412379075889476e-06
+    }
+  },
+  {
+    "answer": "B",
+    "base_correct": true,
+    "base_prediction": "B",
+    "base_scores": {
+      "A": -13.375012397766113,
+      "B": -1.2874520507466514e-05,
+      "C": -13.625012397766113,
+      "D": -11.500012397766113
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10367",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:849a6ddf9bdb0e3f0da2",
+    "split": "val",
+    "store_digest": "c3a6a0b4a126f2318b323fa3af2a209cccc48dd6d045ffdb349b2bf974738f22",
+    "tuned_correct": true,
+    "tuned_prediction": "B",
+    "tuned_scores": {
+      "A": -14.000005722045898,
+      "B": -6.198863957251888e-06,
+      "C": -14.250005722045898,
+      "D": -12.250005722045898
+    }
+  },
+  {
+    "answer": "D",
+    "base_correct": true,
+    "base_prediction": "D",
+    "base_scores": {
+      "A": -9.750127792358398,
+      "B": -10.625127792358398,
+      "C": -10.000127792358398,
+      "D": -0.0001280225842492655
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11361",
+    "observation_ids": [
+      2
+    ],
+    "source_group": "conservative:756afeaf5b81681c96fa",
+    "split": "val",
+    "store_digest": "72bc2148736159c6c30d7cc9c263c39c87f4f13e031bb71a26614a3b2b3b471b",
+    "tuned_correct": true,
+    "tuned_prediction": "D",
+    "tuned_scores": {
+      "A": -10.500073432922363,
+      "B": -11.500073432922363,
+      "C": -10.250073432922363,
+      "D": -7.30726242181845e-05
+    }
+  },
+  {
+    "answer": "C",
+    "base_correct": true,
+    "base_prediction": "C",
+    "base_scores": {
+      "A": -12.875021934509277,
+      "B": -11.250021934509277,
+      "C": -2.1815061700181104e-05,
+      "D": -12.000021934509277
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_11287",
+    "observation_ids": [
+      1
+    ],
+    "source_group": "conservative:43774dec0fa6a678a6b5",
+    "split": "val",
+    "store_digest": "ff388624cbd46dca689cfe7ce1e7fceca768c2a3ce4d7d2279e27b3d05016708",
+    "tuned_correct": true,
+    "tuned_prediction": "C",
+    "tuned_scores": {
+      "A": -13.500011444091797,
+      "B": -11.875011444091797,
+      "C": -1.1205610462639015e-05,
+      "D": -12.750011444091797
+    }
+  },
+  {
+    "answer": "A",
+    "base_correct": true,
+    "base_prediction": "A",
+    "base_scores": {
+      "A": -0.009057978168129921,
+      "B": -4.759057998657227,
+      "C": -7.759057998657227,
+      "D": -11.009057998657227
+    },
+    "condition": "retrieval_all",
+    "id": "train:positional_relationship_AirScape_Train_10133",
+    "observation_ids": [
+      3
+    ],
+    "source_group": "conservative:80c7a748dd1386891de1",
+    "split": "val",
+    "store_digest": "2c6aaa33eda8dcc6088e30c73bf87d469309c80cfadf6c2ddb07a9cd318ccf57",
+    "tuned_correct": true,
+    "tuned_prediction": "A",
+    "tuned_scores": {
+      "A": -0.005503739695996046,
+      "B": -5.2555036544799805,
+      "C": -8.25550365447998,
+      "D": -11.50550365447998
+    }
+  }
+]

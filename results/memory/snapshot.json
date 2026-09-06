@@ -1,0 +1,34 @@
+{
+  "protocol_digest": "163c9999da2f2e65c486b2e9547787d34e948cd7b26697766b785e48f039b716",
+  "scope": "Completed existing-cohort memory diagnostic; old test is regression evidence",
+  "files": {
+    "base-runtime.json": {
+      "sha256": "dae0cf18033f7d7623307cdfc3cdf45c5017e8c25bc0d34740063bafd038875c",
+      "bytes": 317
+    },
+    "frozen-source.tar.gz": {
+      "sha256": "b33992a27d316b334fbe5b145e3bc60bae14429a64acbc006d6e96c0008f30cc",
+      "bytes": 140110
+    },
+    "gpu-smoke.json": {
+      "sha256": "a96383bbfeb88c916fa99f90d024245b4b96b6a6f3b57b4e8e255f86285e55e5",
+      "bytes": 1444
+    },
+    "metrics.json": {
+      "sha256": "f66dcfd7e3a8b03d8e393ddaf068f1920f480e1d0b9f8cca36eb2978aafefeea",
+      "bytes": 130960
+    },
+    "per_question.json": {
+      "sha256": "0318fab2fbe4ef09e7d2c41ba19a92393773d897b4faf10dfc1483da2ed2b90e",
+      "bytes": 229925
+    },
+    "report.md": {
+      "sha256": "d837a224ab479bd02ea0d090d31264e5eaf248c55e6a209370943200a245c5c4",
+      "bytes": 14124
+    },
+    "tuned-runtime.json": {
+      "sha256": "568dba2a5bf03f201dd8837ffc2a26b7cf1b661dfc798871664509d373d78026",
+      "bytes": 322
+    }
+  }
+}

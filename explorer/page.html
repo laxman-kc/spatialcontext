@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Current earlier-clip QA results: memory retrieval improved reused validation accuracy; further reader fine-tuning added no accuracy gain. Explore the preserved original study below.">
+<title>Earlier-clip QA · Current results &amp; original study</title>
+<style>__EXPLORER_CSS__</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to results</a>
+<div class="shell">
+<header class="masthead">
+  <a class="brand" href="#"><span class="brand-symbol" aria-hidden="true">▥</span><span>EARLIER-CLIP <b>QA</b></span></a>
+  <div class="masthead-links"><span class="saved-label"><i></i> Saved results</span><a href="../README.md">Project guide <span aria-hidden="true">↗</span></a></div>
+</header>
+<main id="main">
+  <section class="current-overview" aria-labelledby="current-title">
+    <div class="current-heading"><div><p class="eyebrow">CURRENT RESULTS / 6 SEPTEMBER 2026</p><h1 id="current-title">Base model + memory.<br>The selected system.</h1><p class="current-intro">Retrieving the relevant earlier evidence improved the observed validation score. A new memory-reader adapter added no further accuracy gain, so the selection rule kept the base model.</p></div><a class="current-report" href="../REPORT.md">Read the current report <span aria-hidden="true">↗</span></a></div>
+    <div class="current-grid">
+      <article class="current-card"><p class="eyebrow">01 / RETRIEVAL · VALIDATION</p><h2>43<span>/50</span> <span class="current-arrow" aria-label="to">→</span> 46<span>/50</span></h2><p>Base model: full eight-frame input → question-selected target pair. Both the supplied evidence and prompt changed.</p><a href="../results/memory/metrics.json">Memory diagnostic metrics ↗</a></article>
+      <article class="current-card"><p class="eyebrow">02 / NEW ADAPTER · VALIDATION</p><h2>46<span>/50</span> <span class="current-arrow" aria-label="to">→</span> 46<span>/50</span></h2><p>Base → new memory-reader adapter, with the same question-selected all-target-pair input. No validation answers changed.</p><a href="../results/memory-reader/selection.json">Selection: retain base ↗</a></article>
+      <article class="current-card"><p class="eyebrow">03 / REUSED REGRESSION SET</p><h2>18<span>/27</span> <span class="current-arrow" aria-label="to">→</span> 19<span>/27</span></h2><p>Base model: full input → target-pair retrieval. All-target <strong>oracle</strong> evidence reached 20/27 in a separate annotation-assisted diagnostic.</p><a href="../results/memory/metrics.json">Regression diagnostic metrics ↗</a></article>
+    </div>
+    <p class="current-caveat">These are small, reused, AI-reviewed cohorts. They do not establish fresh held-out generalization or a general memory benefit. Adapter selection used validation only; the new candidate was not evaluated on the old test set.</p>
+    <a class="historical-jump" href="#original-study-title">Explore the original fine-tuning study below <span aria-hidden="true">↓</span></a>
+  </section>
+  <section class="hero" aria-labelledby="original-study-title">
+    <div><p class="eyebrow">HISTORICAL / ORIGINAL FINE-TUNING STUDY</p><h2 id="original-study-title" class="historical-title">What changed <br>after the original fine-tune?</h2><p class="hero-copy">The interactive charts below preserve the original adapter experiment. Its primary result remains unchanged by the later memory diagnostics above.</p></div>
+    <div class="primary-result"><p class="eyebrow">ORIGINAL PRIMARY TEST · COMPETING FOOTAGE</p><div class="big-result"><span>18<span class="denominator">/27</span></span><span class="result-arrow" aria-label="to">→</span><span>18<span class="denominator">/27</span></span></div><div class="result-labels"><span>Base model</span><span>Original adapter</span></div><p class="result-conclusion"><strong>0.00 pp</strong> observed accuracy change</p></div>
+  </section>
+  <div class="study-strip" aria-label="Original experiment scope"><span><b>108</b> training examples</span><span><b>50</b> validation examples</span><span><b>27</b> test questions</span><span><b>216</b> test predictions</span></div>
+  <div class="tabbar" role="tablist" aria-label="Explore the original study">
+    <button id="tab-results" role="tab" aria-selected="true" aria-controls="view-results" data-view="results">01 <span>Test results</span></button>
+    <button id="tab-training" role="tab" aria-selected="false" aria-controls="view-training" tabindex="-1" data-view="training">02 <span>Training trace</span></button>
+    <button id="tab-design" role="tab" aria-selected="false" aria-controls="view-design" tabindex="-1" data-view="design">03 <span>Study design</span></button>
+    <span class="view-note">Original study · no live inference</span>
+  </div>
+  <section id="view-results" role="tabpanel" aria-labelledby="tab-results">
+    <div class="section-heading"><div><p class="eyebrow">01 / THE COMPARISON</p><h2>The same questions. Four conditions.</h2></div><div class="chart-controls"><div class="mode-switch" aria-label="Chart measure"><button aria-pressed="true" data-mode="accuracy">Accuracy</button><button aria-pressed="false" data-mode="change">Paired change</button></div><label class="check"><input id="show-ci" type="checkbox" checked>95% intervals</label></div></div>
+    <div class="comparison-layout">
+      <div class="plot-region"><div class="chart-legend" id="comparison-legend"><span><i class="dot base"></i>Base model</span><span><i class="square tuned"></i>LoRA tuned</span></div><div id="comparison-chart" class="chart" aria-label="Accuracy comparison"></div><p class="chart-footnote" id="comparison-note"></p></div>
+      <aside class="condition-panel"><p class="eyebrow">SELECT A CONDITION</p><div class="conditions" id="conditions"></div><h3 id="condition-title"></h3><p id="condition-description" class="muted"></p><div class="clip-schematic" id="clip-schematic" aria-label="Illustrative input schematic"></div><p class="tiny">Input schematic, not study footage.</p><div class="selected-summary" id="selected-summary" aria-live="polite"></div></aside>
+    </div>
+    <div class="question-section">
+      <div class="section-heading"><div><p class="eyebrow">LOOK UNDER THE AVERAGE</p><h2>Every question has a result.</h2><p class="muted">Select a tile to inspect both model answers under the chosen condition.</p></div><button class="text-button" id="show-regression">Inspect the one regression <span aria-hidden="true">↗</span></button></div>
+      <div class="question-layout"><div><div class="question-toolbar"><label>Show <select id="question-filter"><option value="all">All questions</option><option value="changed">Correctness changed</option><option value="wrong">Both models wrong</option></select></label><span id="question-count" class="tiny" aria-live="polite"></span></div><div class="question-grid" id="question-grid"></div><div class="outcome-legend"><span><i class="outcome-icon correct">✓</i> Both correct</span><span><i class="outcome-icon wrong">×</i> Both wrong</span><span><i class="outcome-icon regression">↘</i> Regressed</span><span><i class="outcome-icon improved">↗</i> Corrected</span></div></div><aside class="answer-detail" id="answer-detail" aria-live="polite"></aside></div>
+      <details class="data-table"><summary>View the numerical table and export data</summary><div class="table-wrap" id="results-table"></div><button class="secondary-button" id="export-csv">Download selected condition · CSV</button></details>
+    </div>
+  </section>
+  <section id="view-training" role="tabpanel" aria-labelledby="tab-training" hidden>
+    <div class="section-heading"><div><p class="eyebrow">02 / ORIGINAL ADAPTER TRAINING</p><h2>27 recorded steps. A verified adapter.</h2><p class="muted">Raw measurements from the original completed epoch. No smoothing.</p></div><label class="metric-select">Plot <select id="training-metric"><option value="mean_loss">Batch loss</option><option value="lr_used">Learning rate used</option><option value="gradient_norm">Gradient norm</option></select></label></div>
+    <div class="training-layout"><div><div id="training-chart" class="chart"></div><div class="step-control"><label for="training-step">Inspect optimizer step <output id="step-output">27 / 27</output></label><input type="range" id="training-step" min="1" max="27" value="27" step="1"></div><p class="chart-footnote">Each loss is the mean for that accumulation group, on different training examples. This trace does not establish convergence or better held-out performance.</p></div><aside class="training-detail"><p class="eyebrow">SELECTED STEP</p><h3 id="step-title"></h3><dl id="step-values"></dl><div class="training-proof"><b>The adapter changed.</b><p>All recorded losses and gradients were finite. Checkpoint hashes and save/reload checks passed.</p><span>23,592,960 trainable parameters</span></div></aside></div>
+    <div class="training-summary"><div><b>108 / 108</b><span>examples processed</span></div><div><b>112.96 sec</b><span>training loop + checkpoints</span></div><div><b>11.08 GiB</b><span>peak allocated GPU memory</span></div><div><b>43 → 44 / 50</b><span>validation answers correct</span></div></div><p class="chart-footnote">Measured on an A100 80 GB. Time excludes setup, curation, model loading and evaluation. The first optimizer step used zero learning rate during warmup. A one-question validation difference is descriptive.</p>
+  </section>
+  <section id="view-design" role="tabpanel" aria-labelledby="tab-design" hidden>
+    <div class="section-heading"><div><p class="eyebrow">03 / WHAT THIS EXPERIMENT TESTS</p><h2>Earlier evidence, later distraction.</h2><p class="muted">The model receives the prepared history in one input, with a question about an earlier clip.</p></div></div>
+    <div class="design-example"><p class="eyebrow">ILLUSTRATIVE QUESTION</p><blockquote>“Which object is beside the tower in the first clip?”</blockquote><div class="design-flow"><div><span class="stage-num">1</span><h3>Keep the evidence</h3><p>Eight prepared frames and a clip map. The earlier target remains visible.</p></div><div><span class="stage-num">2</span><h3>Change a later clip</h3><p>Compare three visual inputs: original, unrelated and competing-category. Text-only removes all images.</p></div><div><span class="stage-num">3</span><h3>Compare A–D answers</h3><p>Score base and tuned models on identical condition inputs.</p></div></div><p class="tiny">Schematic example only. The result snapshot contains numerical outcomes, not videos or full question text.</p></div>
+    <div class="design-columns"><section><p class="eyebrow">WHAT STAYS FIXED</p><h3>A paired comparison</h3><ul><li>Question and four answer options across all conditions; earlier target frames across the three visual conditions.</li><li>Prepared-frame geometry, clip map and shared processor.</li><li>All original model weights; only language-attention LoRA trains.</li><li>Final adapter selection before either model's test scoring.</li></ul></section><section><p class="eyebrow">WHAT THE EVIDENCE CAN SUPPORT</p><h3>A completed bounded study</h3><ul><li>Operationally successful training, checkpointing and evaluation.</li><li>No observed improvement on the primary competing condition.</li><li>AI-reviewed labels; no human-label validation claim.</li><li>This original experiment did not test persistent storage or establish population improvement.</li></ul></section></div>
+    <div class="provenance-section"><div><h3>Small cohort. Visible uncertainty.</h3><p>27 questions form 10 uneven source/donor groups: 9, 8, 3 and seven singletons. Intervals use 10,000 paired cluster resamples, seed 42. Original source independence remains unverified.</p><p>When every question's correctness stays unchanged, the empirical paired-difference interval is [0, 0]. That does not establish population equivalence.</p></div><div><h3>Traceable to saved files.</h3><p>Qwen3-VL-4B-Instruct · one training epoch · one seed. All interactive charts below the current overview describe the original study, using its saved snapshot.</p><p><a href="../results/fullstudy/metrics.json">Metrics JSON ↗</a> &nbsp; <a href="../results/fullstudy/training-history.json">Training history ↗</a></p><p class="tiny">Protocol <code id="protocol-short"></code></p><a href="../PLAN.md">Full experiment contract ↗</a></div></div>
+  </section>
+  <footer><span>Earlier-clip QA <b> / </b> Qwen3-VL + LoRA</span><span>AI-reviewed custom cohort · One training seed · Saved results</span><a href="../PROGRESS.md">Evidence & limitations ↗</a></footer>
+</main>
+</div>
+<noscript><p class="noscript">The overview above and <a href="../REPORT.md">current report</a> are available without JavaScript. The original study's interactive controls require it; its <a href="../results/fullstudy/report.md">historical static report</a> and <a href="../results/fullstudy/figures/test-accuracy.png">accuracy figure</a> also remain available.</p></noscript>
+<script id="study-data" type="application/json">__EXPLORER_DATA__</script>
+<script>__EXPLORER_JS__</script>
+</body>
+</html>

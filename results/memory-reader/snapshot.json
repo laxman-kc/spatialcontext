@@ -1,0 +1,54 @@
+{
+  "created_at_utc": "2026-09-06T04:03:01.598837+00:00",
+  "files": {
+    "checkpoint-verification.json": {
+      "bytes": 4272,
+      "sha256": "3341a815640277befb71497758bc67bac87c6bf7a3bf641caa7bb8a405cd2582"
+    },
+    "environment.json": {
+      "bytes": 1639,
+      "sha256": "f73eb84ebd3ccea7180e257feae31dfb1c1957998c35c4f9bb935d911a5c8314"
+    },
+    "frozen-source.tar.gz": {
+      "bytes": 152631,
+      "sha256": "b2310e07fd1550f56a07db1ac6df5a4e9229b5f9d22de1de4c8e5a6ee23b44d8"
+    },
+    "metrics.json": {
+      "bytes": 7486,
+      "sha256": "a3fc26b7b92910b90f5887d9a1e3393dbbb391cc776cd92e407077beb0a87efe"
+    },
+    "numerical-audit.json": {
+      "bytes": 6845,
+      "sha256": "1064fcb34a6bba02e1ba34579473e6f480e461b529c4f6adc16902a881f1c8a7"
+    },
+    "per_question.json": {
+      "bytes": 117765,
+      "sha256": "ef056604cd8a59d4f7fc6c5cb5aad98d1632fed2b60cad3673b071f7e4ab7eff"
+    },
+    "selection.json": {
+      "bytes": 1934,
+      "sha256": "deccf8c35faafecf31e75febd66eed3485aed382f31e36ca17a1df2513d03043"
+    },
+    "train-events.jsonl": {
+      "bytes": 7258,
+      "sha256": "9880b5a467b4af90510047c88427c817e8d0da0f7b5cc0217f22a56ce94c6c4a"
+    },
+    "training.json": {
+      "bytes": 446,
+      "sha256": "8b1f3a8937db94696a78b915c31e869094d4afccdd1aad629b75311d737809ae"
+    }
+  },
+  "frozen_source_code_digest": "489cdb3bb34e804473b79c03c85c61313310521b07d4379d30ae835484ee775a",
+  "frozen_source_code_digest_verified": true,
+  "interpretation": "One fresh-base reader LoRA candidate, train108/validation50 only; selected base on validation tie.",
+  "limitations": [
+    "No model or optimizer weights are in this lightweight snapshot.",
+    "Frame hashes/provenance are retained, but original video pixels are not bundled.",
+    "Labels are AI-reviewed; no human validation or fresh held-out generalization is claimed."
+  ],
+  "numerical_audit_sha256": "1064fcb34a6bba02e1ba34579473e6f480e461b529c4f6adc16902a881f1c8a7",
+  "prediction_cells": 316,
+  "protocol_digest": "09ed5345b40203867baed4272e076c246bd2c12ba168c15c0b8a70e63ae6ea29",
+  "schema": "memory-reader-numerical-snapshot-v1",
+  "source": "/ephemeral/earlier-clip-qa-memory-release/artifacts/memory-reader-v1"
+}

@@ -1,0 +1,3949 @@
+{
+  "bootstrap": {
+    "method": "paired source-group percentile bootstrap; question-weighted",
+    "samples": 2000,
+    "seed": 20260906
+  },
+  "identities": {
+    "code_digest": "c594bfcaac1491dbbace2598e944c2563bf4ff9a3f5d6f48e98ae04e93df834a",
+    "config_digest": "e47a2f6385e7ad915acfe5aee6999865f80b4b5a77736f0be806f726fb577a61",
+    "model:base": "dc6e4377addd21e22e89ffdec6d23c985fdb106601645601d9d88124b2b0208a",
+    "model:tuned": "cc96b49c44a7ccbef17dfbbb85074e36c455b7bc834d575ba7158581d1cceb83",
+    "protocol_digest": "163c9999da2f2e65c486b2e9547787d34e948cd7b26697766b785e48f039b716"
+  },
+  "limitations": [
+    "Labels were AI-reviewed; no human validation is claimed.",
+    "Old test results are diagnostic and do not establish generalization.",
+    "Source-group intervals depend on available grouping; hidden overlap may remain.",
+    "Coverage measures retained evidence availability, not whether the reader used it.",
+    "Store bytes exclude model weights; scoring and retrieval latency are reported separately."
+  ],
+  "prediction_cells": 2388,
+  "schema": "external-memory-evaluation-v1",
+  "splits": {
+    "test": {
+      "conditions": {
+        "competing_empty": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.12317509362953759,
+            "mean_selected_pairs": 0.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.4074074074074074,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 1.0,
+                  "correct": 8,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.0,
+                  "correct": 0,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 2,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 11,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 3.5913754778060443,
+              "mean_scoring_seconds": 0.27745217177781106
+            },
+            "tuned": {
+              "accuracy": 0.37037037037037035,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 1.0,
+                  "correct": 8,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.0,
+                  "correct": 0,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.16666666666666666,
+                  "correct": 1,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 10,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 3.6665578381486097,
+              "mean_scoring_seconds": 0.3362857614070823
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": -0.037037037037037035,
+            "ci95": [
+              -0.14285714285714285,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0178"
+            ],
+            "source_groups": 10,
+            "unchanged": 26
+          }
+        },
+        "competing_full": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 2.2721073913055955e-05,
+            "mean_selected_pairs": 4.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.6666666666666666,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.75,
+                  "correct": 6,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 18,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.758802593345603,
+              "mean_scoring_seconds": 0.5235889709261015
+            },
+            "tuned": {
+              "accuracy": 0.6666666666666666,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.75,
+                  "correct": 6,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 18,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.7597409916130279,
+              "mean_scoring_seconds": 0.5401952338888805
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "competing_memory_full": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.12295718518523951,
+            "mean_selected_pairs": 4.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.6296296296296297,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.75,
+                  "correct": 6,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.5555555555555556,
+                  "correct": 5,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 17,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.8565103632480949,
+              "mean_scoring_seconds": 0.7680962484444334
+            },
+            "tuned": {
+              "accuracy": 0.6296296296296297,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.75,
+                  "correct": 6,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.5555555555555556,
+                  "correct": 5,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 17,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.8446005259325763,
+              "mean_scoring_seconds": 0.7993466350738648
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "competing_oracle": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.12262758499996886,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 0.7962962962962963,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6665631544456287,
+              "mean_scoring_seconds": 0.3848053308147091
+            },
+            "tuned": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6726524456712805,
+              "mean_scoring_seconds": 0.4380983033332558
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "competing_oracle_all": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.12255887244444036,
+            "mean_selected_pairs": 1.4074074074074074,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.7407407407407407,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.7777777777777778,
+                  "correct": 7,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 20,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6309195718915732,
+              "mean_scoring_seconds": 0.4448724505925417
+            },
+            "tuned": {
+              "accuracy": 0.7407407407407407,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.7777777777777778,
+                  "correct": 7,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 20,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6276706439427673,
+              "mean_scoring_seconds": 0.4622377735554269
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "competing_recent": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.12288621259284371,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.3333333333333333,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.375,
+                  "correct": 3,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.4444444444444444,
+                  "correct": 4,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 2,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.0,
+                  "correct": 0,
+                  "count": 4
+                }
+              },
+              "correct": 9,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.792137770327153,
+              "mean_scoring_seconds": 0.3820968620742254
+            },
+            "tuned": {
+              "accuracy": 0.3333333333333333,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.375,
+                  "correct": 3,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.4444444444444444,
+                  "correct": 4,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 2,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.0,
+                  "correct": 0,
+                  "count": 4
+                }
+              },
+              "correct": 9,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.7910383236077096,
+              "mean_scoring_seconds": 0.45842875392608456
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "competing_retrieval": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.12284495751845059,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 0.7962962962962963,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6665631544456287,
+              "mean_scoring_seconds": 0.3822246427035107
+            },
+            "tuned": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6726524456712805,
+              "mean_scoring_seconds": 0.43085202111116677
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "competing_uniform": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.1222520471109655,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 0.35185185185185186,
+            "target_clip_hit_rate": 0.5555555555555556,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.5925925925925926,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.625,
+                  "correct": 5,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 4,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 16,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.1768158424072814,
+              "mean_scoring_seconds": 0.42473896666666
+            },
+            "tuned": {
+              "accuracy": 0.5925925925925926,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.625,
+                  "correct": 5,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 4,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 16,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.1771488970295683,
+              "mean_scoring_seconds": 0.4407022271109411
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "competing_wrong": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.12226951370367142,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2884678.7407407407,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.37037037037037035,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.375,
+                  "correct": 3,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 3,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.5,
+                  "correct": 3,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 10,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.0250805704681962,
+              "mean_scoring_seconds": 0.4032731712220454
+            },
+            "tuned": {
+              "accuracy": 0.37037037037037035,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.375,
+                  "correct": 3,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 3,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.5,
+                  "correct": 3,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 10,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.0056170412787684,
+              "mean_scoring_seconds": 0.43646960337025154
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "empty": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11851398911096987,
+            "mean_selected_pairs": 0.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.4074074074074074,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 1.0,
+                  "correct": 8,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.0,
+                  "correct": 0,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 2,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 11,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 3.5913754778060443,
+              "mean_scoring_seconds": 0.27537652370369026
+            },
+            "tuned": {
+              "accuracy": 0.37037037037037035,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 1.0,
+                  "correct": 8,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.0,
+                  "correct": 0,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.16666666666666666,
+                  "correct": 1,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 10,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 3.6665578381486097,
+              "mean_scoring_seconds": 0.330830386259482
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": -0.037037037037037035,
+            "ci95": [
+              -0.14285714285714285,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0178"
+            ],
+            "source_groups": 10,
+            "unchanged": 26
+          }
+        },
+        "full": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 2.5520296629919256e-05,
+            "mean_selected_pairs": 4.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.6666666666666666,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.5555555555555556,
+                  "correct": 5,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 18,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.8677727617590184,
+              "mean_scoring_seconds": 0.5309793763332251
+            },
+            "tuned": {
+              "accuracy": 0.6666666666666666,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.5555555555555556,
+                  "correct": 5,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 18,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.8658245067595595,
+              "mean_scoring_seconds": 0.5354536744814848
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "memory_full": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.1196975083704375,
+            "mean_selected_pairs": 4.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.5925925925925926,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.75,
+                  "correct": 6,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.4444444444444444,
+                  "correct": 4,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 16,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.9758802519447811,
+              "mean_scoring_seconds": 0.7602857355926702
+            },
+            "tuned": {
+              "accuracy": 0.6296296296296297,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.75,
+                  "correct": 6,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.5555555555555556,
+                  "correct": 5,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 17,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.9750571709593916,
+              "mean_scoring_seconds": 0.7744631195551106
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.037037037037037035,
+            "ci95": [
+              0.0,
+              0.18203463203463086
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "test:positional_relationship_0087"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 26
+          }
+        },
+        "oracle": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11914240955539518,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 0.7962962962962963,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6665631544456287,
+              "mean_scoring_seconds": 0.3915209443702797
+            },
+            "tuned": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6726524456712805,
+              "mean_scoring_seconds": 0.4341398200742535
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "oracle_all": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11904237844444449,
+            "mean_selected_pairs": 1.4074074074074074,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.7407407407407407,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.7777777777777778,
+                  "correct": 7,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 20,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6309195718915732,
+              "mean_scoring_seconds": 0.4057777868888311
+            },
+            "tuned": {
+              "accuracy": 0.7407407407407407,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.7777777777777778,
+                  "correct": 7,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 20,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6276706439427673,
+              "mean_scoring_seconds": 0.45760480670375087
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "recent": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11868749166697617,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.37037037037037035,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.5,
+                  "correct": 4,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.1111111111111111,
+                  "correct": 1,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 4,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 10,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.8476475097790912,
+              "mean_scoring_seconds": 0.380840678407131
+            },
+            "tuned": {
+              "accuracy": 0.37037037037037035,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.5,
+                  "correct": 4,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.1111111111111111,
+                  "correct": 1,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 4,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 10,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.8069128934983854,
+              "mean_scoring_seconds": 0.4279866153334566
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "retrieval": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11880363714825998,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 0.7962962962962963,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6665631544456287,
+              "mean_scoring_seconds": 0.3747418142220003
+            },
+            "tuned": {
+              "accuracy": 0.7037037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.875,
+                  "correct": 7,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 5,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 19,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.6726524456712805,
+              "mean_scoring_seconds": 0.4225155078146835
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "uniform": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11862802455545063,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 0.35185185185185186,
+            "target_clip_hit_rate": 0.5555555555555556,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.5925925925925926,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.625,
+                  "correct": 5,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 4,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 16,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.1768158424072814,
+              "mean_scoring_seconds": 0.38166276581493247
+            },
+            "tuned": {
+              "accuracy": 0.5925925925925926,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.625,
+                  "correct": 5,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 6,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 4,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.25,
+                  "correct": 1,
+                  "count": 4
+                }
+              },
+              "correct": 16,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.1771488970295683,
+              "mean_scoring_seconds": 0.4299460795185344
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "wrong": {
+          "delay_clips_counts": {
+            "1": 18,
+            "2": 8,
+            "3": 1
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11842654440739285,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2616453.0,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 27
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.4444444444444444,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.5,
+                  "correct": 4,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 3,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.5,
+                  "correct": 3,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.5,
+                  "correct": 2,
+                  "count": 4
+                }
+              },
+              "correct": 12,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.6579654608611707,
+              "mean_scoring_seconds": 0.3777339489998768
+            },
+            "tuned": {
+              "accuracy": 0.4444444444444444,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.5,
+                  "correct": 4,
+                  "count": 8
+                },
+                "B": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 3,
+                  "count": 9
+                },
+                "C": {
+                  "accuracy": 0.5,
+                  "correct": 3,
+                  "count": 6
+                },
+                "D": {
+                  "accuracy": 0.5,
+                  "correct": 2,
+                  "count": 4
+                }
+              },
+              "correct": 12,
+              "count": 27,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.6420093893452927,
+              "mean_scoring_seconds": 0.43241687403692425
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 27
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        }
+      },
+      "interpretation": "previously used test: descriptive regression only",
+      "within_model_contrasts": {
+        "empty_minus_competing_empty": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "full_minus_competing_full": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              -0.16666666666666666,
+              0.07692307692307693
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "test:positional_relationship_0097"
+            ],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0232"
+            ],
+            "source_groups": 10,
+            "unchanged": 25
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              -0.16666666666666666,
+              0.07692307692307693
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "test:positional_relationship_0097"
+            ],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0232"
+            ],
+            "source_groups": 10,
+            "unchanged": 25
+          }
+        },
+        "memory_full_minus_competing_memory_full": {
+          "base": {
+            "accuracy_change": -0.037037037037037035,
+            "ci95": [
+              -0.18203463203463202,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0087"
+            ],
+            "source_groups": 10,
+            "unchanged": 26
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "memory_full_minus_full": {
+          "base": {
+            "accuracy_change": -0.07407407407407407,
+            "ci95": [
+              -0.20026315789473684,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 2,
+            "regressed_ids": [
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0130"
+            ],
+            "source_groups": 10,
+            "unchanged": 25
+          },
+          "tuned": {
+            "accuracy_change": -0.037037037037037035,
+            "ci95": [
+              -0.0816751700680272,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0130"
+            ],
+            "source_groups": 10,
+            "unchanged": 26
+          }
+        },
+        "oracle_all_minus_competing_oracle_all": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "oracle_all_minus_oracle": {
+          "base": {
+            "accuracy_change": 0.037037037037037035,
+            "ci95": [
+              0.0,
+              0.17647058823529413
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "test:positional_relationship_0232"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 26
+          },
+          "tuned": {
+            "accuracy_change": 0.037037037037037035,
+            "ci95": [
+              0.0,
+              0.17647058823529413
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "test:positional_relationship_0232"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 26
+          }
+        },
+        "oracle_minus_competing_oracle": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "oracle_minus_retrieval": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "recent_minus_competing_recent": {
+          "base": {
+            "accuracy_change": 0.037037037037037035,
+            "ci95": [
+              -0.2,
+              0.5602857142857128
+            ],
+            "corrected": 6,
+            "corrected_ids": [
+              "test:positional_relationship_0028",
+              "test:positional_relationship_0037",
+              "test:positional_relationship_0073",
+              "test:positional_relationship_0086",
+              "test:positional_relationship_0178",
+              "test:positional_relationship_0219"
+            ],
+            "regressed": 5,
+            "regressed_ids": [
+              "test:positional_relationship_0059",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0106",
+              "test:positional_relationship_0110",
+              "test:positional_relationship_0120"
+            ],
+            "source_groups": 10,
+            "unchanged": 16
+          },
+          "tuned": {
+            "accuracy_change": 0.037037037037037035,
+            "ci95": [
+              -0.2,
+              0.5602857142857128
+            ],
+            "corrected": 6,
+            "corrected_ids": [
+              "test:positional_relationship_0028",
+              "test:positional_relationship_0037",
+              "test:positional_relationship_0073",
+              "test:positional_relationship_0086",
+              "test:positional_relationship_0178",
+              "test:positional_relationship_0219"
+            ],
+            "regressed": 5,
+            "regressed_ids": [
+              "test:positional_relationship_0059",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0106",
+              "test:positional_relationship_0110",
+              "test:positional_relationship_0120"
+            ],
+            "source_groups": 10,
+            "unchanged": 16
+          }
+        },
+        "retrieval_minus_competing_retrieval": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "retrieval_minus_empty": {
+          "base": {
+            "accuracy_change": 0.2962962962962963,
+            "ci95": [
+              0.07130952380952381,
+              0.55
+            ],
+            "corrected": 10,
+            "corrected_ids": [
+              "test:positional_relationship_0016",
+              "test:positional_relationship_0028",
+              "test:positional_relationship_0056",
+              "test:positional_relationship_0059",
+              "test:positional_relationship_0067",
+              "test:positional_relationship_0086",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0106",
+              "test:positional_relationship_0110",
+              "test:positional_relationship_0211"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "test:positional_relationship_0182",
+              "test:positional_relationship_0207"
+            ],
+            "source_groups": 10,
+            "unchanged": 15
+          },
+          "tuned": {
+            "accuracy_change": 0.3333333333333333,
+            "ci95": [
+              0.11764705882352941,
+              0.5911363636363625
+            ],
+            "corrected": 11,
+            "corrected_ids": [
+              "test:positional_relationship_0016",
+              "test:positional_relationship_0028",
+              "test:positional_relationship_0056",
+              "test:positional_relationship_0059",
+              "test:positional_relationship_0067",
+              "test:positional_relationship_0086",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0106",
+              "test:positional_relationship_0110",
+              "test:positional_relationship_0178",
+              "test:positional_relationship_0211"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "test:positional_relationship_0182",
+              "test:positional_relationship_0207"
+            ],
+            "source_groups": 10,
+            "unchanged": 14
+          }
+        },
+        "retrieval_minus_recent": {
+          "base": {
+            "accuracy_change": 0.3333333333333333,
+            "ci95": [
+              0.10526315789473684,
+              0.5
+            ],
+            "corrected": 10,
+            "corrected_ids": [
+              "test:positional_relationship_0016",
+              "test:positional_relationship_0056",
+              "test:positional_relationship_0059",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0097",
+              "test:positional_relationship_0106",
+              "test:positional_relationship_0110",
+              "test:positional_relationship_0120",
+              "test:positional_relationship_0130",
+              "test:positional_relationship_0211"
+            ],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0003"
+            ],
+            "source_groups": 10,
+            "unchanged": 16
+          },
+          "tuned": {
+            "accuracy_change": 0.3333333333333333,
+            "ci95": [
+              0.10526315789473684,
+              0.5
+            ],
+            "corrected": 10,
+            "corrected_ids": [
+              "test:positional_relationship_0016",
+              "test:positional_relationship_0056",
+              "test:positional_relationship_0059",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0097",
+              "test:positional_relationship_0106",
+              "test:positional_relationship_0110",
+              "test:positional_relationship_0120",
+              "test:positional_relationship_0130",
+              "test:positional_relationship_0211"
+            ],
+            "regressed": 1,
+            "regressed_ids": [
+              "test:positional_relationship_0003"
+            ],
+            "source_groups": 10,
+            "unchanged": 16
+          }
+        },
+        "retrieval_minus_uniform": {
+          "base": {
+            "accuracy_change": 0.1111111111111111,
+            "ci95": [
+              -0.05,
+              0.3333333333333333
+            ],
+            "corrected": 5,
+            "corrected_ids": [
+              "test:positional_relationship_0067",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0090",
+              "test:positional_relationship_0211",
+              "test:positional_relationship_0219"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "test:positional_relationship_0003",
+              "test:positional_relationship_0232"
+            ],
+            "source_groups": 10,
+            "unchanged": 20
+          },
+          "tuned": {
+            "accuracy_change": 0.1111111111111111,
+            "ci95": [
+              -0.05,
+              0.3333333333333333
+            ],
+            "corrected": 5,
+            "corrected_ids": [
+              "test:positional_relationship_0067",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0090",
+              "test:positional_relationship_0211",
+              "test:positional_relationship_0219"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "test:positional_relationship_0003",
+              "test:positional_relationship_0232"
+            ],
+            "source_groups": 10,
+            "unchanged": 20
+          }
+        },
+        "retrieval_minus_wrong": {
+          "base": {
+            "accuracy_change": 0.25925925925925924,
+            "ci95": [
+              0.09523809523809523,
+              0.45011363636363577
+            ],
+            "corrected": 9,
+            "corrected_ids": [
+              "test:positional_relationship_0056",
+              "test:positional_relationship_0067",
+              "test:positional_relationship_0086",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0090",
+              "test:positional_relationship_0097",
+              "test:positional_relationship_0120",
+              "test:positional_relationship_0211",
+              "test:positional_relationship_0219"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "test:positional_relationship_0182",
+              "test:positional_relationship_0207"
+            ],
+            "source_groups": 10,
+            "unchanged": 16
+          },
+          "tuned": {
+            "accuracy_change": 0.25925925925925924,
+            "ci95": [
+              0.09523809523809523,
+              0.45011363636363577
+            ],
+            "corrected": 9,
+            "corrected_ids": [
+              "test:positional_relationship_0056",
+              "test:positional_relationship_0067",
+              "test:positional_relationship_0086",
+              "test:positional_relationship_0087",
+              "test:positional_relationship_0090",
+              "test:positional_relationship_0097",
+              "test:positional_relationship_0120",
+              "test:positional_relationship_0211",
+              "test:positional_relationship_0219"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "test:positional_relationship_0182",
+              "test:positional_relationship_0207"
+            ],
+            "source_groups": 10,
+            "unchanged": 16
+          }
+        },
+        "uniform_minus_competing_uniform": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 27
+          }
+        },
+        "wrong_minus_competing_wrong": {
+          "base": {
+            "accuracy_change": 0.07407407407407407,
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "corrected": 2,
+            "corrected_ids": [
+              "test:positional_relationship_0028",
+              "test:positional_relationship_0073"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 25
+          },
+          "tuned": {
+            "accuracy_change": 0.07407407407407407,
+            "ci95": [
+              0.0,
+              0.25
+            ],
+            "corrected": 2,
+            "corrected_ids": [
+              "test:positional_relationship_0028",
+              "test:positional_relationship_0073"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 10,
+            "unchanged": 25
+          }
+        }
+      }
+    },
+    "train": {
+      "conditions": {
+        "full": {
+          "delay_clips_counts": {
+            "1": 46,
+            "2": 32,
+            "3": 30
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 3.042475932320317e-05,
+            "mean_selected_pairs": 4.0,
+            "mean_store_bytes": 2621378.972222222,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 108
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.8888888888888888,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.8709677419354839,
+                  "correct": 27,
+                  "count": 31
+                },
+                "B": {
+                  "accuracy": 0.88,
+                  "correct": 22,
+                  "count": 25
+                },
+                "C": {
+                  "accuracy": 0.8636363636363636,
+                  "correct": 19,
+                  "count": 22
+                },
+                "D": {
+                  "accuracy": 0.9333333333333333,
+                  "correct": 28,
+                  "count": 30
+                }
+              },
+              "correct": 96,
+              "count": 108,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.35600046464580254,
+              "mean_scoring_seconds": 0.5172943879444439
+            },
+            "tuned": {
+              "accuracy": 0.8796296296296297,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.8709677419354839,
+                  "correct": 27,
+                  "count": 31
+                },
+                "B": {
+                  "accuracy": 0.88,
+                  "correct": 22,
+                  "count": 25
+                },
+                "C": {
+                  "accuracy": 0.8636363636363636,
+                  "correct": 19,
+                  "count": 22
+                },
+                "D": {
+                  "accuracy": 0.9,
+                  "correct": 27,
+                  "count": 30
+                }
+              },
+              "correct": 95,
+              "count": 108,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.3254201504720342,
+              "mean_scoring_seconds": 0.5553792032222662
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 108
+          },
+          "tuned_minus_base": {
+            "accuracy_change": -0.009259259259259259,
+            "ci95": [
+              -0.01764705882352941,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 1,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_8935"
+            ],
+            "source_groups": 77,
+            "unchanged": 107
+          }
+        }
+      },
+      "interpretation": "training fit diagnostic",
+      "within_model_contrasts": {}
+    },
+    "val": {
+      "conditions": {
+        "empty": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11578727960000833,
+            "mean_selected_pairs": 0.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.52,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.42857142857142855,
+                  "correct": 3,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 4,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.35294117647058826,
+                  "correct": 6,
+                  "count": 17
+                }
+              },
+              "correct": 26,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.3336859818135416,
+              "mean_scoring_seconds": 0.2677278661799937
+            },
+            "tuned": {
+              "accuracy": 0.52,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.42857142857142855,
+                  "correct": 3,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.3333333333333333,
+                  "correct": 4,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.35294117647058826,
+                  "correct": 6,
+                  "count": 17
+                }
+              },
+              "correct": 26,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.356566810587974,
+              "mean_scoring_seconds": 0.3248226241199882
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "episode_capacity2": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.05744307289991411,
+            "mean_selected_pairs": 0.4,
+            "mean_store_bytes": 1261544.98,
+            "mean_target_pair_recall": 0.38,
+            "target_clip_hit_rate": 0.4,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.62,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.5714285714285714,
+                  "correct": 4,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.5,
+                  "correct": 6,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.47058823529411764,
+                  "correct": 8,
+                  "count": 17
+                }
+              },
+              "correct": 31,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.7688783713575582,
+              "mean_scoring_seconds": 0.2247319583600256
+            },
+            "tuned": {
+              "accuracy": 0.62,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.5714285714285714,
+                  "correct": 4,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.5,
+                  "correct": 6,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.47058823529411764,
+                  "correct": 8,
+                  "count": 17
+                }
+              },
+              "correct": 31,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.778231907410613,
+              "mean_scoring_seconds": 0.272242541960004
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "full": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 2.74524999622372e-05,
+            "mean_selected_pairs": 4.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.86,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.7142857142857143,
+                  "correct": 5,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.8823529411764706,
+                  "correct": 15,
+                  "count": 17
+                }
+              },
+              "correct": 43,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.3468730014608298,
+              "mean_scoring_seconds": 0.516344253299867
+            },
+            "tuned": {
+              "accuracy": 0.88,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.8571428571428571,
+                  "correct": 6,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.8823529411764706,
+                  "correct": 15,
+                  "count": 17
+                }
+              },
+              "correct": 44,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.33623451632588286,
+              "mean_scoring_seconds": 0.5530333021600018
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.02,
+            "ci95": [
+              0.0,
+              0.061224489795918366
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10878"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 49
+          }
+        },
+        "memory_full": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11523496327983594,
+            "mean_selected_pairs": 4.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.82,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.8571428571428571,
+                  "correct": 12,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.7142857142857143,
+                  "correct": 5,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.8235294117647058,
+                  "correct": 14,
+                  "count": 17
+                }
+              },
+              "correct": 41,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.48786116901325727,
+              "mean_scoring_seconds": 0.7453400821800824
+            },
+            "tuned": {
+              "accuracy": 0.84,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.7142857142857143,
+                  "correct": 5,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.8235294117647058,
+                  "correct": 14,
+                  "count": 17
+                }
+              },
+              "correct": 42,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.4770399153459391,
+              "mean_scoring_seconds": 0.7805594954801564
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.02,
+            "ci95": [
+              0.0,
+              0.061224489795918366
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10020"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 49
+          }
+        },
+        "oracle": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11521556644016527,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 0.97,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.1879274541426733,
+              "mean_scoring_seconds": 0.37562289739984406
+            },
+            "tuned": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.18842917346454485,
+              "mean_scoring_seconds": 0.42079756462011575
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "oracle_all": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.1160407474400563,
+            "mean_selected_pairs": 1.06,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.1796238708096169,
+              "mean_scoring_seconds": 0.37701093863994173
+            },
+            "tuned": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.18103103110694108,
+              "mean_scoring_seconds": 0.4436889794598028
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "recent": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.1158393327000158,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.34,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.21428571428571427,
+                  "correct": 3,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.42857142857142855,
+                  "correct": 3,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.25,
+                  "correct": 3,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.47058823529411764,
+                  "correct": 8,
+                  "count": 17
+                }
+              },
+              "correct": 17,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.3849821174889803,
+              "mean_scoring_seconds": 0.3706775021799695
+            },
+            "tuned": {
+              "accuracy": 0.34,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.21428571428571427,
+                  "correct": 3,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.42857142857142855,
+                  "correct": 3,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.25,
+                  "correct": 3,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.47058823529411764,
+                  "correct": 8,
+                  "count": 17
+                }
+              },
+              "correct": 17,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.3717278376594186,
+              "mean_scoring_seconds": 0.4338118733601368
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "recent_capacity2": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.05765420899984747,
+            "mean_selected_pairs": 0.28,
+            "mean_store_bytes": 1257409.04,
+            "mean_target_pair_recall": 0.28,
+            "target_clip_hit_rate": 0.28,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.6,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.42857142857142855,
+                  "correct": 3,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.4166666666666667,
+                  "correct": 5,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.5294117647058824,
+                  "correct": 9,
+                  "count": 17
+                }
+              },
+              "correct": 30,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.045770413913656,
+              "mean_scoring_seconds": 0.20663561867997488
+            },
+            "tuned": {
+              "accuracy": 0.6,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.42857142857142855,
+                  "correct": 3,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.4166666666666667,
+                  "correct": 5,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.5294117647058824,
+                  "correct": 9,
+                  "count": 17
+                }
+              },
+              "correct": 30,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 2.066057211783422,
+              "mean_scoring_seconds": 0.261450526420158
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "reservoir_capacity2": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.05874244211994664,
+            "mean_selected_pairs": 0.58,
+            "mean_store_bytes": 1367167.7,
+            "mean_target_pair_recall": 0.55,
+            "target_clip_hit_rate": 0.58,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.76,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 1.0,
+                  "correct": 14,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.5714285714285714,
+                  "correct": 4,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 8,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.7058823529411765,
+                  "correct": 12,
+                  "count": 17
+                }
+              },
+              "correct": 38,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.0786420776551369,
+              "mean_scoring_seconds": 0.24353716482008167
+            },
+            "tuned": {
+              "accuracy": 0.76,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 1.0,
+                  "correct": 14,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.5714285714285714,
+                  "correct": 4,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.6666666666666666,
+                  "correct": 8,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.7058823529411765,
+                  "correct": 12,
+                  "count": 17
+                }
+              },
+              "correct": 38,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.0879339829436316,
+              "mean_scoring_seconds": 0.2932637781399171
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "retrieval": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.11477880934005952,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 0.97,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.1879274541426733,
+              "mean_scoring_seconds": 0.3696933506399728
+            },
+            "tuned": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.18842917346454485,
+              "mean_scoring_seconds": 0.4306448641001407
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "uniform": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.116116008000281,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 0.33,
+            "target_clip_hit_rate": 0.36,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.7,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.6428571428571429,
+                  "correct": 9,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.7142857142857143,
+                  "correct": 5,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.75,
+                  "correct": 9,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.7058823529411765,
+                  "correct": 12,
+                  "count": 17
+                }
+              },
+              "correct": 35,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.350172628919825,
+              "mean_scoring_seconds": 0.38272118615986983
+            },
+            "tuned": {
+              "accuracy": 0.7,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.6428571428571429,
+                  "correct": 9,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.7142857142857143,
+                  "correct": 5,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.75,
+                  "correct": 9,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.7058823529411765,
+                  "correct": 12,
+                  "count": 17
+                }
+              },
+              "correct": 35,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.3295459316091252,
+              "mean_scoring_seconds": 0.43772485713991044
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "wrong": {
+          "delay_clips_counts": {
+            "1": 14,
+            "2": 18,
+            "3": 18
+          },
+          "evidence": {
+            "mean_retrieval_seconds": 0.1160605125199072,
+            "mean_selected_pairs": 1.0,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 0.0,
+            "target_clip_hit_rate": 0.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.54,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.5714285714285714,
+                  "correct": 8,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.5714285714285714,
+                  "correct": 4,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.5833333333333334,
+                  "correct": 7,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.47058823529411764,
+                  "correct": 8,
+                  "count": 17
+                }
+              },
+              "correct": 27,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.9932686846597063,
+              "mean_scoring_seconds": 0.3692067167599089
+            },
+            "tuned": {
+              "accuracy": 0.54,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.6428571428571429,
+                  "correct": 9,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 0.5714285714285714,
+                  "correct": 4,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.5833333333333334,
+                  "correct": 7,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.4117647058823529,
+                  "correct": 7,
+                  "count": 17
+                }
+              },
+              "correct": 27,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 1.951274922912562,
+              "mean_scoring_seconds": 0.4237335999198695
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              -0.06,
+              0.06
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_11208"
+            ],
+            "regressed": 1,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_11361"
+            ],
+            "source_groups": 49,
+            "unchanged": 48
+          }
+        }
+      },
+      "interpretation": "validation diagnostic",
+      "within_model_contrasts": {
+        "memory_full_minus_full": {
+          "base": {
+            "accuracy_change": -0.04,
+            "ci95": [
+              -0.10204081632653061,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 2,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_11084"
+            ],
+            "source_groups": 49,
+            "unchanged": 48
+          },
+          "tuned": {
+            "accuracy_change": -0.04,
+            "ci95": [
+              -0.12244897959183673,
+              0.03707264957264938
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10020"
+            ],
+            "regressed": 3,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_10878",
+              "train:positional_relationship_AirScape_Train_11084"
+            ],
+            "source_groups": 49,
+            "unchanged": 46
+          }
+        },
+        "oracle_all_minus_oracle": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "oracle_minus_retrieval": {
+          "base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          },
+          "tuned": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        },
+        "retrieval_minus_empty": {
+          "base": {
+            "accuracy_change": 0.4,
+            "ci95": [
+              0.23988235294117646,
+              0.5510204081632653
+            ],
+            "corrected": 22,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10015",
+              "train:positional_relationship_AirScape_Train_10020",
+              "train:positional_relationship_AirScape_Train_10069",
+              "train:positional_relationship_AirScape_Train_10169",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10349",
+              "train:positional_relationship_AirScape_Train_10580",
+              "train:positional_relationship_AirScape_Train_10714",
+              "train:positional_relationship_AirScape_Train_10794",
+              "train:positional_relationship_AirScape_Train_10814",
+              "train:positional_relationship_AirScape_Train_10878",
+              "train:positional_relationship_AirScape_Train_11287",
+              "train:positional_relationship_AirScape_Train_11360",
+              "train:positional_relationship_AirScape_Train_11361",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_9371",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662",
+              "train:positional_relationship_AirScape_Train_9801",
+              "train:positional_relationship_AirScape_Train_9824",
+              "train:positional_relationship_AirScape_Train_9934",
+              "train:positional_relationship_AirScape_Train_9959"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_9831"
+            ],
+            "source_groups": 49,
+            "unchanged": 26
+          },
+          "tuned": {
+            "accuracy_change": 0.4,
+            "ci95": [
+              0.23988235294117646,
+              0.5510204081632653
+            ],
+            "corrected": 22,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10015",
+              "train:positional_relationship_AirScape_Train_10020",
+              "train:positional_relationship_AirScape_Train_10069",
+              "train:positional_relationship_AirScape_Train_10169",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10349",
+              "train:positional_relationship_AirScape_Train_10580",
+              "train:positional_relationship_AirScape_Train_10714",
+              "train:positional_relationship_AirScape_Train_10794",
+              "train:positional_relationship_AirScape_Train_10814",
+              "train:positional_relationship_AirScape_Train_10878",
+              "train:positional_relationship_AirScape_Train_11287",
+              "train:positional_relationship_AirScape_Train_11360",
+              "train:positional_relationship_AirScape_Train_11361",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_9371",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662",
+              "train:positional_relationship_AirScape_Train_9801",
+              "train:positional_relationship_AirScape_Train_9824",
+              "train:positional_relationship_AirScape_Train_9934",
+              "train:positional_relationship_AirScape_Train_9959"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_9831"
+            ],
+            "source_groups": 49,
+            "unchanged": 26
+          }
+        },
+        "retrieval_minus_recent": {
+          "base": {
+            "accuracy_change": 0.58,
+            "ci95": [
+              0.44,
+              0.72
+            ],
+            "corrected": 30,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10015",
+              "train:positional_relationship_AirScape_Train_10020",
+              "train:positional_relationship_AirScape_Train_10034",
+              "train:positional_relationship_AirScape_Train_10069",
+              "train:positional_relationship_AirScape_Train_10133",
+              "train:positional_relationship_AirScape_Train_10169",
+              "train:positional_relationship_AirScape_Train_10205",
+              "train:positional_relationship_AirScape_Train_10241",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10330",
+              "train:positional_relationship_AirScape_Train_10349",
+              "train:positional_relationship_AirScape_Train_10372",
+              "train:positional_relationship_AirScape_Train_10714",
+              "train:positional_relationship_AirScape_Train_10794",
+              "train:positional_relationship_AirScape_Train_10810",
+              "train:positional_relationship_AirScape_Train_10878",
+              "train:positional_relationship_AirScape_Train_10953",
+              "train:positional_relationship_AirScape_Train_11208",
+              "train:positional_relationship_AirScape_Train_11287",
+              "train:positional_relationship_AirScape_Train_11360",
+              "train:positional_relationship_AirScape_Train_11361",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_11716",
+              "train:positional_relationship_AirScape_Train_8913",
+              "train:positional_relationship_AirScape_Train_8918",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662",
+              "train:positional_relationship_AirScape_Train_9801",
+              "train:positional_relationship_AirScape_Train_9934",
+              "train:positional_relationship_AirScape_Train_9959"
+            ],
+            "regressed": 1,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_9831"
+            ],
+            "source_groups": 49,
+            "unchanged": 19
+          },
+          "tuned": {
+            "accuracy_change": 0.58,
+            "ci95": [
+              0.44,
+              0.72
+            ],
+            "corrected": 30,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10015",
+              "train:positional_relationship_AirScape_Train_10020",
+              "train:positional_relationship_AirScape_Train_10034",
+              "train:positional_relationship_AirScape_Train_10069",
+              "train:positional_relationship_AirScape_Train_10133",
+              "train:positional_relationship_AirScape_Train_10169",
+              "train:positional_relationship_AirScape_Train_10205",
+              "train:positional_relationship_AirScape_Train_10241",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10330",
+              "train:positional_relationship_AirScape_Train_10349",
+              "train:positional_relationship_AirScape_Train_10372",
+              "train:positional_relationship_AirScape_Train_10714",
+              "train:positional_relationship_AirScape_Train_10794",
+              "train:positional_relationship_AirScape_Train_10810",
+              "train:positional_relationship_AirScape_Train_10878",
+              "train:positional_relationship_AirScape_Train_10953",
+              "train:positional_relationship_AirScape_Train_11208",
+              "train:positional_relationship_AirScape_Train_11287",
+              "train:positional_relationship_AirScape_Train_11360",
+              "train:positional_relationship_AirScape_Train_11361",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_11716",
+              "train:positional_relationship_AirScape_Train_8913",
+              "train:positional_relationship_AirScape_Train_8918",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662",
+              "train:positional_relationship_AirScape_Train_9801",
+              "train:positional_relationship_AirScape_Train_9934",
+              "train:positional_relationship_AirScape_Train_9959"
+            ],
+            "regressed": 1,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_9831"
+            ],
+            "source_groups": 49,
+            "unchanged": 19
+          }
+        },
+        "retrieval_minus_uniform": {
+          "base": {
+            "accuracy_change": 0.22,
+            "ci95": [
+              0.08,
+              0.36
+            ],
+            "corrected": 13,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10015",
+              "train:positional_relationship_AirScape_Train_10205",
+              "train:positional_relationship_AirScape_Train_10241",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10332",
+              "train:positional_relationship_AirScape_Train_10367",
+              "train:positional_relationship_AirScape_Train_10476",
+              "train:positional_relationship_AirScape_Train_10580",
+              "train:positional_relationship_AirScape_Train_10810",
+              "train:positional_relationship_AirScape_Train_11208",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_9809"
+            ],
+            "source_groups": 49,
+            "unchanged": 35
+          },
+          "tuned": {
+            "accuracy_change": 0.22,
+            "ci95": [
+              0.08,
+              0.36
+            ],
+            "corrected": 13,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10015",
+              "train:positional_relationship_AirScape_Train_10205",
+              "train:positional_relationship_AirScape_Train_10241",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10332",
+              "train:positional_relationship_AirScape_Train_10367",
+              "train:positional_relationship_AirScape_Train_10476",
+              "train:positional_relationship_AirScape_Train_10580",
+              "train:positional_relationship_AirScape_Train_10810",
+              "train:positional_relationship_AirScape_Train_11208",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_9809"
+            ],
+            "source_groups": 49,
+            "unchanged": 35
+          }
+        },
+        "retrieval_minus_wrong": {
+          "base": {
+            "accuracy_change": 0.38,
+            "ci95": [
+              0.22448979591836735,
+              0.5306122448979592
+            ],
+            "corrected": 21,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10169",
+              "train:positional_relationship_AirScape_Train_10241",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10332",
+              "train:positional_relationship_AirScape_Train_10349",
+              "train:positional_relationship_AirScape_Train_10372",
+              "train:positional_relationship_AirScape_Train_10580",
+              "train:positional_relationship_AirScape_Train_10583",
+              "train:positional_relationship_AirScape_Train_10714",
+              "train:positional_relationship_AirScape_Train_10794",
+              "train:positional_relationship_AirScape_Train_10810",
+              "train:positional_relationship_AirScape_Train_10814",
+              "train:positional_relationship_AirScape_Train_10878",
+              "train:positional_relationship_AirScape_Train_11208",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_11716",
+              "train:positional_relationship_AirScape_Train_8918",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662",
+              "train:positional_relationship_AirScape_Train_9801",
+              "train:positional_relationship_AirScape_Train_9934"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_9831"
+            ],
+            "source_groups": 49,
+            "unchanged": 27
+          },
+          "tuned": {
+            "accuracy_change": 0.38,
+            "ci95": [
+              0.22,
+              0.5306122448979592
+            ],
+            "corrected": 21,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_10169",
+              "train:positional_relationship_AirScape_Train_10241",
+              "train:positional_relationship_AirScape_Train_10256",
+              "train:positional_relationship_AirScape_Train_10332",
+              "train:positional_relationship_AirScape_Train_10349",
+              "train:positional_relationship_AirScape_Train_10372",
+              "train:positional_relationship_AirScape_Train_10580",
+              "train:positional_relationship_AirScape_Train_10583",
+              "train:positional_relationship_AirScape_Train_10714",
+              "train:positional_relationship_AirScape_Train_10794",
+              "train:positional_relationship_AirScape_Train_10810",
+              "train:positional_relationship_AirScape_Train_10814",
+              "train:positional_relationship_AirScape_Train_10878",
+              "train:positional_relationship_AirScape_Train_11361",
+              "train:positional_relationship_AirScape_Train_11599",
+              "train:positional_relationship_AirScape_Train_11716",
+              "train:positional_relationship_AirScape_Train_8918",
+              "train:positional_relationship_AirScape_Train_9511",
+              "train:positional_relationship_AirScape_Train_9662",
+              "train:positional_relationship_AirScape_Train_9801",
+              "train:positional_relationship_AirScape_Train_9934"
+            ],
+            "regressed": 2,
+            "regressed_ids": [
+              "train:positional_relationship_AirScape_Train_10102",
+              "train:positional_relationship_AirScape_Train_9831"
+            ],
+            "source_groups": 49,
+            "unchanged": 27
+          }
+        }
+      }
+    }
+  }
+}

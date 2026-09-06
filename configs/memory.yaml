@@ -1,0 +1,12 @@
+schema_version: 1
+base_config: fullstudy.yaml
+seed: 42
+reader_pairs: 1
+capacity_pairs: 4
+conditions: [full, memory_full, retrieval, oracle, oracle_all, recent, uniform, wrong, empty]
+capacity_conditions:
+  - {name: episode_capacity2, policy: episode, capacity_pairs: 2}
+  - {name: recent_capacity2, policy: recent, capacity_pairs: 2}
+  - {name: reservoir_capacity2, policy: reservoir, capacity_pairs: 2}
+interpretation: diagnostic_existing_cohort_not_fresh_test
+additional_training: gated_on_validation_diagnostics

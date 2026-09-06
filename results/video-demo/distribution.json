@@ -1,0 +1,24 @@
+{
+  "schema": "video-demo-public-distribution-v1",
+  "prepared_at_utc": "2026-09-06T13:49:35.531016+00:00",
+  "media_included": false,
+  "reason": "Individual redistribution permission for the source footage was not established; retain footage and derivatives only in the private maintainer handoff.",
+  "omitted_media": {
+    "walkthrough.mp4": {
+      "bytes": 3914418,
+      "sha256": "f500496d8e2fb9f2c7134e5e3f1092b187b64dd296aaf89f80ee92d3076de4b0"
+    },
+    "preview.gif": {
+      "bytes": 2711418,
+      "sha256": "3649e81ba6ca5861c9f8710e752dc99e3ad9b3d785a49bf284066cb5f640c9b7"
+    },
+    "poster.png": {
+      "bytes": 371915,
+      "sha256": "37469645b38072ba88c583d071cc255ee3b0c537a854b38574bba7429f23521a"
+    }
+  },
+  "retained_historical_receipt": "provenance.json",
+  "retained_outputs": "data.json",
+  "license_notice": "../../NOTICE.md",
+  "scope": "The historical receipt records excluded media hashes. Numerical outputs and their source identities are unchanged."
+}

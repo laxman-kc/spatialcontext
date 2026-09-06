@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "metrics": {
+      "path": "results/fullstudy/metrics.json",
+      "sha256": "3553fccdfdd8da191f02ff2e798e22f840f9d2c710bb5647d0e38332a510e132"
+    },
+    "training_history": {
+      "path": "results/fullstudy/training-history.json",
+      "sha256": "a038785072b50374ac4573109245811d36f2c32506d03e95234a4daffc265e72"
+    },
+    "raw_events": {
+      "path": "artifacts/fullstudy/train/events.jsonl",
+      "sha256": "8d215e52614e7611df851d5f46e2c96739e2c2608db6f6741a657ee446fce669"
+    }
+  },
+  "protocol_digest": "abfff2fb1645b298c389f7ace1d09f09cb425348b601ca26c1a9cc7c1443eb78",
+  "renderer": {
+    "path": "scripts/render_figures.py",
+    "sha256": "d855dbd40d455282a4b6d47c7091fada1d4aa48fbe34a97348251e0b68129d72",
+    "python": "3.10.19",
+    "matplotlib": "3.10.7",
+    "numpy": "2.2.6",
+    "png_dpi": 180
+  },
+  "figures": {
+    "test-accuracy": {
+      "description": "Base and tuned accuracy on 27 questions: original: 18/27 and 18/27; neutral: 19/27 and 18/27; competing: 18/27 and 18/27; text only: 5/27 and 5/27. The accuracy axis covers 0–100%. Error bars are conditional 95% paired source/donor-cluster bootstrap accuracy intervals from 10,000 resamples of 10 supplied clusters.",
+      "files": {
+        "svg": {
+          "path": "results/fullstudy/figures/test-accuracy.svg",
+          "sha256": "374a14bc9407f38049561dd1d66104fb01a2b50805fa0d38056b28d36623641d"
+        },
+        "png": {
+          "path": "results/fullstudy/figures/test-accuracy.png",
+          "sha256": "992b030a88d8ae45c7d5b9f2ad0728da23c9341f96885504c7cb238fd87d0e74"
+        }
+      }
+    },
+    "training-dynamics": {
+      "description": "All 27 recorded optimizer-group losses and actual learning rates for one epoch over 108 examples. 26 steps use a nonzero learning rate. Values are unsmoothed. Changing examples across groups mean the training trace does not establish convergence.",
+      "files": {
+        "svg": {
+          "path": "results/fullstudy/figures/training-dynamics.svg",
+          "sha256": "d1427a78d5b53fc1281c8cf55eeace7ce3debb2981ef71a440c2a51cf9962d0f"
+        },
+        "png": {
+          "path": "results/fullstudy/figures/training-dynamics.png",
+          "sha256": "f04ec401a6dc7003f8f5f7a1802aacb288d310328794fdb6e02179e2be62a3b2"
+        }
+      }
+    }
+  }
+}

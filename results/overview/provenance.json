@@ -1,0 +1,100 @@
+{
+  "schema": "results-overview-v1",
+  "renderer": "scripts/render_overview.py",
+  "renderer_sha256": "12d54c83b3813b76eb79d8aea947f66c5dc6a834ce48ba059a4b33dec4e9dedd",
+  "matplotlib_version": "3.10.7",
+  "sources": [
+    {
+      "path": "results/memory/metrics.json",
+      "sha256": "f66dcfd7e3a8b03d8e393ddaf068f1920f480e1d0b9f8cca36eb2978aafefeea",
+      "bytes": 130960
+    },
+    {
+      "path": "results/memory-reader/metrics.json",
+      "sha256": "a3fc26b7b92910b90f5887d9a1e3393dbbb391cc776cd92e407077beb0a87efe",
+      "bytes": 7486
+    }
+  ],
+  "comparisons": [
+    {
+      "title": "Memory retrieval",
+      "scope": "Reused validation \u00b7 50 questions",
+      "before_label": "Base \u00b7 full input",
+      "after_label": "Base \u00b7 target clip",
+      "before": {
+        "correct": 43,
+        "total": 50,
+        "accuracy": 0.86
+      },
+      "after": {
+        "correct": 46,
+        "total": 50,
+        "accuracy": 0.92
+      },
+      "note": "3 more correct answers. Both evidence and prompt change.",
+      "source": "results/memory/metrics.json",
+      "selectors": [
+        "splits.val.conditions.full.models.base",
+        "splits.val.conditions.retrieval.models.base"
+      ]
+    },
+    {
+      "title": "Memory retrieval",
+      "scope": "Reused test \u00b7 27 questions \u00b7 regression only",
+      "before_label": "Base \u00b7 full input",
+      "after_label": "Base \u00b7 target clip",
+      "before": {
+        "correct": 18,
+        "total": 27,
+        "accuracy": 0.6666666666666666
+      },
+      "after": {
+        "correct": 19,
+        "total": 27,
+        "accuracy": 0.7037037037037037
+      },
+      "note": "1 more correct answer. Both evidence and prompt change.",
+      "source": "results/memory/metrics.json",
+      "selectors": [
+        "splits.test.conditions.full.models.base",
+        "splits.test.conditions.retrieval.models.base"
+      ]
+    },
+    {
+      "title": "Memory-reader tuning",
+      "scope": "Same reused validation \u00b7 50 questions",
+      "before_label": "Base \u00b7 retrieved pairs",
+      "after_label": "New memory adapter",
+      "before": {
+        "correct": 46,
+        "total": 50,
+        "accuracy": 0.92
+      },
+      "after": {
+        "correct": 46,
+        "total": 50,
+        "accuracy": 0.92
+      },
+      "note": "No extra accuracy gain. Same evidence and prompt.",
+      "source": "results/memory-reader/metrics.json",
+      "selectors": [
+        "splits.val.conditions.retrieval_all.models.base",
+        "splits.val.conditions.retrieval_all.models.tuned"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "path": "results/overview/results-overview.png",
+      "sha256": "637075095cc66045709e9a6732ddb7930b548a91c255a83efb5c3e02523836ad",
+      "bytes": 83033
+    },
+    {
+      "path": "results/overview/results-overview.svg",
+      "sha256": "aea8c6ac356151e175c9219af81853e0313f281d320895c72f797751d342d2d9",
+      "bytes": 9141
+    }
+  ],
+  "new_predictions": 0,
+  "scope": "Presentation of preserved numerical snapshots; no new training or evaluation."
+}

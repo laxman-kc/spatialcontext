@@ -1,0 +1,11 @@
+{
+  "cases": 1194,
+  "fresh_process": true,
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "model": "base",
+  "peak_allocated_bytes": 9753198080,
+  "peak_reserved_bytes": 12771655680,
+  "protocol_digest": "163c9999da2f2e65c486b2e9547787d34e948cd7b26697766b785e48f039b716",
+  "seconds": 684.085261622,
+  "torch": "2.6.0+cu124"
+}

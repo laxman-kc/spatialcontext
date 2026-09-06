@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "scope": "Completed bounded earlier-clip spatial QA study; AI-reviewed labels; one training seed",
+  "counts": {
+    "train": 108,
+    "validation": 50,
+    "test": 27,
+    "test_predictions": 216
+  },
+  "validation": {
+    "base": {
+      "rows": 50,
+      "correct": 43
+    },
+    "tuned": {
+      "rows": 50,
+      "correct": 44
+    }
+  },
+  "cpu_tests_passed": 115,
+  "lint_passed": true,
+  "encoded_input_preflight_passed": 185,
+  "fine_tuning_executed": true,
+  "primary_accuracy_improved": false,
+  "backup": {
+    "archive_sha256": "5f6de03a7b18d32d4a890a1651e9fc1134c1a1545e6c2d4e0dab7a5131f7574f",
+    "archive_bytes": 1404741341,
+    "file_count": 5934,
+    "uncompressed_bytes": 1528802519,
+    "all_archived_file_hashes_verified": true,
+    "frozen_inputs_verified": true,
+    "final_checkpoint_integrity_verified": true,
+    "report_regenerated_byte_identical": true
+  },
+  "protocol_digest": "abfff2fb1645b298c389f7ace1d09f09cb425348b601ca26c1a9cc7c1443eb78",
+  "limitations": [
+    "AI review, not human validation",
+    "27 test questions in 10 uneven source/donor clusters",
+    "One training seed",
+    "Unresolved source provenance and imperfect donor matching",
+    "No memory-mechanism or full official benchmark claim"
+  ],
+  "contents_note": "This compact results snapshot contains saved numerical outputs, checks and environment metadata. It does not contain model weights, videos, the full review ledger or the full reproduction bundle."
+}

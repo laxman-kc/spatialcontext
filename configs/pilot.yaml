@@ -1,0 +1,28 @@
+schema_version: 1
+model:
+  id: Qwen/Qwen3-VL-4B-Instruct
+  revision: ebb281ec70b05090aa6165b016eac8ec08e71b17
+  dtype: bfloat16
+  attention_backend: sdpa_math
+  deterministic: true
+preprocessing:
+  frames: 8
+  synthetic_fps: 2.0
+  max_sequence_tokens: 4096
+training:
+  seed: 42
+  epochs: 1
+  max_cumulative_seconds: 7200
+  gradient_accumulation_steps: 4
+  learning_rate: 0.00001
+  warmup_ratio: 0.03
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  checkpoint_every_optimizer_steps: 25
+  lora_rank: 32
+  lora_alpha: 64
+  lora_dropout: 0.05
+  checkpoint_selection: end_of_run
+analysis:
+  bootstrap_samples: 10000
+  seed: 42

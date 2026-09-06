@@ -1,0 +1,11 @@
+{
+  "checkpoint_integrity": "passed",
+  "adapter_tensors": 288,
+  "lora_b_tensors": 144,
+  "all_tensors_finite": true,
+  "nonzero_lora_b_elements": 10027008,
+  "all_logged_losses_gradients_finite": true,
+  "epoch_mean_loss": 0.11838790443777772,
+  "updates": 27,
+  "examples_seen": 108
+}

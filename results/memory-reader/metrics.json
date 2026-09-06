@@ -1,0 +1,222 @@
+{
+  "bootstrap": {
+    "method": "paired source-group percentile bootstrap; question-weighted",
+    "samples": 10000,
+    "seed": 42
+  },
+  "identities": {
+    "code_digest": "489cdb3bb34e804473b79c03c85c61313310521b07d4379d30ae835484ee775a",
+    "config_digest": "da391d7ad47841853d2de50cd84dcfcde05c5a586364876e82996f0e563c971b",
+    "model:base": "dc6e4377addd21e22e89ffdec6d23c985fdb106601645601d9d88124b2b0208a",
+    "model:tuned": "8d275db3c86920e760a3e0aa79e3c22a001efb3c720fb3784a151b19aca8b94a",
+    "protocol_digest": "09ed5345b40203867baed4272e076c246bd2c12ba168c15c0b8a70e63ae6ea29"
+  },
+  "limitations": [
+    "Labels were AI-reviewed; no human validation is claimed.",
+    "Old test results are diagnostic and do not establish generalization.",
+    "Source-group intervals depend on available grouping; hidden overlap may remain.",
+    "Coverage measures retained evidence availability, not whether the reader used it.",
+    "Store bytes exclude model weights; scoring and retrieval latency are reported separately.",
+    "One candidate selected on reused validation; no test cases were scored here."
+  ],
+  "prediction_cells": 316,
+  "schema": "external-memory-evaluation-v1",
+  "splits": {
+    "train": {
+      "conditions": {
+        "retrieval_all": {
+          "delay_clips_counts": {
+            "None": 108
+          },
+          "evidence": {
+            "mean_retrieval_seconds": null,
+            "mean_selected_pairs": 1.0740740740740742,
+            "mean_store_bytes": 2621378.972222222,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 108
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.9444444444444444,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9354838709677419,
+                  "correct": 29,
+                  "count": 31
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 25,
+                  "count": 25
+                },
+                "C": {
+                  "accuracy": 0.8636363636363636,
+                  "correct": 19,
+                  "count": 22
+                },
+                "D": {
+                  "accuracy": 0.9666666666666667,
+                  "correct": 29,
+                  "count": 30
+                }
+              },
+              "correct": 102,
+              "count": 108,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.13396272110584725,
+              "mean_scoring_seconds": 0.38686768187913173
+            },
+            "tuned": {
+              "accuracy": 0.9537037037037037,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.967741935483871,
+                  "correct": 30,
+                  "count": 31
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 25,
+                  "count": 25
+                },
+                "C": {
+                  "accuracy": 0.8636363636363636,
+                  "correct": 19,
+                  "count": 22
+                },
+                "D": {
+                  "accuracy": 0.9666666666666667,
+                  "correct": 29,
+                  "count": 30
+                }
+              },
+              "correct": 103,
+              "count": 108,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.12003055140265152,
+              "mean_scoring_seconds": 0.4919144758610451
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 108
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.009259259259259259,
+            "ci95": [
+              0.0,
+              0.03896103896103896
+            ],
+            "corrected": 1,
+            "corrected_ids": [
+              "train:positional_relationship_AirScape_Train_11392"
+            ],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 77,
+            "unchanged": 107
+          }
+        }
+      },
+      "interpretation": "training fit diagnostic",
+      "within_model_contrasts": {}
+    },
+    "val": {
+      "conditions": {
+        "retrieval_all": {
+          "delay_clips_counts": {
+            "None": 50
+          },
+          "evidence": {
+            "mean_retrieval_seconds": null,
+            "mean_selected_pairs": 1.06,
+            "mean_store_bytes": 2548028.16,
+            "mean_target_pair_recall": 1.0,
+            "target_clip_hit_rate": 1.0,
+            "target_coverage_cases": 50
+          },
+          "models": {
+            "base": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.1796238708096169,
+              "mean_scoring_seconds": 0.37583567455971206
+            },
+            "tuned": {
+              "accuracy": 0.92,
+              "by_gold_class": {
+                "A": {
+                  "accuracy": 0.9285714285714286,
+                  "correct": 13,
+                  "count": 14
+                },
+                "B": {
+                  "accuracy": 1.0,
+                  "correct": 7,
+                  "count": 7
+                },
+                "C": {
+                  "accuracy": 0.8333333333333334,
+                  "correct": 10,
+                  "count": 12
+                },
+                "D": {
+                  "accuracy": 0.9411764705882353,
+                  "correct": 16,
+                  "count": 17
+                }
+              },
+              "correct": 46,
+              "count": 50,
+              "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+              "mean_gold_negative_logscore": 0.1883820005182642,
+              "mean_scoring_seconds": 0.4253070291205222
+            }
+          },
+          "question_class_counts": {
+            "unspecified": 50
+          },
+          "tuned_minus_base": {
+            "accuracy_change": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "corrected": 0,
+            "corrected_ids": [],
+            "regressed": 0,
+            "regressed_ids": [],
+            "source_groups": 49,
+            "unchanged": 50
+          }
+        }
+      },
+      "interpretation": "validation diagnostic",
+      "within_model_contrasts": {}
+    }
+  }
+}

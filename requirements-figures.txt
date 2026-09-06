@@ -1,0 +1,2 @@
+# Optional, local-only figure renderer; not part of the frozen GPU environment.
+matplotlib==3.10.7

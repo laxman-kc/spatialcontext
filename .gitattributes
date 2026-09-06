@@ -1,0 +1,7 @@
+# Keep source portable while preserving checksum-bound experiment evidence.
+* text=auto eol=lf
+results/** -text
+# Preserve the renderer's whitespace in checksum-bound vector plots.
+results/**/*.svg -whitespace
+*.png binary
+*.tar.gz binary

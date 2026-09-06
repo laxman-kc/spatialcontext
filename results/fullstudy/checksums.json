@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "description": "Byte-identical copies except explicitly derived run-summary.json. Hashes check consistency, not independent authenticity.",
+  "files": {
+    "report.md": {
+      "sha256": "be33b4fb53925a2ac04ad8f96478c26625e2b3a62382bf2b3704f01f6943a09b",
+      "bytes": 3689,
+      "source": "artifacts/fullstudy/report/report.md"
+    },
+    "metrics.json": {
+      "sha256": "3553fccdfdd8da191f02ff2e798e22f840f9d2c710bb5647d0e38332a510e132",
+      "bytes": 31254,
+      "source": "artifacts/fullstudy/report/metrics.json"
+    },
+    "training.json": {
+      "sha256": "0535eb60d14cacc7c7ccdef8adc39fd5b183d213891c8c5906b6082553cb2109",
+      "bytes": 446,
+      "source": "artifacts/fullstudy/train/summary.json"
+    },
+    "checkpoint-verification.json": {
+      "sha256": "616f81eec14635c13ea4b90ec1ee9ce01fea9a6770775ba1377818ab1f445b8c",
+      "bytes": 288,
+      "source": "artifacts/fullstudy/checkpoint-verification.json"
+    },
+    "environment.json": {
+      "sha256": "bc8169ec7824f73c409f89947c31fe797aee728d66393c516e35d1b1191ed18e",
+      "bytes": 246,
+      "source": "artifacts/fullstudy/environment/runtime.json"
+    },
+    "gpu-lock.txt": {
+      "sha256": "9762a1437c0d7794e0ee393272f9f5c782195685636b6c7a2043b8a209d5fd90",
+      "bytes": 1029,
+      "source": "artifacts/fullstudy/environment/gpu-lock.txt"
+    },
+    "run-summary.json": {
+      "sha256": "a86a335d429a979595aad67f27322dae471f9906489870ecd50b4764bf21de22",
+      "bytes": 1493,
+      "source": "derived from verified full-study artifacts and local backup receipt"
+    },
+    "training-history.json": {
+      "bytes": 11612,
+      "sha256": "a038785072b50374ac4573109245811d36f2c32506d03e95234a4daffc265e72",
+      "source": "derived from original saved training events"
+    },
+    "figures/provenance.json": {
+      "bytes": 2338,
+      "sha256": "d4ec309bb1ebaf186cb62dd5af9d679a0a67e3d5e5039b62c9ceb38cc71c159b",
+      "source": "generated from verified saved metrics/training history by scripts/render_figures.py"
+    },
+    "figures/test-accuracy.png": {
+      "bytes": 186508,
+      "sha256": "992b030a88d8ae45c7d5b9f2ad0728da23c9341f96885504c7cb238fd87d0e74",
+      "source": "generated from verified saved metrics/training history by scripts/render_figures.py"
+    },
+    "figures/test-accuracy.svg": {
+      "bytes": 21195,
+      "sha256": "374a14bc9407f38049561dd1d66104fb01a2b50805fa0d38056b28d36623641d",
+      "source": "generated from verified saved metrics/training history by scripts/render_figures.py"
+    },
+    "figures/training-dynamics.png": {
+      "bytes": 233744,
+      "sha256": "f04ec401a6dc7003f8f5f7a1802aacb288d310328794fdb6e02179e2be62a3b2",
+      "source": "generated from verified saved metrics/training history by scripts/render_figures.py"
+    },
+    "figures/training-dynamics.svg": {
+      "bytes": 26322,
+      "sha256": "d1427a78d5b53fc1281c8cf55eeace7ce3debb2981ef71a440c2a51cf9962d0f",
+      "source": "generated from verified saved metrics/training history by scripts/render_figures.py"
+    }
+  }
+}

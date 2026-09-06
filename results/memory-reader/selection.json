@@ -1,0 +1,69 @@
+{
+  "checkpoint": null,
+  "model_digest": "dc6e4377addd21e22e89ffdec6d23c985fdb106601645601d9d88124b2b0208a",
+  "protocol_digest": "09ed5345b40203867baed4272e076c246bd2c12ba168c15c0b8a70e63ae6ea29",
+  "rule": "One fresh-base candidate; final checkpoint; strict validation accuracy improvement else base",
+  "selected": "base",
+  "validation": {
+    "base": {
+      "accuracy": 0.92,
+      "by_gold_class": {
+        "A": {
+          "accuracy": 0.9285714285714286,
+          "correct": 13,
+          "count": 14
+        },
+        "B": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "count": 7
+        },
+        "C": {
+          "accuracy": 0.8333333333333334,
+          "correct": 10,
+          "count": 12
+        },
+        "D": {
+          "accuracy": 0.9411764705882353,
+          "correct": 16,
+          "count": 17
+        }
+      },
+      "correct": 46,
+      "count": 50,
+      "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+      "mean_gold_negative_logscore": 0.1796238708096169,
+      "mean_scoring_seconds": 0.37583567455971206
+    },
+    "tuned": {
+      "accuracy": 0.92,
+      "by_gold_class": {
+        "A": {
+          "accuracy": 0.9285714285714286,
+          "correct": 13,
+          "count": 14
+        },
+        "B": {
+          "accuracy": 1.0,
+          "correct": 7,
+          "count": 7
+        },
+        "C": {
+          "accuracy": 0.8333333333333334,
+          "correct": 10,
+          "count": 12
+        },
+        "D": {
+          "accuracy": 0.9411764705882353,
+          "correct": 16,
+          "count": 17
+        }
+      },
+      "correct": 46,
+      "count": 50,
+      "gold_negative_logscore_definition": "Answer-token negative log-likelihood in nats; excludes EOS; not training loss",
+      "mean_gold_negative_logscore": 0.1883820005182642,
+      "mean_scoring_seconds": 0.4253070291205222
+    }
+  }
+}

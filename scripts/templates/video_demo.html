@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earlier-clip QA · Actual video test</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:light;--ink:#152a34;--muted:#526874;--teal:#08756c;--line:#d4dfde;--paper:#f4f5ef}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}main{max-width:1640px;margin:auto;padding:28px 40px 18px}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:700;color:var(--teal)}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:22px}h1{font-size:34px;letter-spacing:-1.3px;margin:9px 0 8px;font-weight:650}.sub{color:var(--muted);font-size:15px;margin:0}.badge{border:1px solid #8ebdb4;border-radius:28px;padding:10px 16px;font-size:12px;font-weight:700;color:var(--teal);white-space:nowrap}.grid{display:grid;grid-template-columns:1.5fr 1fr;gap:28px}.video-wrap{position:relative;border-radius:12px;overflow:hidden;background:#17282d;aspect-ratio:16/9}video{width:100%;height:100%;display:block;object-fit:contain}.clip-label{position:absolute;left:16px;top:16px;background:#10262deb;color:white;padding:9px 13px;border-radius:6px;font-size:13px}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin:12px 0 8px}.segment{background:#dfe5df;color:var(--muted);padding:9px 10px;border-radius:5px;font-size:12px}.segment.target{background:#d9eae4;color:#065e55}.segment.active{box-shadow:inset 0 -3px var(--teal)}.source-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}.evidence{display:grid;grid-template-columns:164px 164px 1fr;gap:10px;margin-top:19px;align-items:center}.evidence img{width:164px;display:block;border-radius:6px;border:2px solid #438f7e}.evidence p{margin:4px 0;color:var(--muted);font-size:13px;line-height:1.45}.evidence strong{font-size:14px}figcaption{font-size:11px;margin-top:4px;color:var(--muted)}figure{margin:0}.question-head{display:flex;align-items:center;justify-content:space-between}.qnum{font-size:12px;letter-spacing:1.4px;color:var(--teal);font-weight:bold}nav{display:flex;gap:6px}button{border:1px solid #b6c7c4;border-radius:6px;padding:8px 11px;background:white;color:var(--ink);cursor:pointer;font:inherit;font-size:12px}button:hover{background:#dceee7}button:focus-visible{outline:3px solid #c87828;outline-offset:3px}button[aria-pressed=true]{background:var(--ink);color:white;border-color:var(--ink)}h2{font-size:21px;line-height:1.32;letter-spacing:-.35px;margin:14px 0}.options{display:grid;gap:6px;margin-bottom:18px}.option{display:flex;gap:10px;padding:8px 10px;font-size:13px;line-height:1.3;background:#e9ede7;border-radius:5px;border:1px solid transparent}.option b{font-size:12px;padding-top:1px;min-width:12px}.option.correct{border-color:#7bb7a3;background:#dfefe4}.results{display:grid;gap:8px}.result{display:grid;grid-template-columns:1fr auto;gap:4px;align-items:center;background:white;border:1px solid var(--line);border-radius:8px;padding:12px 14px}.result h3{font-size:15px;margin:0 0 5px}.result small{font-size:12px;color:var(--muted)}.answer{font-size:26px;min-width:60px;text-align:right;font-weight:700;color:var(--teal)}.answer small{display:block;font-size:10px;font-weight:400}.outcome{margin:12px 0 0;padding:12px 14px;background:#dfece5;border-radius:8px;min-height:64px;font-size:13px;line-height:1.5}.outcome strong{display:block}.controls{display:flex;gap:8px;margin-top:14px;align-items:center}.status{font-size:12px;color:var(--muted);margin-left:auto}.footer{margin-top:20px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;font-size:11px;line-height:1.5;color:var(--muted)}.footer p{margin:0}.foot-right{text-align:right}.revealed .reveal-button{background:var(--teal);color:white;border-color:var(--teal)}
+@media(max-width:1100px){main{padding:20px}.grid{grid-template-columns:1fr}header{align-items:flex-start;gap:10px}h1{font-size:28px}.evidence{grid-template-columns:140px 140px 1fr}.evidence img{width:140px}.badge{font-size:10px;padding:8px}h2{font-size:20px}.footer{flex-direction:column;gap:8px}.foot-right{text-align:left}}
+@media(max-width:520px){main{padding:16px}header{display:block}.badge{display:inline-block;margin-top:14px}.evidence{grid-template-columns:1fr 1fr}.evidence img{width:100%}.evidence>div{grid-column:1/-1}.source-meta{font-size:10px}.segment{padding:8px 5px;font-size:10px}.controls{flex-wrap:wrap}.status{margin-left:0}}
+@media(min-width:1101px){main{padding:20px 32px 12px}header{padding-bottom:14px;margin-bottom:16px}h1{font-size:32px;margin:7px 0}.timeline{margin:10px 0 4px}.segment{padding:7px 10px}.evidence{grid-template-columns:134px 134px 1fr;margin-top:14px}.evidence img{width:134px}.controls{margin-top:12px}.footer{margin-top:14px;padding-top:10px}}
+.answer.incorrect{color:#a14d2c}
+main{max-width:1540px}
+h2{font-size:30px;line-height:1.25;margin:18px 0 10px}.display-note{font-size:12px;color:var(--muted);margin:0 0 12px}details{font-size:13px;color:var(--muted);margin-bottom:20px}summary{cursor:pointer}details p{line-height:1.4}.result{padding:18px 16px;min-height:98px}.result h3{font-size:18px}.answer{font-size:24px;max-width:265px}.answer small{font-size:13px;margin-top:5px}.outcome{font-size:17px;padding:17px;line-height:1.5}.status{font-size:11px}.controls{flex-wrap:wrap}button{font-size:11px}.evidence strong{font-size:15px}@media(max-width:520px){h2{font-size:25px}.result{padding:14px 10px;gap:10px}.result h3{font-size:16px}.answer{font-size:19px;max-width:160px}.outcome{font-size:15px}}
+</style>
+<main>
+<header><div><div class="eyebrow">EARLIER-CLIP QA / ACTUAL VIDEO TEST</div><h1>Can it recall an earlier scene?</h1><p class="sub">Watch the earlier clip, then compare three actual GPU answers.</p></div><span class="badge">SAVED GPU TEST · REPLAY</span></header>
+<div class="grid">
+<section aria-label="Source footage and retained evidence">
+<div class="video-wrap"><video id="video" muted playsinline preload="auto" poster="frame_0002.png" aria-label="Original 21.5 second source video"></video><div class="clip-label" id="clip-label">Original source · 4 concatenated clips</div></div>
+<div class="timeline" id="timeline"><div class="segment">01 · earlier scene</div><div class="segment target">02 · question target</div><div class="segment">03 · later scene</div><div class="segment">04 · later scene</div></div>
+<div class="source-meta"><span>AirScape_Train_8918 · 24 fps · no audio</span><span id="time">0.00 / 21.50 s</span></div>
+<div class="evidence"><figure><img src="frame_0002.png" alt="First retained frame from clip two"><figcaption>Retained evidence · 7.17 s</figcaption></figure><figure><img src="frame_0003.png" alt="Second retained frame from clip two"><figcaption>Retained evidence · 8.96 s</figcaption></figure><div><strong>What “memory” means here</strong><p>Save 8 frames before answering.<br>Find the 2 frames from clip 2.<br>Use those same frames after tuning.</p></div></div>
+<div class="controls"><button id="play">Play source footage</button><button id="target">Replay target clip</button><button id="remembered">Show remembered frame</button><span class="status" id="play-status">Source playback, separate from scoring</span></div>
+</section>
+<section aria-label="Questions and actual model answers">
+<div class="question-head"><span class="qnum" id="qnum"></span><nav aria-label="Question selection"><button id="q1" aria-pressed="true">Question 1</button><button id="q2" aria-pressed="false">Question 2</button></nav></div>
+<h2 id="question"></h2><p class="display-note">Shortened for display; the tested wording is preserved below.</p><details><summary>Exact tested question and choices</summary><p id="full-question"></p><div class="options" id="options"></div></details>
+<div class="results" id="results"></div>
+<div class="outcome" id="outcome" aria-live="polite"></div>
+<div class="controls"><button class="reveal-button" id="reveal">Show actual GPU answers</button><span class="status" id="run-date"></span></div>
+</section>
+</div>
+<footer class="footer"><p>One reused validation video · two related questions · AI-reviewed answers<br>Retrieval changes images and prompt. The tuning comparison changes only the adapter.</p><p class="foot-right">Source: SIS-Motion-54K / AirScape · original footage retains third-party rights<br>Qwen3-VL-4B-Instruct · saved A100 outputs, no live inference in this viewer</p></footer>
+</main>
+<script>
+const data = __VIDEO_DEMO_JSON__;
+const video = document.getElementById('video');
+const $ = id => document.getElementById(id);
+let current = 0, revealed = false, targetOnly = false;
+const modes = [['full','Before','Base model · all 8 sampled frames'],['memory_base','With memory','Base model · 2 frames from clip 2'],['memory_tuned','After fine-tuning','Tuned model · the same 2 frames']];
+const displayQuestions = ['What is right of the truck carrying white bags?', 'Is the truck left or right of the lights?'];
+const displayAnswers = [{A:'White car',B:'Spherical lights',C:'Lane lines',D:'Road sign'},{A:'Right of the lights',B:'Overlapping the lights',C:'Left of the lights',D:'Truck not visible'}];
+function render(){
+ const q=data.questions[current];
+ $('qnum').textContent=`QUESTION ${current+1} / ${data.questions.length}`;
+ $('question').textContent=displayQuestions[current];$('full-question').textContent=q.question;
+ $('options').replaceChildren(...Object.entries(q.options).map(([k,v])=>{const d=document.createElement('div');d.className='option'+(revealed&&k===q.gold?' correct':'');const b=document.createElement('b');b.textContent=k;const t=document.createElement('span');t.textContent=v;d.append(b,t);return d}));
+ $('results').replaceChildren(...modes.map(([key,label,note])=>{const r=q.results[key],d=document.createElement('div');d.className='result';const left=document.createElement('div'),h=document.createElement('h3'),n=document.createElement('small'),a=document.createElement('div'),s=document.createElement('small');h.textContent=label;n.textContent=note;left.append(h,n);a.className='answer'+(revealed&&!r.correct?' incorrect':'');a.textContent=revealed?displayAnswers[current][r.prediction]:'—';s.textContent=revealed?`${r.prediction} · ${r.correct?'Correct':'Incorrect'}`:'Answer saved';a.append(s);d.append(left,a);return d}));
+ const predictions=modes.map(([key])=>q.results[key].prediction), tied=new Set(predictions).size===1;
+ $('outcome').replaceChildren();const strong=document.createElement('strong'),detail=document.createElement('span');
+ const allCorrect=modes.every(([key])=>q.results[key].correct);
+ const retrievalImproved=!q.results.full.correct&&q.results.memory_base.correct;
+ strong.textContent=revealed?(allCorrect?'Already correct in all three runs.':retrievalImproved?'Memory retrieval corrected this answer.':tied?'All three runs gave the same incorrect answer.':'The recorded answers differ.'):'Watch the footage, then show the answers.';
+ const tuningSame=predictions[1]===predictions[2];
+ detail.textContent=revealed?(tuningSame?'Fine-tuning added no accuracy gain on this question.':'Fine-tuning changed the recorded answer.'):'The model saw sampled frames. Playback shows the actual video.';
+ $('outcome').append(strong,detail);document.body.classList.toggle('revealed',revealed);$('reveal').textContent=revealed?'Hide GPU answers':'Show actual GPU answers';
+ $('q1').setAttribute('aria-pressed',String(current===0));$('q2').setAttribute('aria-pressed',String(current===1));
+}
+$('q1').onclick=()=>{current=0;render()};$('q2').onclick=()=>{current=1;render()};$('reveal').onclick=()=>{revealed=!revealed;render()};
+$('play').onclick=async()=>{targetOnly=false;if(video.paused){if(video.ended)video.currentTime=0;await video.play()}else video.pause()};
+$('remembered').onclick=()=>{targetOnly=false;video.pause();video.currentTime=data.source.sample_pts[3]};
+$('target').onclick=async()=>{targetOnly=true;video.currentTime=5.375;await video.play()};
+video.onplay=()=>{$('play').textContent='Pause footage';$('play-status').textContent=targetOnly?'Playing the earlier target clip':'Playing original footage at 1× speed'};
+video.onpause=()=>{$('play').textContent='Play source footage';$('play-status').textContent=video.ended?'Playback complete · earlier evidence remains stored':'Source playback paused'};
+video.ontimeupdate=()=>{const t=video.currentTime,clip=Math.min(4,Math.floor(t/5.375)+1);$('time').textContent=`${t.toFixed(2)} / 21.50 s`;$('clip-label').textContent=`Clip ${clip} of 4${clip===2?' · earlier question target':''}`;[...$('timeline').children].forEach((node,i)=>node.classList.toggle('active',i===clip-1));if(targetOnly&&t>=10.75){targetOnly=false;video.pause();video.currentTime=10.75-1/24}};
+$('run-date').textContent='A100 · '+data.questions[0].results.full.started_at_utc.slice(0,10);
+render();
+// A local Blob supports exact seeking even when a simple HTTP server omits byte ranges.
+$('play').disabled=true;$('target').disabled=true;$('remembered').disabled=true;
+$('play-status').textContent='Loading verified source footage';
+fetch('source.mp4').then(response=>{if(!response.ok)throw new Error('Source video unavailable');return response.blob()}).then(blob=>{
+ video.src=URL.createObjectURL(blob);
+ video.addEventListener('canplay',()=>{$('play').disabled=false;$('target').disabled=false;$('remembered').disabled=false;$('play-status').textContent='Source playback, separate from scoring'},{once:true});
+ video.load();
+}).catch(error=>{$('play-status').textContent=error.message});
+</script>
+</html>

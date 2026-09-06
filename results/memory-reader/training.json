@@ -1,0 +1,13 @@
+{
+  "checkpoint": "checkpoint-000027",
+  "diagnostic": false,
+  "elapsed_seconds": 103.08725306500128,
+  "examples_seen": 108,
+  "examples_total": 108,
+  "identity": "880c605ab504942414de03b72d6261ad635c5430c312b55c33e089ad6a8187a4",
+  "peak_vram_bytes": 10973631488,
+  "protocol_digest": "09ed5345b40203867baed4272e076c246bd2c12ba168c15c0b8a70e63ae6ea29",
+  "stop_reason": "epoch_complete",
+  "trainable_parameters": 23592960,
+  "updates": 27
+}

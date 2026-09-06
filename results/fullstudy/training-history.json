@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "artifacts/fullstudy/train/events.jsonl",
+    "sha256": "8d215e52614e7611df851d5f46e2c96739e2c2608db6f6741a657ee446fce669"
+  },
+  "training_summary_source": {
+    "path": "results/fullstudy/training.json",
+    "sha256": "0535eb60d14cacc7c7ccdef8adc39fd5b183d213891c8c5906b6082553cb2109"
+  },
+  "protocol_digest": "abfff2fb1645b298c389f7ace1d09f09cb425348b601ca26c1a9cc7c1443eb78",
+  "training_identity": "01214ff6a0526d90c6e55b92e7ff42a28b345de02d627b74fc60c86b24e07830",
+  "field_descriptions": {
+    "step": "Completed optimizer iteration, starting at 1; includes the initial zero-LR warmup step.",
+    "examples_seen": "Cumulative training examples consumed in the single shuffled epoch.",
+    "mean_loss": "Arithmetic mean of per-example supervised-token cross-entropy losses in this group (nats).",
+    "gradient_norm": "Total gradient norm returned by clipping, before the clip is applied.",
+    "lr_used": "Learning rate used by this optimizer step, recorded before optimizer.step().",
+    "lr": "Scheduler learning rate after this optimizer step; this is the next step's rate.",
+    "tokens": "Full encoded sequence length for each example in the accumulation group.",
+    "elapsed_seconds": "Cumulative training-loop wall time at this event; excludes earlier setup and data work.",
+    "peak_vram_bytes": "Peak CUDA memory allocated by PyTorch so far; not total device memory usage."
+  },
+  "events": [
+    {
+      "step": 1,
+      "examples_seen": 4,
+      "mean_loss": 0.0019185656264824047,
+      "gradient_norm": 0.0870668962597847,
+      "lr_used": 0.0,
+      "lr": 1e-05,
+      "tokens": [
+        1227,
+        1227,
+        1213,
+        1214
+      ],
+      "elapsed_seconds": 4.667566167000132,
+      "peak_vram_bytes": 11693701120
+    },
+    {
+      "step": 2,
+      "examples_seen": 8,
+      "mean_loss": 0.18672096977411456,
+      "gradient_norm": 4.928880214691162,
+      "lr_used": 1e-05,
+      "lr": 9.96354437049027e-06,
+      "tokens": [
+        1208,
+        1218,
+        1227,
+        1227
+      ],
+      "elapsed_seconds": 8.527537663000203,
+      "peak_vram_bytes": 11882445312
+    },
+    {
+      "step": 3,
+      "examples_seen": 12,
+      "mean_loss": 0.4173643025569618,
+      "gradient_norm": 7.943572521209717,
+      "lr_used": 9.96354437049027e-06,
+      "lr": 9.854709087130261e-06,
+      "tokens": [
+        1243,
+        1224,
+        1216,
+        1209
+      ],
+      "elapsed_seconds": 12.496207470000172,
+      "peak_vram_bytes": 11882445312
+    },
+    {
+      "step": 4,
+      "examples_seen": 16,
+      "mean_loss": 0.0012300467273576032,
+      "gradient_norm": 0.048050422221422195,
+      "lr_used": 9.854709087130261e-06,
+      "lr": 9.675081213427076e-06,
+      "tokens": [
+        1217,
+        1221,
+        1233,
+        1210
+      ],
+      "elapsed_seconds": 16.48148832300012,
+      "peak_vram_bytes": 11891865600
+    },
+    {
+      "step": 5,
+      "examples_seen": 20,
+      "mean_loss": 0.500695691386646,
+      "gradient_norm": 7.360088348388672,
+      "lr_used": 9.675081213427076e-06,
+      "lr": 9.427280128266049e-06,
+      "tokens": [
+        1219,
+        1221,
+        1232,
+        1225
+      ],
+      "elapsed_seconds": 21.028217619000316,
+      "peak_vram_bytes": 11891865600
+    },
+    {
+      "step": 6,
+      "examples_seen": 24,
+      "mean_loss": 0.05095434902770535,
+      "gradient_norm": 2.123960256576538,
+      "lr_used": 9.427280128266049e-06,
+      "lr": 9.114919329468283e-06,
+      "tokens": [
+        1218,
+        1234,
+        1224,
+        1234
+      ],
+      "elapsed_seconds": 25.389493567000045,
+      "peak_vram_bytes": 11893883392
+    },
+    {
+      "step": 7,
+      "examples_seen": 28,
+      "mean_loss": 0.00024098267696004427,
+      "gradient_norm": 0.011865587905049324,
+      "lr_used": 9.114919329468283e-06,
+      "lr": 8.742553740855507e-06,
+      "tokens": [
+        1216,
+        1215,
+        1216,
+        1235
+      ],
+      "elapsed_seconds": 29.769025090000014,
+      "peak_vram_bytes": 11895902208
+    },
+    {
+      "step": 8,
+      "examples_seen": 32,
+      "mean_loss": 0.10597936411795672,
+      "gradient_norm": 3.1442394256591797,
+      "lr_used": 8.742553740855507e-06,
+      "lr": 8.315613291203977e-06,
+      "tokens": [
+        1235,
+        1221,
+        1232,
+        1220
+      ],
+      "elapsed_seconds": 34.20186682800022,
+      "peak_vram_bytes": 11895902208
+    },
+    {
+      "step": 9,
+      "examples_seen": 36,
+      "mean_loss": 0.04978348604663552,
+      "gradient_norm": 2.2154338359832764,
+      "lr_used": 8.315613291203977e-06,
+      "lr": 7.84032373365578e-06,
+      "tokens": [
+        1220,
+        1214,
+        1223,
+        1228
+      ],
+      "elapsed_seconds": 38.523472381000374,
+      "peak_vram_bytes": 11895902208
+    },
+    {
+      "step": 10,
+      "examples_seen": 40,
+      "mean_loss": 0.0038684480007091793,
+      "gradient_norm": 0.29183197021484375,
+      "lr_used": 7.84032373365578e-06,
+      "lr": 7.323615860218844e-06,
+      "tokens": [
+        1224,
+        1221,
+        1211,
+        1231
+      ],
+      "elapsed_seconds": 43.01590861400018,
+      "peak_vram_bytes": 11895902208
+    },
+    {
+      "step": 11,
+      "examples_seen": 44,
+      "mean_loss": 0.0029140437982277945,
+      "gradient_norm": 0.14311182498931885,
+      "lr_used": 7.323615860218844e-06,
+      "lr": 6.773024435212678e-06,
+      "tokens": [
+        1222,
+        1220,
+        1234,
+        1207
+      ],
+      "elapsed_seconds": 47.13711767099994,
+      "peak_vram_bytes": 11895902208
+    },
+    {
+      "step": 12,
+      "examples_seen": 48,
+      "mean_loss": 0.14381451171698245,
+      "gradient_norm": 3.53241229057312,
+      "lr_used": 6.773024435212678e-06,
+      "lr": 6.1965783214377895e-06,
+      "tokens": [
+        1217,
+        1227,
+        1213,
+        1225
+      ],
+      "elapsed_seconds": 50.97775218900006,
+      "peak_vram_bytes": 11895902208
+    },
+    {
+      "step": 13,
+      "examples_seen": 52,
+      "mean_loss": 0.06217763635368101,
+      "gradient_norm": 1.9469010829925537,
+      "lr_used": 6.1965783214377895e-06,
+      "lr": 5.6026834012766155e-06,
+      "tokens": [
+        1217,
+        1237,
+        1204,
+        1212
+      ],
+      "elapsed_seconds": 54.84456916499994,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 14,
+      "examples_seen": 56,
+      "mean_loss": 0.01879131998066441,
+      "gradient_norm": 1.1585408449172974,
+      "lr_used": 5.6026834012766155e-06,
+      "lr": 5e-06,
+      "tokens": [
+        1235,
+        1232,
+        1223,
+        1233
+      ],
+      "elapsed_seconds": 58.682904661000066,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 15,
+      "examples_seen": 60,
+      "mean_loss": 0.03453985539567839,
+      "gradient_norm": 1.5249383449554443,
+      "lr_used": 5e-06,
+      "lr": 4.397316598723385e-06,
+      "tokens": [
+        1217,
+        1217,
+        1215,
+        1230
+      ],
+      "elapsed_seconds": 62.75591346700003,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 16,
+      "examples_seen": 64,
+      "mean_loss": 0.25983088294242407,
+      "gradient_norm": 5.672271728515625,
+      "lr_used": 4.397316598723385e-06,
+      "lr": 3.803421678562213e-06,
+      "tokens": [
+        1231,
+        1222,
+        1216,
+        1228
+      ],
+      "elapsed_seconds": 66.5514551250003,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 17,
+      "examples_seen": 68,
+      "mean_loss": 0.02701914469349731,
+      "gradient_norm": 1.793168306350708,
+      "lr_used": 3.803421678562213e-06,
+      "lr": 3.226975564787322e-06,
+      "tokens": [
+        1226,
+        1231,
+        1221,
+        1218
+      ],
+      "elapsed_seconds": 70.39521217000038,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 18,
+      "examples_seen": 72,
+      "mean_loss": 0.03556969629605078,
+      "gradient_norm": 2.675690174102783,
+      "lr_used": 3.226975564787322e-06,
+      "lr": 2.6763841397811576e-06,
+      "tokens": [
+        1231,
+        1214,
+        1234,
+        1221
+      ],
+      "elapsed_seconds": 74.35915208200004,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 19,
+      "examples_seen": 76,
+      "mean_loss": 0.002446952688046622,
+      "gradient_norm": 0.18248052895069122,
+      "lr_used": 2.6763841397811576e-06,
+      "lr": 2.159676266344222e-06,
+      "tokens": [
+        1219,
+        1230,
+        1228,
+        1229
+      ],
+      "elapsed_seconds": 78.13778846000014,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 20,
+      "examples_seen": 80,
+      "mean_loss": 0.2959267589612864,
+      "gradient_norm": 5.609077453613281,
+      "lr_used": 2.159676266344222e-06,
+      "lr": 1.6843867087960252e-06,
+      "tokens": [
+        1210,
+        1224,
+        1236,
+        1223
+      ],
+      "elapsed_seconds": 82.01372875400011,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 21,
+      "examples_seen": 84,
+      "mean_loss": 0.09470217658827096,
+      "gradient_norm": 6.409488677978516,
+      "lr_used": 1.6843867087960252e-06,
+      "lr": 1.257446259144494e-06,
+      "tokens": [
+        1210,
+        1221,
+        1199,
+        1226
+      ],
+      "elapsed_seconds": 85.94570538800008,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 22,
+      "examples_seen": 88,
+      "mean_loss": 0.07176428783714073,
+      "gradient_norm": 2.428286075592041,
+      "lr_used": 1.257446259144494e-06,
+      "lr": 8.850806705317183e-07,
+      "tokens": [
+        1231,
+        1215,
+        1234,
+        1228
+      ],
+      "elapsed_seconds": 89.77247594200026,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 23,
+      "examples_seen": 92,
+      "mean_loss": 0.2599983370868131,
+      "gradient_norm": 7.7889604568481445,
+      "lr_used": 8.850806705317183e-07,
+      "lr": 5.727198717339511e-07,
+      "tokens": [
+        1228,
+        1226,
+        1228,
+        1216
+      ],
+      "elapsed_seconds": 93.63889374000019,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 24,
+      "examples_seen": 96,
+      "mean_loss": 0.0005380739657994127,
+      "gradient_norm": 0.030751962214708328,
+      "lr_used": 5.727198717339511e-07,
+      "lr": 3.2491878657292643e-07,
+      "tokens": [
+        1231,
+        1232,
+        1200,
+        1226
+      ],
+      "elapsed_seconds": 97.42748673899996,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 25,
+      "examples_seen": 100,
+      "mean_loss": 0.3316511832190372,
+      "gradient_norm": 4.622375011444092,
+      "lr_used": 3.2491878657292643e-07,
+      "lr": 1.4529091286973994e-07,
+      "tokens": [
+        1222,
+        1229,
+        1230,
+        1225
+      ],
+      "elapsed_seconds": 101.66196856100032,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 26,
+      "examples_seen": 104,
+      "mean_loss": 0.12729444767228415,
+      "gradient_norm": 3.4924843311309814,
+      "lr_used": 1.4529091286973994e-07,
+      "lr": 3.645562950973014e-08,
+      "tokens": [
+        1216,
+        1214,
+        1231,
+        1232
+      ],
+      "elapsed_seconds": 107.59218744700001,
+      "peak_vram_bytes": 11899938816
+    },
+    {
+      "step": 27,
+      "examples_seen": 108,
+      "mean_loss": 0.10873790468258449,
+      "gradient_norm": 3.091745138168335,
+      "lr_used": 3.645562950973014e-08,
+      "lr": 0.0,
+      "tokens": [
+        1232,
+        1230,
+        1236,
+        1221
+      ],
+      "elapsed_seconds": 111.51780250000002,
+      "peak_vram_bytes": 11899938816
+    }
+  ]
+}

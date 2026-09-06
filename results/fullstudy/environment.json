@@ -1,0 +1,9 @@
+{
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "bf16": true,
+  "model_revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17"
+}

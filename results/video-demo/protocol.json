@@ -1,0 +1,225 @@
+{
+  "adapter_files": {
+    "adapter_config.json": "a486b3ad5ca4d875184ef4d8c2ab78e772d9e4f961047fffa7d506de24ae06d5",
+    "adapter_model.safetensors": "e65c7ff88df0887bc4fdeb35629c36be1c84fcea81855c241525aa1bf2c59912"
+  },
+  "adapter_identity": "8d275db3c86920e760a3e0aa79e3c22a001efb3c720fb3784a151b19aca8b94a",
+  "base_identity": "dc6e4377addd21e22e89ffdec6d23c985fdb106601645601d9d88124b2b0208a",
+  "code_digest": "489cdb3bb34e804473b79c03c85c61313310521b07d4379d30ae835484ee775a",
+  "config_digest": "da391d7ad47841853d2de50cd84dcfcde05c5a586364876e82996f0e563c971b",
+  "created_at_utc": "2026-09-06T06:57:08.081714+00:00",
+  "decoder": {
+    "libraries": {
+      "libavcodec": [
+        61,
+        3,
+        100
+      ],
+      "libavdevice": [
+        61,
+        1,
+        100
+      ],
+      "libavfilter": [
+        10,
+        1,
+        100
+      ],
+      "libavformat": [
+        61,
+        1,
+        100
+      ],
+      "libavutil": [
+        59,
+        8,
+        100
+      ],
+      "libswresample": [
+        5,
+        1,
+        100
+      ],
+      "libswscale": [
+        8,
+        1,
+        100
+      ]
+    },
+    "machine": "arm64",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "pyav": "13.1.0"
+  },
+  "digest": "d918bdef5430741f35e788d7a9763f95f5fa80be94b6a3246780de50438a7fb9",
+  "memory": {
+    "before": {
+      "frames/00000001_0.png": "af7fc65bf879fd23190cf85d9f96f36006d60c919efcdbc0abefedfca9772cc9",
+      "frames/00000001_1.png": "1afbf1ea226aab69d69092da22eed38186f7757f0a3f0247a00e486838f9c6b1",
+      "frames/00000002_0.png": "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+      "frames/00000002_1.png": "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025",
+      "frames/00000003_0.png": "20b81d1e1d6638f6017345567fcd571cc82aee20f782dfc142664c0bf4189f77",
+      "frames/00000003_1.png": "993e72ee686832f74438de882adadebaab0491255087f6eec78cf671a337ae78",
+      "frames/00000004_0.png": "bb974e2b4dd3a19e79efd31eec0b5b42b3d0c1e7e30047179c31c23975321a03",
+      "frames/00000004_1.png": "872105c4bb1010deaae238d532f0db70b125bb7e9f94ed4d9763ca346ee87bbd",
+      "manifest.json": "dd4f8ab4fa386436949e094e59179fe9722066a1a11e355e4fb10b3740ef8c15",
+      "memory.sqlite": "e2f9ae8549c943b782e44c797a85431af1f3e3d0f7ebbf4e5fc2d9431a86a1e1"
+    },
+    "capacity_pairs": 4,
+    "question_blind_writer": true,
+    "retained_frames": 8,
+    "sealed_before_question_retrieval": true,
+    "selected_frames_per_question": 2,
+    "selections": {
+      "inverse-8918": {
+        "available_pairs": 4,
+        "clip_indices": [
+          2
+        ],
+        "diagnostic": false,
+        "episode_id": "video-demo-8918",
+        "evidence_usage_proven": false,
+        "fallback": null,
+        "frame_sha256": [
+          "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+          "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025"
+        ],
+        "frames": [
+          "frames/00000002_0.png",
+          "frames/00000002_1.png"
+        ],
+        "max_pairs": 4,
+        "observation_ids": [
+          2
+        ],
+        "pair_indices": [
+          1
+        ],
+        "policy": "episode",
+        "reason": null,
+        "requested_clip": 2,
+        "scene_ids": [
+          "clip-2"
+        ],
+        "selected_frames": 2,
+        "selected_pairs": 1,
+        "source_ids": [
+          "source-clip-2"
+        ],
+        "store_digest": "b82055bec8fdead3a355ee081dc4043a445d1c750eae64cf829a20a990f2852d",
+        "timestamps": [
+          1.25
+        ]
+      },
+      "original-8918": {
+        "available_pairs": 4,
+        "clip_indices": [
+          2
+        ],
+        "diagnostic": false,
+        "episode_id": "video-demo-8918",
+        "evidence_usage_proven": false,
+        "fallback": null,
+        "frame_sha256": [
+          "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+          "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025"
+        ],
+        "frames": [
+          "frames/00000002_0.png",
+          "frames/00000002_1.png"
+        ],
+        "max_pairs": 4,
+        "observation_ids": [
+          2
+        ],
+        "pair_indices": [
+          1
+        ],
+        "policy": "episode",
+        "reason": null,
+        "requested_clip": 2,
+        "scene_ids": [
+          "clip-2"
+        ],
+        "selected_frames": 2,
+        "selected_pairs": 1,
+        "source_ids": [
+          "source-clip-2"
+        ],
+        "store_digest": "b82055bec8fdead3a355ee081dc4043a445d1c750eae64cf829a20a990f2852d",
+        "timestamps": [
+          1.25
+        ]
+      }
+    },
+    "store_digest": "b82055bec8fdead3a355ee081dc4043a445d1c750eae64cf829a20a990f2852d"
+  },
+  "preparation_digest": "b79626eb5da25283e12515ce290100227581dd11ff648ae4325aac35226e0969",
+  "preparation_seconds": 1.3305900000268593,
+  "questions_sha256": "c3b11a3993f7982eb8765c3ac57c6b4856b36e47bee0a083bb3777b50dfba923",
+  "reader_inputs_sha256": "4276889cb89dad65dc9a6f764e141d59e38e1355210780cccc069712439a48b1",
+  "schema": "video-demo-protocol-v1",
+  "scoring_frozen_at_utc": "2026-09-06T06:57:54.560721+00:00",
+  "script_sha256": "a470b48c19f7f712f4ab2c66d74ac052e1302a9119c0781c03fc5012bb024d3f",
+  "source": {
+    "all_eight_pngs_match_reviewed_evidence": true,
+    "clip_ranges_seconds": [
+      [
+        0.0,
+        5.375
+      ],
+      [
+        5.375,
+        10.75
+      ],
+      [
+        10.75,
+        16.125
+      ],
+      [
+        16.125,
+        21.5
+      ]
+    ],
+    "decoded_frames": 516,
+    "duration": 21.5,
+    "fps": 24.0,
+    "geometry_wh": [
+      1280,
+      720
+    ],
+    "id": "AirScape_Train_8918",
+    "prepared_png_sha256": [
+      "af7fc65bf879fd23190cf85d9f96f36006d60c919efcdbc0abefedfca9772cc9",
+      "1afbf1ea226aab69d69092da22eed38186f7757f0a3f0247a00e486838f9c6b1",
+      "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+      "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025",
+      "20b81d1e1d6638f6017345567fcd571cc82aee20f782dfc142664c0bf4189f77",
+      "993e72ee686832f74438de882adadebaab0491255087f6eec78cf671a337ae78",
+      "bb974e2b4dd3a19e79efd31eec0b5b42b3d0c1e7e30047179c31c23975321a03",
+      "872105c4bb1010deaae238d532f0db70b125bb7e9f94ed4d9763ca346ee87bbd"
+    ],
+    "sample_indices": [
+      43,
+      86,
+      172,
+      215,
+      301,
+      344,
+      430,
+      473
+    ],
+    "sample_pts": [
+      1.7916666666666667,
+      3.5833333333333335,
+      7.166666666666667,
+      8.958333333333334,
+      12.541666666666666,
+      14.333333333333334,
+      17.916666666666668,
+      19.708333333333332
+    ],
+    "sha256": "00fb1953fa10157fa4382b3eb00630eb562f61742863bab91311826de754a708",
+    "synthetic_model_fps": 2.0,
+    "url": "https://modelscope.cn/api/v1/datasets/choucisan/SIS-Motion-54K-Dataset/repo?Revision=edc34ea44f58a538622ef4221cf5a3b0fe3070a8&FilePath=AirScape_dataset%2FAirScape_Train_8918.mp4"
+  }
+}

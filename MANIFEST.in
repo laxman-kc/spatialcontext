@@ -1,0 +1,14 @@
+include README.md REPORT.md PLAN.md PROGRESS.md CONTRIBUTING.md
+include requirements-figures.txt
+recursive-include configs *.yaml
+recursive-include scripts *.py *.sh *.html
+recursive-include tests *.py
+recursive-include explorer *.html *.css *.js
+recursive-include results/fullstudy *.json *.jsonl *.md *.txt *.svg *.png
+recursive-include results/memory *.json *.jsonl *.md *.txt *.tar.gz
+recursive-include results/memory-reader *.json *.jsonl *.md *.txt *.tar.gz
+recursive-include results/overview *.json *.svg *.png
+recursive-include results/video-demo *.json
+exclude results/video-demo/poster.png
+global-exclude *.mp4 *.mov *.avi *.webm *.gif
+global-exclude __pycache__ *.py[cod] .DS_Store

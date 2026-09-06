@@ -1,0 +1,104 @@
+{
+  "cause": "The underlying reason for the cross-platform pixel difference was not isolated. No model outcomes were available during this correction.",
+  "frames": [
+    {
+      "canonical_png_sha256": "af7fc65bf879fd23190cf85d9f96f36006d60c919efcdbc0abefedfca9772cc9",
+      "changed_channel_values": 460143,
+      "linux_png_sha256": "80f90fbf818da7469338caddb2cb1b355638a317a8a53e850c424f3b84695a45",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0000.png"
+    },
+    {
+      "canonical_png_sha256": "1afbf1ea226aab69d69092da22eed38186f7757f0a3f0247a00e486838f9c6b1",
+      "changed_channel_values": 464473,
+      "linux_png_sha256": "438c414f3a5b9a77e5f8d0430e67cc9e90c2ab224f06374445cf00ec66e0b63e",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0001.png"
+    },
+    {
+      "canonical_png_sha256": "ffdabb4cd7cc3396ce04c287d0719dbe0f770c3314287e6b92511a7c9db7adfc",
+      "changed_channel_values": 376690,
+      "linux_png_sha256": "2c5e39c4585a355672b91d34d840128ec8d75e87b23b6d8ad0062484f6e0b169",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0002.png"
+    },
+    {
+      "canonical_png_sha256": "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025",
+      "changed_channel_values": 357277,
+      "linux_png_sha256": "a96a9be0c737857173fab357a9adfa63dbcb27f04178f3f81911890aa1c7a897",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0003.png"
+    },
+    {
+      "canonical_png_sha256": "20b81d1e1d6638f6017345567fcd571cc82aee20f782dfc142664c0bf4189f77",
+      "changed_channel_values": 515348,
+      "linux_png_sha256": "5d3c9928ce70cefb400ae31d8f64a1b4cc7d5b25fb3a1e343217d0055ba212c2",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0004.png"
+    },
+    {
+      "canonical_png_sha256": "993e72ee686832f74438de882adadebaab0491255087f6eec78cf671a337ae78",
+      "changed_channel_values": 516168,
+      "linux_png_sha256": "b6c9012a836df3b18a9c76f7cf373eb57a30dbb1d24a1e878c04779771d7e2d1",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0005.png"
+    },
+    {
+      "canonical_png_sha256": "bb974e2b4dd3a19e79efd31eec0b5b42b3d0c1e7e30047179c31c23975321a03",
+      "changed_channel_values": 426624,
+      "linux_png_sha256": "cbea49be1e3b3ba3e8b599f4a12bcc845184ad9edc54b8e8e79da1ccdece9617",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0006.png"
+    },
+    {
+      "canonical_png_sha256": "872105c4bb1010deaae238d532f0db70b125bb7e9f94ed4d9763ca346ee87bbd",
+      "changed_channel_values": 426289,
+      "linux_png_sha256": "c397fa1b2f3b5fe214792f3c77821cb89e03436c5ebd70799c784fe792639e19",
+      "max_absolute_rgb_channel_difference": 3,
+      "name": "frame_0007.png"
+    }
+  ],
+  "linux_runtime": {
+    "libraries": {
+      "libavcodec": [
+        61,
+        3,
+        100
+      ],
+      "libavdevice": [
+        61,
+        1,
+        100
+      ],
+      "libavfilter": [
+        10,
+        1,
+        100
+      ],
+      "libavformat": [
+        61,
+        1,
+        100
+      ],
+      "libavutil": [
+        59,
+        8,
+        100
+      ],
+      "libswresample": [
+        5,
+        1,
+        100
+      ],
+      "libswscale": [
+        8,
+        1,
+        100
+      ]
+    },
+    "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.35",
+    "pyav": "13.1.0"
+  },
+  "source_sha256": "00fb1953fa10157fa4382b3eb00630eb562f61742863bab91311826de754a708",
+  "status": "Rejected Linux preparation before model loading; used hash-matching fresh macOS decoding transferred losslessly"
+}
