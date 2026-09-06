@@ -46,7 +46,7 @@ Keep scientific claims tied to the saved evidence. Distinguish software correctn
 
 Original project code is MIT-licensed; preserve [LICENSE](LICENSE) and [NOTICE.md](NOTICE.md). The public branch excludes third-party footage and its MP4, GIF and poster derivatives. Keep those exclusions when preparing future releases.
 
-Work from the standalone repository's `codex/public-release` branch. It begins with a clean root commit so earlier media-containing commits are not part of the public history. The former `codex/release-ready` branch and private Git bundle retain local history; do not push them. Include source, tests, documentation and the small `results/` snapshots. Keep original media, memory databases, model weights, private credentials and backup archives ignored. The two small frozen-source archives under `results/` are intentional reproducibility inputs. `.gitattributes` preserves the exact bytes of checksum-bound results.
+Work from the standalone repository's `main` branch. It begins with a clean root commit so earlier media-containing commits are not part of the public history. The former `codex/release-ready` branch and private Git bundle retain local history; do not push them. Include source, tests, documentation and the small `results/` snapshots. Keep original media, memory databases, model weights, private credentials and backup archives ignored. The two small frozen-source archives under `results/` are intentional reproducibility inputs. `.gitattributes` preserves the exact bytes of checksum-bound results.
 
 Run the CPU checks above and verify the saved evidence:
 
@@ -60,10 +60,10 @@ git status --short
 git remote -v
 ```
 
-After configuring `origin` to the intended repository, publish only the reviewed public branch:
+`origin` points to [laxman-kc/spatialcontext](https://github.com/laxman-kc/spatialcontext). Publish only the reviewed `main` branch:
 
 ```bash
-git push -u origin codex/public-release:main
+git push -u origin main
 ```
 
-Do not use `--all` or `--mirror`: local private branches contain excluded footage. No remote or public upload is created by the release-preparation workflow. The source ZIP is another history-free distribution option. Model and dataset terms remain separate from the MIT license.
+Do not use `--all` or `--mirror`: local private branches contain excluded footage. The remote is configured for this project; pushing `main` publishes only its reviewed history. The source ZIP is another history-free distribution option. Model and dataset terms remain separate from the MIT license.

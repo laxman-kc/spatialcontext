@@ -4,11 +4,13 @@
 
 ## Public-release preparation — 6 September 2026 UTC
 
-The owner selected MIT for original project code. `LICENSE`, package license metadata and `NOTICE.md` now state that scope and preserve dataset/reference attributions. The public release excludes the third-party MP4, GIF and poster, including their earlier Git versions. The recordings and old Git history remain in the local handoff; the public `codex/public-release` branch has no private-history ancestor.
+Publication uses **`main`** at [laxman-kc/spatialcontext](https://github.com/laxman-kc/spatialcontext). The owner supplied this destination and requested `main`; the private historical branch is excluded from the push.
+
+The owner selected MIT for original project code. `LICENSE`, package license metadata and `NOTICE.md` now state that scope and preserve dataset/reference attributions. The public release excludes the third-party MP4, GIF and poster, including their earlier Git versions. The recordings and old Git history remain in the local handoff; the public `main` branch has no private-history ancestor.
 
 The README retains the original spatial-recall question, all measured outcomes and a plain Matplotlib chart. The actual video test is shown as a table linked to its unchanged questions, scores, timestamps and provenance. No model weights or dataset media are bundled. The numerical snapshots and frozen source archives retain their verified bytes.
 
-A fresh CPU installation exposed a source-distribution packaging defect: the archive omitted scripts and configurations needed by two test modules. `MANIFEST.in` now includes the source workflow, tests, configs, documentation and numerical results, while excluding footage. The rebuilt source archive passed all 251 CPU tests, Ruff and all three saved-result inspectors. A separately installed wheel passed CLI startup, dependency checks and an import check outside the source folder. Both artifacts include MIT/Apache notices; archive inspection found no footage, model weights or ignored private data. The CI workflow now also checks media exclusions and tests the source distribution. Local command logs and package inventories are under ignored `artifacts/public-release/`. No Git remote, public upload, hosted CI pass or new GPU experiment is claimed.
+A fresh CPU installation exposed a source-distribution packaging defect: the archive omitted scripts and configurations needed by two test modules. `MANIFEST.in` now includes the source workflow, tests, configs, documentation and numerical results, while excluding footage. The rebuilt source archive passed all 251 CPU tests, Ruff and all three saved-result inspectors. A separately installed wheel passed CLI startup, dependency checks and an import check outside the source folder. Both artifacts include MIT/Apache notices; archive inspection found no footage, model weights or ignored private data. The CI workflow now also checks media exclusions and tests the source distribution. Local command logs and package inventories are under ignored `artifacts/public-release/`. These local checks preceded GitHub publication and involved no new GPU experiment. Hosted results are available in the [CPU workflow](https://github.com/laxman-kc/spatialcontext/actions/workflows/tests.yml).
 
 ## Current documentation and final GPU handoff — 6 September 2026 UTC
 
@@ -30,7 +32,7 @@ A fresh export of the staged Git files passed **251 CPU tests**, Ruff, CLI start
 
 Documentation now distinguishes the original study from subsequent memory experiments and dates superseded diagnostic gaps. Current GPU helpers use portable checkout/cache paths, and the backup helper requires an external destination. Frozen results and historical source archives retain their exact bytes. CI now verifies all saved result snapshots in addition to package, lint and CPU checks; a hosted CI run has not been claimed.
 
-The initial Git preparation left the remote URL and original code license as owner choices. The later public release adds the owner's chosen MIT license and a clean public branch; no repository has been published. See [push preparation](CONTRIBUTING.md#prepare-a-push).
+The initial Git preparation left the remote URL and original code license as owner choices. The later public release adds the owner's chosen MIT license and a clean public branch, now named `main` for publication. See [push preparation](CONTRIBUTING.md#prepare-a-push).
 
 ## Actual video test and recording — 6 September 2026 UTC
 
