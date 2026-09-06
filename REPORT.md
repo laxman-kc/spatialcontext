@@ -31,7 +31,9 @@ The `tuned` column in the earlier memory diagnostic refers to the **original ful
 
 ## Actual video demonstration
 
-Watch the [35-second before/after recording in the README](README.md#actual-video-test). It replays six real GPU predictions with the source footage and retained frames. The project owner confirmed permission to publish this recording; [NOTICE.md](NOTICE.md#video-footage) explains its separate video rights. The uploaded recording and saved numerical evidence describe the same completed run.
+The [16-second before/after video in the README](README.md#actual-video-test) shows one question: the earlier scene, a brief later scene, then the incorrect full-history answer and correct memory-retrieval answer. It uses the same base model's saved predictions. The zoom and labels help viewers see the truck and lights; they were not model inputs. This is an edited replay, with no new inference or training. [Video rights](NOTICE.md#video-footage).
+
+The complete saved run still contains six predictions across both questions:
 
 | Fixed question | Base, full history | Base, retrieved frames | New tuned reader, same retrieved frames |
 |---|---|---|---|

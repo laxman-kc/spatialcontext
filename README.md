@@ -20,16 +20,13 @@ The Matplotlib chart uses [saved metrics](results/overview/provenance.json). Ret
 
 ## Actual video test
 
-**Watch the 35-second before-and-after demo:** full history → memory retrieval. This replays six real A100 predictions on one reused validation video. Retrieval corrects one answer; additional fine-tuning adds no improvement in this example.
+**16 seconds, one question, before and after memory retrieval.**
 
-https://github.com/user-attachments/assets/a010dac7-c10b-4918-b69f-212430c1c387
+https://github.com/user-attachments/assets/6da7cba0-7908-42fe-9e95-0c5641ef29c5
 
-| Question, shortened | Full history | Retrieved frames | Fine-tuned + retrieval |
-|---|---|---|---|
-| What was right of the truck? | White car — incorrect | Spherical lights — correct | Spherical lights — correct |
-| Where was the truck relative to the lights? | Left — correct | Left — correct | Left — correct |
+**Before:** white car — incorrect. **After memory:** spherical lights — correct.
 
-The model received sampled frames. [Exact questions, answers and scores](results/video-demo/data.json) and [run provenance](results/video-demo/provenance.json) are included. The video is hosted as a GitHub attachment; its [publication record](results/video-demo/distribution.json) identifies the original recording. [Reproduce locally](PLAN.md#reproduce-the-actual-video-test).
+An edited replay of recorded answers on one reused validation video. The zoom and labels are for display only. [All six original predictions](results/video-demo/data.json) · [Edit provenance](results/video-demo/simple-provenance.json) · [Reproduce locally](PLAN.md#reproduce-the-actual-video-test).
 
 ## How it works
 

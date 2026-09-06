@@ -1,0 +1,64 @@
+{
+  "schema": "video-demo-simple-edit-v1",
+  "source_results": "results/video-demo/data.json",
+  "source_results_sha256": "a2ea06ca6cb5c0e5705fd277697477f54ab772b6b7ed3d420ceb5cd8c8185298",
+  "source_video_sha256": "00fb1953fa10157fa4382b3eb00630eb562f61742863bab91311826de754a708",
+  "remembered_frame_sha256": "9bbda25830379cd3fae0c6a31f9be31ece1edd5e171ab870dc8d3ac63cd53025",
+  "script_sha256": "589511429b226b63bcdaafa2afa0db62ee2042ec703a00a746ac433d61dbda5b",
+  "question_id": "original-8918",
+  "display_question_shortened": true,
+  "modes": [
+    "full",
+    "memory_base"
+  ],
+  "duration_seconds": 16,
+  "fps": 25,
+  "dimensions": [
+    1600,
+    900
+  ],
+  "edit": [
+    {
+      "output_seconds": [
+        0,
+        4
+      ],
+      "source_seconds": [
+        5.375,
+        9.375
+      ],
+      "speed": 1
+    },
+    {
+      "output_seconds": [
+        4,
+        6
+      ],
+      "source_seconds": [
+        12.5,
+        14.5
+      ],
+      "speed": 1
+    },
+    {
+      "output_seconds": [
+        6,
+        16
+      ],
+      "source_frame_index": 215,
+      "source_seconds": 8.958333333333334,
+      "display_crop_xyxy": [
+        262,
+        122,
+        504,
+        307
+      ]
+    }
+  ],
+  "scope": "Edited replay of saved predictions, not a new inference run. Crop, boxes and shortened labels are presentation only. The model saw the original verified sampled frames.",
+  "video": {
+    "file": "before-after.mp4",
+    "bytes": 1337594,
+    "sha256": "82cc9f9e60c5c0663eadac12eda3197eea3ea360e081d1a3b49dae9cd0a2769a"
+  }
+}

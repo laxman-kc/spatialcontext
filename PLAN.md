@@ -177,9 +177,9 @@ The static figures and text remain available directly in the README. GitHub's [m
 
 ## Reproduce the actual video test
 
-The [recorded walkthrough in the README](README.md#actual-video-test) uses one fixed validation video and two related, previously AI-reviewed questions. Its [six fresh GPU results](results/video-demo/data.json), [frozen protocol](results/video-demo/protocol.json) and [preparation receipt](results/video-demo/preparation.json) are separate from all historical experiment snapshots. The first question preserves the original approved wording; it is not the clarified wording used in the older command-line demonstration. The adapter is the newer memory-reader candidate, not the original full-history adapter. No new training or held-out evaluation is involved.
+The complete video test uses one fixed validation video and two related, previously AI-reviewed questions. Its [six GPU results](results/video-demo/data.json), [frozen protocol](results/video-demo/protocol.json) and [preparation receipt](results/video-demo/preparation.json) are separate from all historical experiment snapshots. The [16-second README edit](README.md#actual-video-test) shows only the first question's full-history and base-memory answers. The saved question preserves the original approved wording; the video's shorter wording is presentation only. The adapter in the complete run is the newer memory-reader candidate, not the original full-history adapter. No new training or held-out evaluation is involved.
 
-The README links the owner-authorized 35-second recording as a GitHub attachment; the numerical outputs remain in the repository. Video files, frames, GIF and poster are excluded from Git and source distributions. See [video rights](NOTICE.md#video-footage) and the [distribution receipt](results/video-demo/distribution.json). To reproduce inference, install the CPU package for preparation and the [GPU environment](#gpu-setup) for scoring. Restore the completed memory-reader checkpoint from the verified handoff; model weights and checkpoints are not included in Git. Acquire the pinned MP4 using `source.url` in `data.json`, subject to the source terms, and save it as `artifacts/video-demo/input/source.mp4`. Its required SHA256 is `00fb1953fa10157fa4382b3eb00630eb562f61742863bab91311826de754a708`.
+The README uses the simpler edit of the owner-authorized recording; the numerical outputs remain in the repository. Video files, frames, GIF and poster are excluded from Git and source distributions. See [video rights](NOTICE.md#video-footage) and the [distribution receipt](results/video-demo/distribution.json). To reproduce inference, install the CPU package for preparation and the [GPU environment](#gpu-setup) for scoring. Restore the completed memory-reader checkpoint from the verified handoff; model weights and checkpoints are not included in Git. Acquire the pinned MP4 using `source.url` in `data.json`, subject to the source terms, and save it as `artifacts/video-demo/input/source.mp4`. Its required SHA256 is `00fb1953fa10157fa4382b3eb00630eb562f61742863bab91311826de754a708`.
 
 Prepare a new run directory on the canonical decoder platform:
 
@@ -203,7 +203,7 @@ python scripts/run_video_demo.py --phase score \
 
 This freezes the adapter and scoring protocol, loads base and tuned readers in separate processes, scores six cases and writes `data.json`. It checks Question 1 against the independent scorer in full-input and memory-base modes. Full-frame paths are unavailable during memory scoring, and the sealed store must remain byte-identical. Frame selection and prompt are the same for both memory readers; the full-input comparison changes both. Every A–D score, timestamp, model identity and result is saved. Run directories are not overwritten.
 
-Copy the completed directory back locally. Build the browser recording stage from the verified media and results:
+Copy the completed directory back locally. To reproduce the original 35-second browser presentation, build its recording stage from the verified media and results:
 
 ```bash
 python scripts/build_video_demo.py \
@@ -213,7 +213,16 @@ python scripts/build_video_demo.py \
 python3 -m http.server 8766 --bind 127.0.0.1
 ```
 
-Open [the local recording stage](http://127.0.0.1:8766/output/playwright/video-demo/). It contains no inference code or remote runtime dependencies. Use **Play source footage**, **Show actual GPU answers**, **Show remembered frame**, then **Question 2**. The shorter presentation uses plain answer words; exact tested wording remains available in the expandable details and saved JSON. The remembered frame is the actual source frame at 8.96 seconds. The page labels saved replay and sampled model evidence explicitly. The recording used Playwright browser capture at 1600×900, then FFmpeg H.264 conversion trimmed to 35 seconds by removing the redundant final still; the optional GIF is an accelerated overview; its speed is recorded in the provenance receipt. The [historical provenance receipt](results/video-demo/provenance.json) records output hashes, encoding and browser checks. Stop the local server with Ctrl+C afterward. Source media, the recording stage, MP4, GIF and poster stay in ignored local storage. The README links the authorized recording as a GitHub attachment alongside the measured-answer table. It does not add footage to Git or source distributions. Recreating the recording locally does not grant permission for other uses of its source footage.
+Open [the local recording stage](http://127.0.0.1:8766/output/playwright/video-demo/). It contains no inference code or remote runtime dependencies. Use **Play source footage**, **Show actual GPU answers**, **Show remembered frame**, then **Question 2**. Exact tested wording remains available in the expandable details and saved JSON. The remembered frame is the actual source frame at 8.96 seconds. The page labels saved replay and sampled model evidence explicitly. The original recording used Playwright browser capture at 1600×900, then FFmpeg H.264 conversion trimmed to 35 seconds by removing the redundant final still; the optional GIF is an accelerated overview; its speed is recorded in the provenance receipt. The [historical provenance receipt](results/video-demo/provenance.json) records output hashes, encoding and browser checks. Stop the local server with Ctrl+C afterward. Source media, the recording stage, MP4, GIF and poster stay in ignored local storage. Recreating the recording locally does not grant permission for other uses of its source footage.
+
+For the current 16-second README edit, render the saved evidence locally with PyAV, Pillow and Matplotlib installed:
+
+```bash
+python scripts/render_simple_video.py \
+  --frame artifacts/video-demo/reproduction/full/frame_0003.png
+```
+
+This writes `artifacts/video-demo/simple/before-after.mp4` and its provenance receipt. With the original handoff restored, omit `--frame` to use `artifacts/video-demo/run/full/frame_0003.png`. The renderer verifies the original source and retained frame hashes, shows four seconds of clip 2 and two seconds of later footage, then reveals the saved answers over a zoomed frame for ten seconds. The crop and labels are display edits; the model used the unchanged sampled frames. Rendering needs no GPU and performs no inference.
 
 ## Artifact availability
 

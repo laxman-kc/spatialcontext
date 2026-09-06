@@ -2,9 +2,13 @@
 
 **Current result: retrieval improved base validation from 43/50 to 46/50 and reused-test accuracy from 18/27 to 19/27. The new memory-reader adapter stayed at 46/50, selecting base. [Current combined report](REPORT.md). All audited GPU project files are preserved locally; the public base model must be downloaded again for future GPU use. [Restore instructions](PLAN.md#restore-after-gpu-removal).**
 
+## Simpler README video — 6 September 2026 UTC
+
+The [16-second edit](README.md#actual-video-test) focuses on one question and two saved answers: white car without retrieval (incorrect), spherical lights with retrieval (correct). It shows the earlier scene, a brief later scene and a zoomed retained frame. Zoom and labels are presentation only. The complete run remains six predictions across two questions; no inference, training or measured result changed. The original 35-second recording and its provenance are retained.
+
 ## README video publication — 6 September 2026 UTC
 
-The project owner confirmed permission to publish the existing 35-second AirScape_Train_8918 demonstration. The [README now links the video as a GitHub attachment](README.md#actual-video-test), showing the full-input answer followed by the retrieved-memory answer and the separate fine-tuned reader. This is the same recorded run, with no new inference, training or changed results.
+The project owner confirmed permission to publish the existing 35-second AirScape_Train_8918 demonstration. The README initially linked that GitHub attachment, showing the full-input answer followed by the retrieved-memory answer and the separate fine-tuned reader. This was the same recorded run, with no new inference, training or changed results. The simpler README edit is described above.
 
 The [distribution receipt](results/video-demo/distribution.json) identifies the attachment. The recording remains excluded from Git and source distributions; raw footage, sampled frames, GIF, poster and private Git history remain local. Source owners retain the video's rights; this authorization does not license other footage. [Video notice](NOTICE.md#video-footage).
 
