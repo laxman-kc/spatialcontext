@@ -1,6 +1,6 @@
-# Design and reproduction
+# Setup and reproduction
 
-This document preserves the completed Project 2 fine-tuning contract and describes the subsequent [external-memory refactor](#external-memory-refactor). [REPORT.md](REPORT.md) is the current combined result; [PROGRESS.md](PROGRESS.md) retains the dated audit history. Use a new output directory for a new experiment and preserve the completed run.
+For the current system structure, diagrams, interfaces and technology stack, see [ARCHITECTURE.md](ARCHITECTURE.md). This document preserves the completed Project 2 fine-tuning contract and describes the subsequent [external-memory refactor](#external-memory-refactor). [REPORT.md](REPORT.md) is the current combined result; [PROGRESS.md](PROGRESS.md) retains the dated audit history. Use a new output directory for a new experiment and preserve the completed run.
 
 To inspect the included evidence without training or installing the ML stack, start with the [current Matplotlib chart](results/overview/results-overview.png) and [actual video-test results](README.md#actual-video-test). The optional [local explorer](#rebuild-the-results-presentation) and original [test](results/fullstudy/figures/test-accuracy.svg) and [training](results/fullstudy/figures/training-dynamics.svg) figures retain the earlier study detail.
 

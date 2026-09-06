@@ -2,6 +2,10 @@
 
 **Current result: retrieval improved base validation from 43/50 to 46/50 and reused-test accuracy from 18/27 to 19/27. The new memory-reader adapter stayed at 46/50, selecting base. [Current combined report](REPORT.md). All audited GPU project files are preserved locally; the public base model must be downloaded again for future GPU use. [Restore instructions](PLAN.md#restore-after-gpu-removal).**
 
+## Architecture documentation — 6 September 2026 UTC
+
+[ARCHITECTURE.md](ARCHITECTURE.md) now describes the implemented high-level and low-level flows, stack, storage, CLI contracts, training, evaluation and operating boundaries. The README links it directly and includes a small system diagram and documentation index. The design was checked against the current code, including prepared-frame observation input and the separate research/CLI retrieval budgets. Runtime behavior and saved results are unchanged.
+
 ## Simpler README video — 6 September 2026 UTC
 
 The [16-second edit](README.md#actual-video-test) focuses on one question and two saved answers: white car without retrieval (incorrect), spherical lights with retrieval (correct). It shows the earlier scene, a brief later scene and a zoomed retained frame. Zoom and labels are presentation only. The complete run remains six predictions across two questions; no inference, training or measured result changed. The original 35-second recording and its provenance are retained.

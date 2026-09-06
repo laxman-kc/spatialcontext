@@ -6,7 +6,7 @@ This project tests **LoRA fine-tuning of Qwen3-VL-4B** on UAV video questions, t
 
 For example: *“In the second clip, what was to the right of the truck?”* The system must use the referenced scene even after other scenes have appeared. It selects one of four supplied answers.
 
-[Results report](REPORT.md) · [Video test](#actual-video-test) · [Setup and reproduction](PLAN.md) · [Progress](PROGRESS.md)
+[Architecture and system design](ARCHITECTURE.md) · [Results report](REPORT.md) · [Video test](#actual-video-test) · [Setup and reproduction](PLAN.md) · [Progress](PROGRESS.md)
 
 ## Results
 
@@ -28,12 +28,20 @@ https://github.com/user-attachments/assets/6da7cba0-7908-42fe-9e95-0c5641ef29c5
 
 An edited replay of recorded answers on one reused validation video. The zoom and labels are for display only. [All six original predictions](results/video-demo/data.json) · [Edit provenance](results/video-demo/simple-provenance.json) · [Reproduce locally](PLAN.md#reproduce-the-actual-video-test).
 
-## How it works
+## Architecture
 
-1. Sample ordered frames from the video.
-2. Save them in a SQLite/PNG memory store before receiving questions.
-3. Retrieve frames from the clip explicitly named in the question.
-4. Use Qwen to score the four answer choices.
+```mermaid
+flowchart LR
+    V["Video preparation"] --> F["RGB frame pairs"]
+    F --> S[("Persistent memory")]
+    S --> R["Retrieve earlier clip"]
+    Q["Question + choices"] --> R
+    R --> M["Qwen reader"]
+    M --> A["Answer + evidence"]
+```
+
+[High-level design](ARCHITECTURE.md#high-level-design) · [Low-level design and storage](ARCHITECTURE.md#low-level-design) · [Technology stack](ARCHITECTURE.md#technology-stack) · [Training and evaluation](ARCHITECTURE.md#training-and-evaluation)
+
 
 The memory survives process restarts. Retrieval currently uses clip numbers. Semantic search, automatic object tracking and 3D mapping are not implemented. [Memory workflow](PLAN.md#reproduce-or-use-the-memory-workflow).
 
@@ -61,7 +69,7 @@ tests/      # CPU tests with synthetic fixtures
 results/    # measured results, figures and recorded video test
 ```
 
-Python 3.10, PyTorch 2.6.0, Transformers 4.57.1, PEFT 0.18.1, PyAV, Pillow, SQLite and Matplotlib. GPU experiments used one NVIDIA A100 80 GB.
+Python 3.10, PyTorch 2.6.0, Transformers 4.57.1, PEFT 0.18.1, PyAV, Pillow, SQLite and Matplotlib. GPU experiments used one NVIDIA A100 80 GB. [Component responsibilities](ARCHITECTURE.md#file-structure).
 
 ## Sources and license
 
@@ -70,3 +78,14 @@ Model: [Qwen3-VL-4B](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct). Research
 Original project code is licensed under **[MIT](LICENSE)**. Dataset-derived text, demo footage and external dependencies retain their own terms; see [NOTICE.md](NOTICE.md). Model weights and raw footage are not included in Git. [Release preparation](CONTRIBUTING.md#prepare-a-push).
 
 Maintainers: keep the ignored data, artifacts and backups when removing the temporary GPU. [Verified handoff and restore instructions](PLAN.md#restore-after-gpu-removal).
+
+## Documentation
+
+| Read | Find |
+|---|---|
+| [Architecture](ARCHITECTURE.md) | High-level and low-level design, stack, interfaces and storage |
+| [Plan](PLAN.md) | Dataset setup, GPU setup, run commands and restoration |
+| [Report](REPORT.md) | Measured results and limitations |
+| [Progress](PROGRESS.md) | Completed work and recorded checks |
+| [Contributing](CONTRIBUTING.md) | Development setup, tests and release workflow |
+| [License notice](NOTICE.md) | Original code and third-party terms |

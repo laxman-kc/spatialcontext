@@ -1,4 +1,4 @@
-include README.md REPORT.md PLAN.md PROGRESS.md CONTRIBUTING.md
+include README.md ARCHITECTURE.md REPORT.md PLAN.md PROGRESS.md CONTRIBUTING.md
 include requirements-figures.txt
 recursive-include configs *.yaml
 recursive-include scripts *.py *.sh *.html
