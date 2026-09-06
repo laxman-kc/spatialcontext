@@ -28,6 +28,8 @@ The [CPU workflow](.github/workflows/tests.yml) uses these checks on Ubuntu with
 
 For workflow edits, also run `actionlint .github/workflows/tests.yml`. YAML parsing alone does not validate GitHub Actions expression contexts.
 
+For diagram edits, render the Mermaid blocks in both `README.md` and `ARCHITECTURE.md` with the [Mermaid CLI](https://github.com/mermaid-js/mermaid-cli) before publishing. Link checks and CPU tests do not validate diagram syntax. Avoid literal semicolons in sequence-diagram message text: Mermaid treats them as statement separators.
+
 ## Make a focused change
 
 - Keep the flat `ecqa/` package and thin CLI. Follow the responsibilities documented in the README.

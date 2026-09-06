@@ -51,9 +51,9 @@ sequenceDiagram
     participant A as answer command
     participant R as Retriever
     participant M as MemoryRuntime / Qwen
-    O->>S: Create new store; observe chronological frame pairs
-    O->>S: Apply retention; seal database, frames and manifest
-    Note over S,A: Questions arrive after sealing; processes may restart
+    O->>S: Create new store and observe chronological frame pairs
+    O->>S: Apply retention and seal database, frames and manifest
+    Note over S,A: Questions arrive after sealing and processes may restart
     A->>S: Open read-only and verify hashes
     A->>R: Episode ID, question and pair budget
     R->>S: Read retained observations for the named clip
@@ -61,7 +61,7 @@ sequenceDiagram
     A->>M: Question, A-D options and sealed memory reference
     M->>S: Verify and load only selected retained frames
     M-->>A: Four contextual answer scores
-    A-->>A: Validate scores; atomically write answer receipt
+    A-->>A: Validate scores and atomically write answer receipt
 ```
 
 The prompt contains the question, choices and a map of selected evidence. Gold answers and audit labels are excluded. The processor preserves prepared frame geometry; overlong inputs are rejected instead of truncated. The highest contextual answer-token score selects A, B, C or D. Scores and the top-two margin are **not calibrated confidence probabilities**.
